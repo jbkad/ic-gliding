@@ -1,0 +1,32 @@
+.scroll-btn  {
+    display: none;
+}
+  
+@media (max-width: 600px) {
+    .scroll-btn  {
+        position: fixed;
+        bottom: 120px;
+        right: 10px;
+        color: #aa9f9f44;
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        display: none;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .scroll-btn.visible {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+}

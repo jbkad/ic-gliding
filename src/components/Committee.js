@@ -9,7 +9,7 @@ export default function Committee() {
             name: "Matthew Homa",
             position: "Captain",
             course: "Aeronautical Engineering",
-            year: "3 Undergrad"
+            year: "3"
         },
         {
             image: "assets/committee/Sam.png",
@@ -23,35 +23,35 @@ export default function Committee() {
             name: "Lincoln Hung",
             position: "Secretary",
             course: "Aeronautical Engineering",
-            year: "4 Undergrad"
+            year: "4"
         },
         {
             image: "assets/committee/Alfred.png",
             name: "Alfred Beadman",
             position: "Junior Treasurer",
             course: "Medicine",
-            year: "3 Undergrad"
+            year: "3"
         },
         {
             image: "assets/committee/Aidan.png",
             name: "Aidan Clark",
             position: "Publicity",
             course: "Aeronautical Engineering",
-            year: "2 Undergrad"
+            year: "2"
         },
         {
             image: "assets/committee/Alex.png",
             name: "Alexander Hook",
             position: "Equipment Officer",
             course: "Aeronautical Engineering",
-            year: "4 Undergrad"
+            year: "4"
         },
         {
-            image: "assets/committee/profile.jpeg",
+            image: "assets/committee/Tomasz.png",
             name: "Tomasz Tomaszewski",
             position: "Committee Member",
-            course: "Course -",
-            year: "-"
+            course: "Design Engineering",
+            year: "3"
         },
     ]
 

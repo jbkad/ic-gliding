@@ -109,10 +109,6 @@ export default function Navbar() {
                         <ExitIcon />
                     </div>
 
-                    {/* <div className="back-btn" onClick={handleShowNavbar}>
-                        {back_button}
-                    </div> */}
-
                     <ul className="menu-items">
                         <li>
                             <Link 
@@ -197,13 +193,6 @@ export default function Navbar() {
                                     >
                                         First trip
                                     </Link>
-                                    {/* <Link 
-                                        to="/first-flight" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-items"
-                                    >
-                                        First flight
-                                    </Link> */}
                                     <Link 
                                         to="/pre-solo" 
                                         onClick={handleMenuClick} 
@@ -239,27 +228,6 @@ export default function Navbar() {
                                     >
                                         Fleet and costs
                                     </Link>
-                                    {/* <Link 
-                                        to="/club-achievements" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-items"
-                                    >
-                                        Trophy winners
-                                    </Link> */}
-                                    {/* <Link 
-                                        to="/rigging" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-items"
-                                    >
-                                        Riggin and conversion notes
-                                    </Link> */}
-                                    {/* <Link 
-                                        to="/equipment" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-items"
-                                    >
-                                        Equipment manuals
-                                    </Link> */}
                                 </div>
                             )}
                         </li>

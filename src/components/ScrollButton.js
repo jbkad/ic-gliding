@@ -31,7 +31,6 @@ const ScrollButton = () => {
     <div
       className={`scroll-btn ${isVisible ? "visible" : ""}`}
       onClick={buttonScrollToTop}
-      data-testid="footer__scroll-btn"
     >
       <ScrollIcon />
     </div>

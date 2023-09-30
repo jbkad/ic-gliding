@@ -1,4 +1,3 @@
-// Navbar.test.js
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
@@ -11,7 +10,6 @@ test('Navbar renders without errors', () => {
     </BrowserRouter>
   );
 
-  // Ensure the Navbar renders without errors
   const navbar = screen.getByRole('navigation');
   expect(navbar).toBeInTheDocument();
 });
@@ -28,8 +26,6 @@ test('Navbar navigation works', () => {
   const glidingInfoLink = screen.getByText(/What is gliding\?/i);
   fireEvent.click(glidingInfoLink);
   expect(screen.getByText(/What is gliding\?/i)).toBeInTheDocument();
-
-  // Add more tests for other menu items as needed...
 });
 
 test('Navbar toggles dropdowns', () => {
@@ -50,6 +46,4 @@ test('Navbar toggles dropdowns', () => {
   // Toggle the member information dropdown
   fireEvent.click(screen.getByText(/Member information/i));
   expect(screen.getByText(/Fleet and costs/i)).toBeInTheDocument();
-
-  // Add more tests for other dropdowns as needed...
 });

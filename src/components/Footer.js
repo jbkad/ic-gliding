@@ -9,7 +9,7 @@ import '../styles/Footer.css';
 
 export default function Footer () {
 
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    // const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <div id="footer">
