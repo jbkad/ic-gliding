@@ -9,7 +9,7 @@ bold {
 }
 
 .app {
-  color: var(--primary-black);
+  color: var(--primary-color);
   background-color: var(--bg-color);
   transition: background-color  1s;
   font-family: 'Manrope', sans-serif;
@@ -29,33 +29,9 @@ bold {
 }
 
 :root {
-  /* light theme colors */
-  --bg-light: #f5f5f7;
-  --highlight-light: rgb(151, 200, 236);
-  --primary-light: #1d1d1f;
-  --secondary-light: steelblue;
-  --tertiary-light: #f5f5f7;
-
-  /* contrast theme colors */
-  --bg-dark: #272343;
-  --highlight-dark: #272343;
-  --primary-dark: #ffe940;
-  --secondary-dark: #f5f5f7;
-  --tertiary-dark: #f5f5f7;
-}
-
-.light-theme {
-  --bg-color: var(--bg-light);
-  --highlight-color: var(--highlight-light);
-  --primary-color: var(--primary-light);
-  --secondary-color: var(--secondary-light);
-  --tertiary-color: var(--tertiary-light);
-}
-
-.dark-theme {
-  --bg-color: var(--bg-dark);
-  --highlight-color: var(--highlight-dark);
-  --primary-color: var(--primary-dark);
-  --secondary-color: var(--secondary-dark);
-  --tertiary-color: var(--tertiary-dark);
+  --bg-color: #f5f5f7;
+  --highlight-color: rgb(151, 200, 236);
+  --primary-color: #1d1d1f;
+  --secondary-color:  steelblue;
+  --tertiary-color: #f5f5f7;
 }

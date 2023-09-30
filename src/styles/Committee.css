@@ -33,7 +33,7 @@
     border: 3px solid rgb(0, 0, 0, 10%);
     box-shadow: 2px 2px rgba(69, 144, 198, 70%);
     background-color:  rgb(151, 200, 236, 8%);
-    color: var(--color-black);
+    color: black;
     border-radius: 8px;
     padding: 20px;
 }

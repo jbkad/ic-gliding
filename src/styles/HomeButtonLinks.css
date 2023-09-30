@@ -17,8 +17,7 @@
 }
 
 .home-links .button {
-    background-color: var(--button-color);
-    color: var(--color-black);
+    color: black;
     border: 2px solid var(--secondary-color);
 }
 
