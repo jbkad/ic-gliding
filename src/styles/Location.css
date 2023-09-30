@@ -1,0 +1,14 @@
+.location .address p {
+    margin: 0;
+}
+
+.location .address ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 2px;
+}
+
+.location .address a {
+    color: black;
+}

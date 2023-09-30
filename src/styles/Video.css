@@ -1,0 +1,28 @@
+.video .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 30px;
+}
+
+.video h2 {
+    text-align: center;
+    text-shadow: 3px 3px rgb(151, 200, 236, 50%);
+}
+
+.video .youtube-video {
+    width: 500vw; 
+    height: 38vw; 
+    border-radius: 20px;
+    border: 1.5px solid rgba(0, 0, 0);
+}
+
+.video .caption {
+    font-size: 100px;
+    position: absolute;
+    color: rgba(128, 128, 128, 0.6);
+    padding-top: 10px;
+    text-align: center;
+}
