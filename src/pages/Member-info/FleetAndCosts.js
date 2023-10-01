@@ -54,7 +54,7 @@ export default function FleetAndCosts() {
             <img
                 src={require('../../assets/296.png')}
                 alt="296"
-                className="fleet-img"
+                className="img"
             />
             <p>296 is one of our two single seat gliders used for cross-country flying and is the first of the Imperial single-seat gliders that you can convert to. It is a very capable cross-country glider despite its age and has achieved some very respectable results in competitions whilst being flown by our members. It is very nice to fly and is suitable for both inexperienced pilots and those with hundreds of hours. </p>
             <div className="specifications">
@@ -95,7 +95,7 @@ export default function FleetAndCosts() {
             <img
                 src={require('../../assets/96.png')}
                 alt="96"
-                className="fleet-img"
+                className="img"
             />
             <p>96 is our highest performance single seater and the pride of our fleet. It has been used for a huge range of cross-country competitions including some international competitions.  </p>
             <div className="specifications">
