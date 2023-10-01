@@ -2,25 +2,24 @@
     overflow: hidden;
 }
 
-.gallery-item {
+.gallery .gallery-item {
     display: inline-flex;
     position: relative;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 80.25vw;
+    width: 80vw;
     overflow: hidden;
 }
 
-.gallery-item img {
+.gallery .gallery-item img {
     min-width: 15vw;
-    width: 80vw;
     height: auto;
     border-radius: 8px;
     border: 1.5px solid black;
 }
 
-.inner-gallery {
+.gallery .inner-gallery {
     white-space: nowrap;
     transition: transform 0.3s;
 }

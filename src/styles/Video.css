@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    margin: 30px;
 }
 
 .video h2 {
@@ -15,7 +14,7 @@
 .video .youtube-video {
     width: 500vw; 
     height: 38vw; 
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1.5px solid rgba(0, 0, 0);
 }
 

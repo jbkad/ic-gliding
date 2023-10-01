@@ -1,0 +1,15 @@
+.cross-country .img {
+    height: auto;
+    max-width: 60vw;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.cross-country .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(128, 128, 128, 0.6);    
+}

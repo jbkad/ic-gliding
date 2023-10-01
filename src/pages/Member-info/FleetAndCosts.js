@@ -13,7 +13,7 @@ export default function FleetAndCosts() {
             <img
                 src={require('../../assets/496.png')}
                 alt="496"
-                className="fleet-img"
+                className="img"
             />
             <p>496 is our Grob Twin Acro III. It will likely be the first glider that you fly in and it is used for training. The seats are arranged in a tandem position with one in front of the other. Both seats have a full set of controls and instruments allowing it to be flown from the front or back seat. 496 is used for pre-solo training and some of your first solo flights may also be done in it. </p>
             <div className="specifications">
@@ -142,7 +142,8 @@ export default function FleetAndCosts() {
                     <div className="block">Winch Launch</div>
                     <div className="block">Aerotow Launch</div>
                     <div className="block">Soaring Fees</div>
-                    <div className="block">Weekend Trip Fee</div>
+                    <div className="block">Weekend Trip Fee: <strong>Train</strong></div>
+                    <div className="block">Weekend Trip Fee: <strong>Minibus</strong></div>
                     <div className="block">Student Daily Hire</div>
                     <div className="block">Alumni Daily Hire</div>
                 </div>
@@ -154,7 +155,8 @@ export default function FleetAndCosts() {
                     <div className="block">£9</div>
                     <div className="block">£43 (to 2000ft)</div>
                     <div className="block">£30p/min (Min charge: 7 mins, Max charge: 2.5 hrs)</div>
-                    <div className="block">£7</div>
+                    <div className="block">£12</div>
+                    <div className="block">£16</div>
                     <div className="block">£30</div>
                     <div className="block">£35</div>
                 </div>
