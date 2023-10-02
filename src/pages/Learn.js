@@ -24,7 +24,10 @@ export default function Learn () {
                 . Once you have purchased your membership you become eligible to sign-up for a place on our weekend trips to the airfield. 
             </p>
 
-            <p>The link to sign up for the weekend’s trips will usually be send out on <strong>Tuesday</strong>. The form will close at <strong>midnight on Wednesday</strong> and a list will be published on <strong>Thursday</strong>. </p>
+            <h2>Weekend trip sign ups</h2>
+            <p>If you have subscribed to our mailing list, you should receive a sign-up form <strong>every Monday at 21:30</strong>. Due to the large number of members, the email might take up to 10 minutes to reach everyone. The form will close <strong>every Tuesday at 21:30.</strong> </p>
+            <p>Flying & reserve lists for that weekend’s trip will be sent out <strong>every Wednesday at 21:30.</strong> </p>
+            <p> If you see your name on the flying or reserve list, <strong>join the corresponding WhatsApp groups by Thursday 21:30 to confirm your attendance.</strong> Otherwise, your spot might be given to members on the reserve list. </p>
         </div>
     )
 }

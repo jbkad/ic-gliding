@@ -120,6 +120,16 @@ export default function Navbar() {
                             </Link>
                         </li>
 
+                        <li>
+                            <Link 
+                                to="/faqs" 
+                                onClick={handleMenuClick}
+                                className="menu-items"
+                            >
+                                FAQs
+                            </Link>
+                        </li>
+
                         {/* 'What is gliding?' dropdown info */}
                         <li>
                             <div 

@@ -1,0 +1,66 @@
+.faqs .question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqs .accordion-items {
+    margin: 0 0 15px 0; 
+}
+
+.faqs .accordion-title-container {
+    color: var(--headline-color);
+    background-color: rgba(70, 131, 180, 0.15);
+}
+
+.faqs .accordion-title-container:hover {
+    color: white;
+    background-color: var(--highlight-color);
+}
+
+.faqs .toggle {
+    font-size: 2.5rem; 
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.faqs .questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.faqs .content-container {
+    max-height: fit-content;
+    overflow: hidden;
+    padding: 8px 15px 5px 15px;
+    background-color: rgba(70, 131, 180, 0.1);
+    color: var(--paragraph-color);
+}
+
+.faqs .content {
+    margin: 0;
+    padding: 8px 15px 5px 5px;
+}
+
+.faqs .content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.faqs .content ul li {
+    padding-bottom: 15px;
+}
+
+.faqs .content .trip-cancellation ul li {
+    list-style-type: circle;
+    padding: 0;
+    
+}
+
+.faqs .content:active {
+    transition: 0.5 ease-in-out;
+}

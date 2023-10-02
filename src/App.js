@@ -18,6 +18,7 @@ import PreSolo from './pages/Learning-to-glide/PreSolo';
 import PostSolo from './pages/Learning-to-glide/PostSolo';
 import Gallery from './pages/Gallery';
 import FleetAndCosts from './pages/Member-info/FleetAndCosts';
+import FAQs from './pages/FAQs';
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
         <div className="app-container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/faqs" element={<FAQs />} />
 
             {/* What is gliding? */}
             <Route path="/flying-and-launching" element={<Flying />} />
