@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { scrollToTop } from "../styles/utils/Constants";
 import '../styles/FAQs.css';
 
 export default function FAQs(){
