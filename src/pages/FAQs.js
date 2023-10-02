@@ -43,7 +43,7 @@ export default function FAQs(){
                     <li>
                         If you can drive, you may get priority. Please
                             <a 
-                                href="https://union.us19.list-manage.com/subscribe?u=269e6fccce0e382e53a4d91ee&id=2153e388bc"
+                                href="mailto:gliding@imperial.ac.uk" 
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
