@@ -134,7 +134,7 @@
 
 @media (max-width: 1200px) {
     .navbar .heading {
-        inline-size: 200px;
+        inline-size: 185px;    
     }
     /* offcanvas menu elements */
     .navbar .menu-btn {

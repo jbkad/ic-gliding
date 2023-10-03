@@ -12,7 +12,7 @@ export default function HomeButtonLinks() {
                 rel="noopener noreferrer"
                 className="button"
             >
-                <MailIcon /> 
+                <MailIcon className="icons"/> 
                 Mailing List 
             </a>
             <a href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding" 
@@ -20,7 +20,7 @@ export default function HomeButtonLinks() {
                 rel="noopener noreferrer"
                 className="button"
             >
-                <PlaneIcon /> 
+                <PlaneIcon className="icons"/> 
                 Union Website     
             </a>
         </div>

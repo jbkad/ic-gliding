@@ -9,7 +9,7 @@ export default function Footer () {
 
 
     return (
-        <div className="footer" id="footer">
+        <footer className="footer" id="footer">
             <div className="container">
                 <Link 
                     to="/" 
@@ -50,6 +50,6 @@ export default function Footer () {
                     </a> 
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

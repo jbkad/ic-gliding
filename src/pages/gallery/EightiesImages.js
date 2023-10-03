@@ -4,7 +4,7 @@ export default function EightiesImages () {
     return (
         <div>
             <h2>1980 - 1989</h2>
-            <strong>No images currently available, sorry!</strong>
+            <strong>Images coming soon!</strong>
         </div>
     )
 }
