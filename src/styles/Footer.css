@@ -1,7 +1,7 @@
 .footer {
     background-color:  var(--highlight-color);
     position: relative;
-    padding: 0 10px;
+    padding: 10px 15px;
     bottom: 0;
     justify-content: center;
     flex-shrink: 0;
@@ -17,13 +17,6 @@
     text-decoration: none;
 }
 
-.footer .items {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
 .footer .img {
     height: 60px;
     width: auto;
@@ -32,7 +25,7 @@
 .footer .title {
     margin-left: 10px;
     color: var(--primary-color);
-    inline-size: 150px;
+    inline-size: 80px;
 }
 
 .title:hover {

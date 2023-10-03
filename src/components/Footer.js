@@ -16,14 +16,11 @@ export default function Footer () {
                     className="content" 
                     onClick={scrollToTop}
                 >
-                    <div className="items">
-                        <img
-                            src="/assets/gliding-logo.png" 
-                            alt="icGC logo"
-                            className="img"
-                        />
-                    <h3 className="title">Imperial College Gliding Club</h3>
-                    </div>
+                    <img
+                        src="/assets/gliding-logo.png" 
+                        alt="icGC logo"
+                        className="img"
+                    />
                 </Link>
                    
                 <div className="buttons">

@@ -94,10 +94,6 @@
     color: var(--secondary-color);
 }
 
-/* Link .navbar .menu-elements ul a:hover {
-    color: var(--secondary-color);
-} */
-
 .navbar .menu-elements ul a.active {
     position: relative;
 }
