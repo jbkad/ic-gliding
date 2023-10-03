@@ -49,7 +49,7 @@ export default function Committee() {
         {
             image: "assets/committee/Tomasz.png",
             name: "Tomasz Tomaszewski",
-            position: "Committee Member",
+            position: "Trip Officer",
             course: "Design Engineering",
             year: "3"
         },

@@ -9,24 +9,31 @@ export default function Footer () {
 
 
     return (
-        <div id="footer">
-            <div className="footer-container">
+        <div className="footer" id="footer">
+            <div className="container">
                 <Link 
                     to="/" 
-                    className="footer-content" 
+                    className="content" 
                     onClick={scrollToTop}
                 >
-                    <div className="footer-title-and-img">
+                    <div className="items">
                         <img
                             src="/assets/gliding-logo.png" 
-                            alt="imperial-college-gliding-logo"
-                            className="footer-img"
+                            alt="icGC logo"
+                            className="img"
                         />
-                    <h3 className="footer-title">Imperial College Gliding Club</h3>
+                    <h3 className="title">Imperial College Gliding Club</h3>
                     </div>
                 </Link>
                    
-                <div className="footer-buttons">
+                <div className="buttons">
+                <Link 
+                    to="/faqs" 
+                    className="spacing" 
+                    onClick={scrollToTop}
+                >
+                    FAQs
+                </Link>
                     <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
                         target="blank"
                         className="spacing"

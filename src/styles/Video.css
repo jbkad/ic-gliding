@@ -12,10 +12,10 @@
 }
 
 .video .youtube-video {
-    width: 500vw; 
-    height: 38vw; 
-    border-radius: 10px;
-    border: 1.5px solid rgba(0, 0, 0);
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
 }
 
 .video .caption {
@@ -24,4 +24,10 @@
     color: rgba(128, 128, 128, 0.6);
     padding-top: 10px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .video .youtube-video {
+        height: 250px;
+    }
 }

@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "icGC",
+  "name": "Imperial College Gliding Club",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "gliding.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },

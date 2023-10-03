@@ -1,11 +1,3 @@
-.home_committee-member-name {
-    font-size: 1.2rem;
-}
-
-.home__committee-member-position {
-    font-weight: 900;
-}
-
 .home .slogan {
     font-weight: bold;
     text-align: center;
@@ -15,5 +7,5 @@
 .home .body {
     text-align: center;
     font-size: 1em;
-    margin: 40px 0;
+    margin: 20px 0;
 }

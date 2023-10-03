@@ -59,7 +59,7 @@
 .gliding-gallery .item img {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 5px;
 }
 
@@ -94,6 +94,7 @@
   
 .modal .caption {
     position: absolute;
+    justify-content: baseline;
     color: white;
     text-align: center;
     bottom: 12%;

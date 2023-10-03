@@ -1,4 +1,4 @@
-import TwoThousandsImages from "./gallery/TwoThousandsImages";
+import ThousandsTenImages from "./gallery/ThousandsTenImages";
 import ThousandsImages from "./gallery/ThousandsImages";
 import NinetiesImages from "./gallery/NinetiesImages";
 import EightiesImages from "./gallery/EightiesImages";
@@ -14,7 +14,7 @@ export default function Gallery() {
     return (
         <div id="gliding-gallery" className="gliding-gallery">
             <h1>Gallery</h1>
-            <TwoThousandsImages />
+            <ThousandsTenImages />
             <ThousandsImages />
             <NinetiesImages />
             <EightiesImages />
