@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as ScrollIcon } from '../assets/svgs/ScrollIcon.svg';
+import { scrollToTop } from '../styles/utils/Constants';
 import '../styles/ScrollButton.css';
 
 const ScrollButton = () => {
@@ -13,13 +14,6 @@ const ScrollButton = () => {
     }
   };
 
-  const buttonScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
     return () => {
@@ -30,7 +24,7 @@ const ScrollButton = () => {
   return (
     <div
       className={`scroll-btn ${isVisible ? "visible" : ""}`}
-      onClick={buttonScrollToTop}
+      onClick={scrollToTop}
     >
       <ScrollIcon />
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { scrollToTop } from "../styles/utils/Constants";
+import { scrollToTop, navigateTo } from "../styles/utils/Constants";
 import { ReactComponent as HomeIcon } from '../assets/svgs/HomeIcon.svg';
 import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
 import { ReactComponent as ExitIcon } from '../assets/svgs/ExitIcon.svg';
@@ -23,7 +23,7 @@ export default function Navbar() {
 
     const handleMenuClick = () => {
         setShowNavbar(false);
-        scrollToTop();
+        navigateTo();
         setShowGlidingInfoDropdown(false);
         setShowLearningDropdown(false);
         setShowMemberDropdown(false);
@@ -108,6 +108,8 @@ export default function Navbar() {
                     <div className="exit-btn" onClick={handleShowNavbar}>
                         <ExitIcon />
                     </div>
+
+                    
 
                     <ul className="menu-items">
                         <li>

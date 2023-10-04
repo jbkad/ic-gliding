@@ -2,7 +2,7 @@
     background-color: var(--bg-color);
     transition: background-color  1s;
     top: 0;
-    padding: 10px;
+    padding: 18px 10px;
 
     /* hover navbar css */
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 2%);
@@ -36,6 +36,7 @@
 
 .navbar .heading {
     margin-left: 10px;
+    inline-size: 200px;    
     color: black;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.8);
 }
@@ -132,10 +133,7 @@
     background-color: #f0f0f0;
 }
 
-@media (max-width: 1200px) {
-    .navbar .heading {
-        inline-size: 185px;    
-    }
+@media (max-width: 1000px) {
     /* offcanvas menu elements */
     .navbar .menu-btn {
         display: block;
@@ -185,7 +183,7 @@
         width: 0;
         height: 100vh;
         background-color: var(--bg-color);
-        transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in-out;
         overflow: hidden;
         z-index: 1;
     }
@@ -198,8 +196,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 50%;
-        padding: 0;
-        list-style-type: none;
+        margin-top: 70%;
     }
-}
+}    

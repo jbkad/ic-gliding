@@ -1,3 +1,4 @@
+import TwoThousandsImages from "./gallery/ThousandsTenImages";
 import ThousandsImages from "./gallery/ThousandsImages";
 import NinetiesImages from "./gallery/NinetiesImages";
 import EightiesImages from "./gallery/EightiesImages";
@@ -7,7 +8,6 @@ import FiftiesImages from "./gallery/FiftiesImages";
 import FortiesImages from "./gallery/FortiesImages";
 import ThirtiesImages from "./gallery/ThirtiesImages";
 import '../styles/Gallery.css';
-import TwoThousandsImages from "./gallery/ThousandsTenImages";
 
 export default function Gallery() {
 

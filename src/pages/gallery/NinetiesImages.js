@@ -26,8 +26,8 @@ export default function NinetiesImages () {
     
     const prevImage90s = (e) => {
         e.stopPropagation();
-    }
-
+        setSelectedImageIndex1990s(prevIndex => (prevIndex === 0 ? images1990s.length - 1 : prevIndex - 1));
+    }   
     const images1990s = [
         {
             src: require("../../assets/gallery/90s/1.jpg"),

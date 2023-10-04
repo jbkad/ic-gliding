@@ -3,6 +3,7 @@ import '../../styles/GalleryItem.css';
 
 // This gallery lives on the <Home /> page.
 
+
 // Renders the gallery items containing images.
 const GalleryItem = ({ children, width, image}) => {
     return (

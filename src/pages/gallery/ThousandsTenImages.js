@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import '../../styles/Gallery.css';
@@ -26,7 +26,8 @@ export default function TwoThousandsImages () {
     
     const prevImage10s = (e) => {
         e.stopPropagation();
-    }
+        setSelectedImageIndex2010s(prevIndex => (prevIndex === 0 ? images2010s.length - 1 : prevIndex - 1));
+    }  
 
     const images2010s = [
         {
@@ -71,6 +72,10 @@ export default function TwoThousandsImages () {
         },
         {
             src: require("../../assets/gallery/10s/11.jpg"),
+            caption: "icGC Summer Tour, Issoudun 2019"
+        },
+        {
+            src: require("../../assets/gallery/10s/12.jpg"),
             caption: "icGC Summer Tour, Issoudun 2019"
         },
     ]
