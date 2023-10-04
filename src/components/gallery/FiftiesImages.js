@@ -102,11 +102,18 @@ export default function FiftiesImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images1950s[selectedImageIndex1950s].src}
-                            alt={`${images1950s[selectedImageIndex1950s].caption}`}
-                            className="modal-image"
-                        />
+                        <div className="items">
+                            <img 
+                                src={images1950s[selectedImageIndex1950s].src}
+                                alt={`${images1950s[selectedImageIndex1950s].caption}`}
+                                className="modal-image"
+                            />
+                            
+                            <div className="caption">
+                                {images1950s[selectedImageIndex1950s].caption}
+                            </div>
+                        </div>
+
 
                         <button 
                             className="navigation-btn" 
@@ -115,9 +122,7 @@ export default function FiftiesImages () {
                             <ArrowRightIcon />
                         </button>
 
-                        <div className="caption">
-                            {images1950s[selectedImageIndex1950s].caption}
-                        </div>
+                       
                     </div>
                 )}
         </div>

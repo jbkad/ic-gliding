@@ -118,11 +118,16 @@ export default function FortiesImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images1940s[selectedImageIndex1940s].src}
-                            alt={`${images1940s[selectedImageIndex1940s].caption}`}
-                            className="modal-image"
-                        />
+                        <div className="items">
+                            <img 
+                                src={images1940s[selectedImageIndex1940s].src}
+                                alt={`${images1940s[selectedImageIndex1940s].caption}`}
+                                className="modal-image"
+                            />
+                            <div className="caption">
+                                {images1940s[selectedImageIndex1940s].caption}
+                            </div>
+                        </div>
 
                         <button 
                             className="navigation-btn" 
@@ -131,9 +136,7 @@ export default function FortiesImages () {
                             <ArrowRightIcon />
                         </button>
 
-                        <div className="caption">
-                            {images1940s[selectedImageIndex1940s].caption}
-                        </div>
+                        
                     </div>
                 )}
         </div>

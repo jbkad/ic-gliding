@@ -141,11 +141,17 @@ export default function SixtiesImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images1960s[selectedImageIndex1960s].src}
-                            alt={`${images1960s[selectedImageIndex1960s].caption}`}
-                            className="modal-image"
-                        />
+                        <div className="items">
+                            <img 
+                                src={images1960s[selectedImageIndex1960s].src}
+                                alt={`${images1960s[selectedImageIndex1960s].caption}`}
+                                className="modal-image"
+                            />
+
+                            <div className="caption">
+                                {images1960s[selectedImageIndex1960s].caption}
+                            </div>
+                        </div>
 
                         <button 
                             className="navigation-btn" 
@@ -154,9 +160,7 @@ export default function SixtiesImages () {
                             <ArrowRightIcon />
                         </button>
 
-                        <div className="caption">
-                            {images1960s[selectedImageIndex1960s].caption}
-                        </div>
+                        
                     </div>
                 )}
         </div>

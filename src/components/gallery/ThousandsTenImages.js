@@ -119,22 +119,25 @@ export default function TwoThousandsImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images2010s[selectedImageIndex2010s].src}
-                            alt={`${images2010s[selectedImageIndex2010s].caption}`}
-                            className="modal-image"
-                        />
+                        <div className="items">
+                            <img 
+                                src={images2010s[selectedImageIndex2010s].src}
+                                alt={`${images2010s[selectedImageIndex2010s].caption}`}
+                                className="modal-image"
+                            />
 
+                            <div className="caption">
+                                {images2010s[selectedImageIndex2010s].caption}
+                            </div>
+                        </div>
+                        
                         <button 
                             className="navigation-btn" 
                             onClick={nextImage10s}
                         >
                             <ArrowRightIcon />
                         </button>
-
-                        <div className="caption">
-                            {images2010s[selectedImageIndex2010s].caption}
-                        </div>
+                        
                     </div>
                 )}
         </div>

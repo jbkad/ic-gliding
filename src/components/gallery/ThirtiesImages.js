@@ -142,11 +142,17 @@ export default function ThirtiesImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images1930s[selectedImageIndex1930s].src}
-                            alt={`${images1930s[selectedImageIndex1930s].caption}`}
-                            className="modal-image"
-                        />
+                        <div className="items">
+                            <img 
+                                src={images1930s[selectedImageIndex1930s].src}
+                                alt={`${images1930s[selectedImageIndex1930s].caption}`}
+                                className="modal-image"
+                            />
+
+                            <div className="caption">
+                                {images1930s[selectedImageIndex1930s].caption}
+                            </div>
+                        </div>
 
                         <button 
                             className="navigation-btn" 
@@ -155,9 +161,7 @@ export default function ThirtiesImages () {
                             <ArrowRightIcon />
                         </button>
 
-                        <div className="caption">
-                            {images1930s[selectedImageIndex1930s].caption}
-                        </div>
+                        
                     </div>
                 )}
         </div>

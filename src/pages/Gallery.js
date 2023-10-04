@@ -1,12 +1,12 @@
-import TwoThousandsImages from "./gallery/ThousandsTenImages";
-import ThousandsImages from "./gallery/ThousandsImages";
-import NinetiesImages from "./gallery/NinetiesImages";
-import EightiesImages from "./gallery/EightiesImages";
-import SeventiesImages from "./gallery/SeventiesImages";
-import SixtiesImages from "./gallery/SixtiesImages";
-import FiftiesImages from "./gallery/FiftiesImages";
-import FortiesImages from "./gallery/FortiesImages";
-import ThirtiesImages from "./gallery/ThirtiesImages";
+import TwoThousandsImages from "../components/gallery/ThousandsTenImages";
+import ThousandsImages from "../components/gallery/ThousandsImages";
+import NinetiesImages from "../components/gallery/NinetiesImages";
+import EightiesImages from "../components/gallery/EightiesImages";
+import SeventiesImages from "../components/gallery/SeventiesImages";
+import SixtiesImages from "../components/gallery/SixtiesImages";
+import FiftiesImages from "../components/gallery/FiftiesImages";
+import FortiesImages from "../components/gallery/FortiesImages";
+import ThirtiesImages from "../components/gallery/ThirtiesImages";
 import '../styles/Gallery.css';
 
 export default function Gallery() {
@@ -23,6 +23,16 @@ export default function Gallery() {
             <FiftiesImages />
             <FortiesImages />
             <ThirtiesImages />
+            
+            <div className="caption">To view more images and discover further about our clubs history, check out {" "}
+                <a
+                    href="https://www.icgcarchive.co.uk/index.php"
+                    target="blank"
+                >
+                    icGC Archive.
+                </a>
+            </div>
+
         </div>
     );
 }

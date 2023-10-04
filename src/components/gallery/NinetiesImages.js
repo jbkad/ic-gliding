@@ -142,12 +142,17 @@ export default function NinetiesImages () {
                             <ArrowLeftIcon />
                         </button>
 
-                        <img 
-                            src={images1990s[selectedImageIndex1990s].src}
-                            alt={`${images1990s[selectedImageIndex1990s].caption}`}
-                            className="modal-image"
-                        />
-
+                        <div className="items">
+                            <img 
+                                src={images1990s[selectedImageIndex1990s].src}
+                                alt={`${images1990s[selectedImageIndex1990s].caption}`}
+                                className="modal-image"
+                            />
+                            <div className="caption">
+                                {images1990s[selectedImageIndex1990s].caption}
+                            </div>
+                        </div>
+                        
                         <button 
                             className="navigation-btn" 
                             onClick={nextImage90s}
@@ -155,9 +160,7 @@ export default function NinetiesImages () {
                             <ArrowRightIcon />
                         </button>
 
-                        <div className="caption">
-                            {images1990s[selectedImageIndex1990s].caption}
-                        </div>
+                        
                     </div>
                 )}
         </div>
