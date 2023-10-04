@@ -10,13 +10,13 @@ export default function Footer () {
         <footer className="footer" id="footer">
             <div className="container">
                 <div className="grid">
-                    <h4 
+                    <a 
                         className="title"
                         href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding"
                         target="blank"
                     >
                         Imperial College Gliding Club
-                    </h4>
+                    </a>
 
                     <a 
                         className="address"
