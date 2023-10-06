@@ -138,7 +138,7 @@ export default function FleetAndCosts() {
                 <div className="item">
                     <strong>Item</strong>
                     <div className="divider"/>
-                    <div className="block">Membership *</div>
+                    <div className="block">Membership*</div>
                     <div className="block">Winch Launch</div>
                     <div className="block">Aerotow Launch</div>
                     <div className="block">Soaring Fees</div>
@@ -152,7 +152,7 @@ export default function FleetAndCosts() {
                     <strong>Cost</strong>
                     <div className="divider"/>
                     <div className="block">£50</div>
-                    <div className="block">£9</div>
+                    <div className="block">£10</div>
                     <div className="block">£43 (to 2000ft)</div>
                     <div className="block">£30p/min (Min charge: 7 mins, Max charge: 2.5 hrs)</div>
                     <div className="block">£12</div>
@@ -162,13 +162,17 @@ export default function FleetAndCosts() {
                 </div>
             </div>
 
-            <p className="note">*Please ensure that your gliding membership is purchased before signing up for trips. For more information click {" "}
-                <a 
-                    href="https://www.imperialcollegeunion.org/shop/csp/gliding/gliding-membership-23-24"
-                    target="blank"
-                >
-                    here.
-                </a> 
+            <p 
+                className="note"
+            >
+                *Please ensure that your {" "}
+                    <a 
+                        href="https://www.imperialcollegeunion.org/shop/csp/gliding/gliding-membership-23-24"
+                        target="blank"
+                    >
+                        gliding membership is purchased
+                    </a> 
+                    {" "} before signing up for trips. 
             </p>
         </div>
     );
