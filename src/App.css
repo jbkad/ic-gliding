@@ -8,6 +8,10 @@ bold {
   font-weight: bold;
 }
 
+a {
+  color: steelblue;
+}
+
 .app {
   color: var(--primary-color);
   background-color: var(--bg-color);
@@ -23,7 +27,7 @@ bold {
   min-height: calc(100vh - 30vh);
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px 100px 10px;
+  padding: 0 15px 80px 15px;
   justify-content: space-between;
 }
 

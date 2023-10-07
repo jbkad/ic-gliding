@@ -24,12 +24,12 @@ export default function Location() {
                                 href="https://maps.app.goo.gl/6N9rqyPNqGEAu1T36"
                                 target="blank"
                             >
-                                Lasham Gliding Society
+                                <li>Lasham Gliding Society</li>
+                                <li>The Avenue</li> 
+                                <li>Alton</li> 
+                                <li>GU34 5SS</li>
                             </a>
                         </li> 
-                        <li>The Avenue</li> 
-                        <li>Alton</li> 
-                        <li>GU34 5SS</li>
                     </strong>
                 </ul>
             </div>

@@ -8,22 +8,32 @@ export default function FAQs(){
     const accordionData = [
         {
             title:'Are there any experience requirements?',
-            content: `Most of our members joined with no flying experience. You will be flying in a two-seater glider with an instructor at the back to teach you.</li>Your instructor will be handling the takeoff and landing for the first few flights, you will do the rest!`
+            content: `
+                <ul>
+                    <li>Most of our members joined with no flying experience. You will be flying in a two-seater glider with an instructor at the back to teach you. </li>
+                    <li>Your instructor will be handling the takeoff and landing for the first few flights, you will do the rest! </li>
+                </ul>
+            `
         },
         {
             title:'Where do we fly?',
-            content:`We fly out of Lasham airfield in <strong>Hampshire</strong> (just over an hour South-West of London). Lasham is a former RAF base and one of the biggest gliding clubs in the world - and its been our home since 1951!`
+            content:`
+                <ul>
+                    <li>We fly out of Lasham airfield in <strong>Hampshire</strong> (just over an hour South-West of London). Lasham is a former RAF base and one of the biggest gliding clubs in the world - and its been our home since 1951! </li>
+                </ul>
+            `
         },
         {
             title:'How do I sign up for day trips on Saturdays or Sundays? ',
             content: `
                 <ul>
                     <li>
-                        If you have subscribed to our 
+                        If you have subscribed to our
                             <a 
                                 href="https://union.us19.list-manage.com/subscribe?u=269e6fccce0e382e53a4d91ee&id=2153e388bc"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="link"
                             >
                                 mailing list
                             </a>
@@ -65,7 +75,11 @@ export default function FAQs(){
         },
         {
             title:'How do I get to Lasham Airfield?',
-            content: `If you are coming with us on a trip on Saturdays or Sundays, the committee will organise you to take either a train and taxi, minibus, or a ride in a member’s car. `
+            content: `
+                <ul>
+                    <li>If you are coming with us on a trip on Saturdays or Sundays, the committee will organise you to take either a train and taxi, minibus, or a ride in a member’s car. </li>
+                </ul>
+            `
         },
         {
             title:'How much will it cost?',
@@ -89,8 +103,9 @@ export default function FAQs(){
                     <li> • Winch Launch - £ 10 </li>
                     <li> • Aerotow to 2000 feet - £ 43 </li>
                     <li> • Aerotow additional 500 feet - £ 4.45 </li>
-                    <li>Time in the air - £ 0.30 per minute (minimum charge 7 minutes) </li>
+                    <li> • Time in the air - £ 0.30 per minute (minimum charge 7 minutes) </li>
 
+                    <br />
                     <li><strong>Example</strong></li>
                     <li> • 10 minute flight off a winch: £ 13 (the vast majority of your training flights will cost about this) </li>
                     <li> • 30 minute flight off a winch: £ 19 </li>
@@ -166,7 +181,11 @@ export default function FAQs(){
         },
         {
             title:'What if I have previous flying/gliding experience?',
-            content: `Come and talk to us! You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). `
+            content: `
+                <ul>
+                    <li>Come and talk to us! You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). </li>
+                </ul>
+            `
         },
     ];
 

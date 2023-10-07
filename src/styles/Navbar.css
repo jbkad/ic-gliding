@@ -46,7 +46,7 @@
 }
 
 .navbar .image {
-    height: 100px;
+    height: 75px;
     width: auto;
 }
 
@@ -199,3 +199,9 @@
         margin-top: 70%;
     }
 }    
+
+@media (max-width: 280px) {    
+    .navbar .heading {
+        display: none;
+    }   
+}

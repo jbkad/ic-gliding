@@ -24,7 +24,10 @@ export default function Gallery() {
             <FortiesImages />
             <ThirtiesImages />
             
-            <div className="archive-caption">To view more images and discover further about our clubs history, check out {" "}
+            <div 
+                className="archive-caption"
+            >
+                To view more images and discover further about our clubs history, check out {" "}
                 <a
                     href="https://www.icgcarchive.co.uk/index.php"
                     target="blank"

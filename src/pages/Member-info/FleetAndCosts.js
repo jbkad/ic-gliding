@@ -1,4 +1,5 @@
 import React from "react";
+import Costs from "../../components/Costs";
 import '../../styles/FleetAndCosts.css';
 
 export default function FleetAndCosts() {
@@ -133,34 +134,7 @@ export default function FleetAndCosts() {
             </div>
 
             <h2>Costs</h2>
-            
-            <div className="cost-grid">
-                <div className="item">
-                    <strong>Item</strong>
-                    <div className="divider"/>
-                    <div className="block">Membership*</div>
-                    <div className="block">Winch Launch</div>
-                    <div className="block">Aerotow Launch</div>
-                    <div className="block">Soaring Fees</div>
-                    <div className="block">Weekend Trip Fee: <strong>Train</strong></div>
-                    <div className="block">Weekend Trip Fee: <strong>Minibus</strong></div>
-                    <div className="block">Student Daily Hire</div>
-                    <div className="block">Alumni Daily Hire</div>
-                </div>
-
-                <div className="cost">
-                    <strong>Cost</strong>
-                    <div className="divider"/>
-                    <div className="block">£50</div>
-                    <div className="block">£10</div>
-                    <div className="block">£43 (to 2000ft)</div>
-                    <div className="block">£30p/min (Min charge: 7 mins, Max charge: 2.5 hrs)</div>
-                    <div className="block">£12</div>
-                    <div className="block">£16</div>
-                    <div className="block">£30</div>
-                    <div className="block">£35</div>
-                </div>
-            </div>
+            <Costs />
 
             <p 
                 className="note"

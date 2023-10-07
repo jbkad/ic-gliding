@@ -5,7 +5,6 @@ import '../styles/Footer.css';
 
 export default function Footer () {
 
-
     return (
         <footer className="footer" id="footer">
             <div className="container">
@@ -23,18 +22,14 @@ export default function Footer () {
                         href="https://maps.app.goo.gl/8r8WdNV1TJXYMXqr7"
                         target="blank"
                     >
-                        <div>Beit Quad</div>
+                        <div>Imperial College Union</div>
+                        <div>Beit Quadrangle</div>
                         <div>Prince Consort Road</div>
                         <div>London SW7 2BB</div>
                     </a>
+                </div>
 
-                <div>
-
-                    </div>
-                
-                </div>   
-
-                <div className="buttons">
+                <div className="social-btns">
                     <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
                         target="blank"
                         className="spacing"
@@ -53,6 +48,7 @@ export default function Footer () {
                         <MailIcon />
                     </a> 
                 </div>
+
             </div>
         </footer>
     );

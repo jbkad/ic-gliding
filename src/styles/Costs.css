@@ -1,0 +1,22 @@
+.costs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.costs-table th, .costs-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.costs-table th {
+    background-color: rgb(151, 200, 236, 0.4);
+    text-align: left;
+}
+
+.costs-table tbody {
+    background-color: rgba(151, 200, 236, 0.15);
+}
+
+.costs-table .note {
+    color: rgba(128, 128, 128, 0.5);
+}

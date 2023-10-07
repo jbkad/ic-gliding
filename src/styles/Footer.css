@@ -51,14 +51,8 @@
     color: var(--tertiary-color);
 }
 
-
-.footer .button {
-    display: flex;
-    align-items: center;
-}
-
 /* social media icons */
-.footer .buttons {
+.footer .social-btns {
     display: flex;
 }
 
@@ -71,12 +65,12 @@
     text-decoration: underline;
 }
 
-.footer .buttons a {
+.footer .social-btns a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.footer .buttons a:hover {
+.footer .social-btns a:hover {
     color: var(--tertiary-color);
 }
 
@@ -85,7 +79,7 @@
         display: block;
     }
 
-    .footer .buttons {
+    .footer .social-btns {
         margin-top: 20px;
         align-items: end;
     }
@@ -93,4 +87,10 @@
     .footer .spacing {
         padding-right: 10px;
     }
+}
+
+@media (max-width: 280px) {    
+    .footer .title {
+        inline-size: 180px;
+    }   
 }

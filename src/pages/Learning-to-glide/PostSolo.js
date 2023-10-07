@@ -40,13 +40,13 @@ export default function PostSolo() {
                 <li>Navigation Test </li>
             </ul>
 
-            <p>For more information about the other available endorsements please visit the BGA website {" "}
+            <p>For more information about the other available endorsements please visit the {" "}
                 <a 
                     href="https://members.gliding.co.uk/laws-rules/gliding-certificate-and-endorsements/"
                     target="blank"
                 >
-                    here.
-                </a>
+                    BGA website
+                </a>.
             </p>
 
             <p>Once you have your Cross-Country Endorsement you are now a licensed pilot and you can then complete cross-country flights on your own to work towards your Silver Badge. To achieve the badge you must complete: </p>
@@ -56,13 +56,13 @@ export default function PostSolo() {
                 <li>A 50km straight distance flight </li>
             </ul>
 
-            <p>Following the silver badge there are a number of other sporting badges and diplomas. More information about these can be found {" "}
+            <p>Following the silver badge there are a number of other {" "}
                 <a 
                     href="https://members.gliding.co.uk/laws-rules/sporting-badges-and-diplomas-requirements/"
                     target="blank"
                 >
-                    here.
-                </a>
+                    sporting badges and diplomas
+                </a>.
             </p>
         </div>
     );

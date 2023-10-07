@@ -4,24 +4,24 @@ export default function Learn () {
     return (
         <div className="learn" id="learn">
             <h1>Learn how to glide</h1>
-            <p>We recommend that anyone who is considering becoming a member joins our mailing list found {" "}
+            <p>We recommend that anyone who is considering becoming a member joins our {" "}
                 <a 
                     href="https://union.us19.list-manage.com/subscribe?u=269e6fccce0e382e53a4d91ee&id=2153e388bc"
                     target="blank"
                 >
-                    here 
+                    mailing list 
                 </a>
                 . Lots of information will be provided through the mailing list about how membership works and how to get flying. 
             </p>
 
-            <p>Before you can sign up to one of our weekend trips you must have purchased a membership from the union website found {" "}
+            <p>Before you can sign up to one of our weekend trips you must have {" "}
                 <a 
                     href="https://www.imperialcollegeunion.org/shop/csp/gliding/gliding-membership-23-24"
                     target="blank"
                 >
-                    here 
+                    purchased a membership 
                 </a>
-                . Once you have purchased your membership you become eligible to sign-up for a place on our weekend trips to the airfield. 
+                {" "} from the union website. Once you have purchased your membership you become eligible to sign-up for a place on our weekend trips to the airfield. 
             </p>
 
             <h2>Weekend trip sign ups</h2>
