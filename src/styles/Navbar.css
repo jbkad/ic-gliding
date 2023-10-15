@@ -2,7 +2,7 @@
     background-color: var(--bg-color);
     transition: background-color  1s;
     top: 0;
-    padding: 18px 10px;
+    padding: 5px 10px;
 
     /* hover navbar css */
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 2%);
