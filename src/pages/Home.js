@@ -3,7 +3,7 @@ import Committee from "../components/Committee";
 import HomeVideo from "../components/gliding-videos/HomeVideo";
 import HomeButtonLinks from "../components/HomeButtonLinks";
 import { GalleryComponent } from "../components/slideshow-gallery/GalleryComponent";
-import '../styles/Home.css';
+import '../styles/pages/Home.css';
 
 export default function Home() {
     return (

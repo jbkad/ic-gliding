@@ -1,6 +1,6 @@
 import React from "react";
-import Costs from "../../components/Costs";
-import '../../styles/FleetAndCosts.css';
+import CostsTable from "../../components/CostsTable";
+import '../../styles/pages/FleetAndCosts.css';
 
 export default function FleetAndCosts() {
     return (
@@ -12,7 +12,7 @@ export default function FleetAndCosts() {
 
             <h3>496: Grob Twin Acro III </h3>
             <img
-                src={require('../../assets/496.png')}
+                src={require('../../assets/fleet/496.png')}
                 alt="496"
                 className="img"
             />
@@ -53,7 +53,7 @@ export default function FleetAndCosts() {
 
             <h3>296: Discus bW </h3>
             <img
-                src={require('../../assets/296.png')}
+                src={require('../../assets/fleet/296.png')}
                 alt="296"
                 className="img"
             />
@@ -94,7 +94,7 @@ export default function FleetAndCosts() {
 
             <h3>96: ASW24 </h3>
             <img
-                src={require('../../assets/96.png')}
+                src={require('../../assets/fleet/96.png')}
                 alt="96"
                 className="img"
             />
@@ -134,7 +134,7 @@ export default function FleetAndCosts() {
             </div>
 
             <h2>Costs</h2>
-            <Costs />
+            <CostsTable />
 
             <p 
                 className="note"

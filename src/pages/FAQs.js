@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/FAQs.css';
+import '../styles/pages/FAQs.css';
 
 export default function FAQs(){
 
@@ -7,7 +7,7 @@ export default function FAQs(){
 
     const accordionData = [
         {
-            title:'Are there any experience requirements?',
+            title:'Do I require any experience to fly?',
             content: `
                 <ul>
                     <li>Most of our members joined with no flying experience. You will be flying in a two-seater glider with an instructor at the back to teach you. </li>
@@ -19,7 +19,14 @@ export default function FAQs(){
             title:'Where do we fly?',
             content:`
                 <ul>
-                    <li>We fly out of Lasham airfield in <strong>Hampshire</strong> (just over an hour South-West of London). Lasham is a former RAF base and one of the biggest gliding clubs in the world - and its been our home since 1951! </li>
+                    <li>We fly out of 
+                    <a 
+                        href="https://maps.app.goo.gl/6N9rqyPNqGEAu1T36"
+                        target="blank"
+                    >
+                        Lasham airfield
+                    </a>
+                    in <strong>Hampshire</strong> (just over an hour South-West of London). Lasham is a former RAF base and one of the biggest gliding clubs in the world - and its been our home since 1951! </li>
                 </ul>
             `
         },
@@ -97,6 +104,7 @@ export default function FAQs(){
                         for £ 50. 
                     </li>
                     <li>These costs will be charged accordingly at the end of each flying day: </li>
+
                     <li> • Minibus / private car to Lasham Airfield with return - £ 16  </li>
                     <li> • Train tickets between Clapham Junction and Basingstoke - at your own costs </li>
                     <li> • Transport between Basingstoke and Lasham Airfield - £ 12 </li>
@@ -150,7 +158,7 @@ export default function FAQs(){
             `
         },
         {
-            title:'What does the Imperial College Gliding Club (icGC) membership include?',
+            title:'What does the Imperial College Gliding Club membership include?',
             content: `
                 <ul>
                     <li>You will have access to our glider fleet (two-seater Grob 103, single-seater Discus, single-seater ASW 24). </li>
@@ -183,7 +191,15 @@ export default function FAQs(){
             title:'What if I have previous flying/gliding experience?',
             content: `
                 <ul>
-                    <li>Come and talk to us! You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). </li>
+                    <li> 
+                    <a 
+                        href="mailto:gliding@imperial.ac.uk" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Come and talk to us! 
+                    </a>
+                    You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). </li>
                 </ul>
             `
         },

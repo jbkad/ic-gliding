@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/Video.css';
+import '../../styles/components/Video.css';
 
 export default function WinchVideo() {
     return (

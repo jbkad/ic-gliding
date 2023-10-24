@@ -1,7 +1,7 @@
 import { ReactComponent as FacebookIcon } from "../assets/svgs/FacebookIcon.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
 import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
-import '../styles/Footer.css';
+import '../styles/components/Footer.css';
 
 export default function Footer () {
 

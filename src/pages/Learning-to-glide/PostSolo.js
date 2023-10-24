@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/PostSolo.css';
+import '../../styles/pages/PostSolo.css';
 
 export default function PostSolo() {
     return (

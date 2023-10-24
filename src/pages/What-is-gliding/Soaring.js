@@ -1,8 +1,8 @@
 import React from "react";
-import SoaringImgOne from '../../assets/soaring-1.png';
-import SoaringImgTwo from '../../assets/soaring-2.png';
-import SoaringImgThree from '../../assets/soaring-3.png';
-import '../../styles/Soaring.css';
+import SoaringImgOne from '../../assets/diagrams/soaring-1.png';
+import SoaringImgTwo from '../../assets/diagrams/soaring-2.png';
+import SoaringImgThree from '../../assets/diagrams/soaring-3.png';
+import '../../styles/pages/Soaring.css';
 
 export default function Soaring() {
     return (

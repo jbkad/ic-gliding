@@ -5,7 +5,7 @@ import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
 import { ReactComponent as ExitIcon } from '../assets/svgs/ExitIcon.svg';
 import { ReactComponent as DownArrowIcon } from '../assets/svgs/DownArrowIcon.svg';
 import { Link } from "react-router-dom";
-import '../styles/Navbar.css';
+import '../styles/components/Navbar.css';
 
 export default function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);

@@ -1,6 +1,6 @@
-import '../../styles/Gallery.css';
+import '../../styles/components/Gallery.css';
 
-export default function EightiesImages () {
+export default function Decade1980s () {
     return (
         <div>
             <h2>1980 - 1989</h2>

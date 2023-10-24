@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/Gallery.css';
+import '../../styles/components/Gallery.css';
 
-
-export default function TwoThousandsImages () {
+export default function Decade2010s () {
 
     const [selectedImageIndex2010s, setSelectedImageIndex2010s] = useState(null);
     const [showModal2010s, setShowModal2010s] = useState(false);

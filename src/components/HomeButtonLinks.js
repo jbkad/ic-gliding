@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
 import { ReactComponent as PlaneIcon } from "../assets/svgs/PlaneIcon.svg";
-import '../styles/HomeButtonLinks.css';
+import '../styles/components/HomeButtonLinks.css';
 
 export default function HomeButtonLinks() {
 

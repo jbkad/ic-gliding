@@ -2,9 +2,9 @@ import React, { useState } from "react"
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/Gallery.css';
+import '../../styles/components/Gallery.css';
 
-export default function SeventiesImages () {
+export default function Decade1970s () {
 
     const [selectedImageIndex1970s, setSelectedImageIndex1970s] = useState(null);
     const [showModal1970s, setShowModal1970s] = useState(false);

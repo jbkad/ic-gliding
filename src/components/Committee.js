@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Committee.css';
+import '../styles/components/Committee.css';
 
 export default function Committee() {
 

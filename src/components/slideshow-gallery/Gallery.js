@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import '../../styles/GalleryItem.css';
+import '../../styles/components/GalleryItem.css';
 
 // This gallery lives on the <Home /> page.
 
