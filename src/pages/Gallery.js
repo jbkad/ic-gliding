@@ -1,3 +1,4 @@
+import Decade2020s from "../components/gallery/Decade2020s";
 import Decade2010s from "../components/gallery/Decade2010s";
 import Decade2000s from "../components/gallery/Decade2000s";
 import Decade1990s from "../components/gallery/Decade1990s";
@@ -14,6 +15,7 @@ export default function Gallery() {
     return (
         <div id="gliding-gallery" className="gliding-gallery">
             <h1>Gallery</h1>
+            <Decade2020s />
             <Decade2010s />
             <Decade2000s />
             <Decade1990s />

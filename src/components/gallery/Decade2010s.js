@@ -82,7 +82,7 @@ export default function Decade2010s () {
 
     return (
         <div>
-            <h2>2010 - Present</h2>
+            <h2>2010 - 2019</h2>
                 <div className="image-grid">
                     <div className="items-container">
                         {images2010s.map((img10s, index) => (
