@@ -35,16 +35,16 @@ export default function FAQs(){
             content: `
                 <ul>
                     <li>
-                        If you have subscribed to our
+                        If you have joined our
                             <a 
-                                href="https://union.us19.list-manage.com/subscribe?u=269e6fccce0e382e53a4d91ee&id=2153e388bc"
+                                href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="link"
                             >
-                                mailing list
+                                WhatsApp group
                             </a>
-                        , you should receive a sign-up form every <strong>Monday at 21:30.</strong> Due to the large number of members, the email might take up to 10 minutes to reach everyone. The form will close every <strong>Tuesday at 21:30.</strong> 
+                        , you should receive a sign-up form every <strong>Monday at 21:30.</strong> The form will close every <strong>Tuesday at 21:30.</strong> 
                     </li>
                     <li>Flying & reserve lists for that weekend’s trip will be sent out every <strong>Wednesday at 21:30.</strong> </li>
                     <li>If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by <strong>Thursday 21:30</strong> to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </li>
