@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import { images } from "../../website-data/gallery/2020s";
 import '../../styles/components/Gallery.css';
 
 export default function Decade2020s () {

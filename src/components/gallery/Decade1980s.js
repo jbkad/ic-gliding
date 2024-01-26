@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import { images } from "../../website-data/gallery/1980s";
 import '../../styles/components/Gallery.css';
 
 export default function Decade1980s () {
