@@ -1,4 +1,3 @@
-import React from "react";
 import { Slideshow, GalleryItem } from "./Gallery";
 
 export function GalleryComponent(){

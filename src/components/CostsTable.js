@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/CostsTable.css";
+import "../styles/components/CostsTable.scss";
 
 export default function CostsTable() {
 

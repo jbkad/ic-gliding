@@ -1,7 +1,7 @@
 import { ReactComponent as FacebookIcon } from "../assets/svgs/FacebookIcon.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
 import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
-import '../styles/components/Footer.css';
+import '../styles/components/Footer.scss';
 
 export default function Footer () {
 
@@ -30,18 +30,18 @@ export default function Footer () {
                 </div>
 
                 <div className="social-btns">
-                    <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
-                        target="blank"
-                        className="spacing"
-                    >
-                        <FacebookIcon />
-                    </a>
                     <a href="https://www.instagram.com/icgliding/" 
                         target="blank"
                         className="spacing"
                     >
                         <InstagramIcon />                   
                     </a>  
+                    <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
+                        target="blank"
+                        className="spacing"
+                    >
+                        <FacebookIcon />
+                    </a>
                     <a href="mailto:gliding@imperial.ac.uk" 
                         target="blank"
                     >

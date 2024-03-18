@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/pages/CrossCountry.css';
+import '../../styles/pages/CrossCountry.scss';
 
 export default function CrossCountry() {
     return (

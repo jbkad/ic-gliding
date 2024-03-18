@@ -1,9 +1,15 @@
+@import 'src/App.scss';
+
 .video .container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.2);
+
 }
 
 .video h2 {
@@ -12,7 +18,7 @@
 }
 
 .video .youtube-video {
-    height: 500px;
+    height: 420px;
     width: 100%;
     border-radius: 15px;
     border: none;
@@ -26,7 +32,7 @@
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $bs-breakpoint-md) {
     .video .youtube-video {
         height: 250px;
     }

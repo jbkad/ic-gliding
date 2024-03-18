@@ -2,7 +2,7 @@ import React from "react";
 import SoaringImgOne from '../../assets/diagrams/soaring-1.png';
 import SoaringImgTwo from '../../assets/diagrams/soaring-2.png';
 import SoaringImgThree from '../../assets/diagrams/soaring-3.png';
-import '../../styles/pages/Soaring.css';
+import '../../styles/pages/Soaring.scss';
 
 export default function Soaring() {
     return (

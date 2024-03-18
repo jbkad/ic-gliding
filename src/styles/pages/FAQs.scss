@@ -4,16 +4,16 @@
     justify-content: space-between;
 }
 
-.faqs .accordion-items {
+.faqs .accordion-item {
     margin: 0 0 15px 0; 
 }
 
-.faqs .accordion-title-container {
+.faqs .accordion-title {
     color: var(--headline-color);
     background-color: rgba(70, 131, 180, 0.15);
 }
 
-.faqs .accordion-title-container:hover {
+.faqs .accordion-title:hover {
     color: white;
     background-color: var(--highlight-color);
 }
@@ -24,7 +24,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.faqs .questions {
+.faqs .question {
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -53,12 +53,6 @@
 
 .faqs .content ul li {
     padding-bottom: 10px;
-}
-
-.faqs .content .trip-cancellation ul li {
-    list-style-type: circle;
-    padding: 0;
-    
 }
 
 .faqs .content:active {

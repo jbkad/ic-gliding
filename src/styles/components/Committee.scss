@@ -1,3 +1,5 @@
+@import 'src/App.scss';
+
 .committee {
     text-align: center;
 }
@@ -51,8 +53,9 @@
     color: rgba(128, 128, 128, 0.7);
 }
 
-@media (max-width: 900px) {
-    .committee .grid {
+// @media (max-width: 900px) {
+@media (max-width: $bs-breakpoint-lg) {
+        .committee .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -62,7 +65,8 @@
     }
 }
 
-@media (max-width: 600px) {
+// @media (max-width: 600px) {
+@media (max-width: $bs-breakpoint-sm) {
     .committee .grid {
         display: grid;
         grid-template-columns: 1fr;

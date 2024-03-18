@@ -1,6 +1,6 @@
 import React from "react";
 import CostsTable from "../../components/CostsTable";
-import '../../styles/pages/FleetAndCosts.css';
+import '../../styles/pages/FleetAndCosts.scss';
 
 export default function FleetAndCosts() {
     return (

@@ -1,9 +1,9 @@
 import React from "react";
-import Committee from "../components/Committee";
+import Committee from "./Committee";
 import HomeVideo from "../components/gliding-videos/HomeVideo";
 import HomeButtonLinks from "../components/HomeButtonLinks";
 import { GalleryComponent } from "../components/slideshow-gallery/GalleryComponent";
-import '../styles/pages/Home.css';
+import '../styles/pages/Home.scss';
 
 export default function Home() {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/MemberPurchase.css';
+import '../../styles/MemberPurchase.scss';
 
 export default function MemberPurchase() {
     return (

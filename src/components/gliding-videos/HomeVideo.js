@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/components/Video.css';
+import '../../styles/components/Video.scss';
 
 export default function HomeVideo() {
     return (

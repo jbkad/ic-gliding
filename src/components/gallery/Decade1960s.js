@@ -3,7 +3,7 @@ import { images } from "../../website-data/gallery/1960s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/components/Gallery.css';
+import '../../styles/components/Gallery.scss';
 
 export default function Decade1960s () {
 

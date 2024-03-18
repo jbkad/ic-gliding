@@ -8,7 +8,7 @@ import Decade1960s from "../components/gallery/Decade1960s";
 import Decade1950s from "../components/gallery/Decade1950s";
 import Decade1940s from "../components/gallery/Decade1940s";
 import Decade1930s from "../components/gallery/Decade1930s";
-import '../styles/components/Gallery.css';
+import '../styles/components/Gallery.scss';
 
 export default function Gallery() {
 
