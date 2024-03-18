@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Learn from './pages/Learn';
-import { ThemeContext } from './components/ThemeToggle';
-import './App.css';
+import { ThemeContext } from './components/utils/ThemeToggle';
+import './App.scss';
 
 // pages
 import Flying from './pages/What-is-gliding/FlyingAndLaunching';

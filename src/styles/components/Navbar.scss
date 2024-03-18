@@ -1,3 +1,5 @@
+@import 'src/App.scss'; 
+
 .navbar {
     background-color: var(--bg-color);
     transition: background-color  1s;
@@ -59,10 +61,6 @@
     display: none;
 }
 
-.navbar .back-btn {
-    display: none;
-}
-
 /* menu elements */
 .navbar .menu-items {
     text-shadow: 2px 2px rgba(255, 255, 255, 0.8);
@@ -91,10 +89,6 @@
     color: var(--primary-color);
 }
 
-.navbar .menu-elements ul a:hover {
-    color: var(--secondary-color);
-}
-
 .navbar .menu-elements ul a.active {
     position: relative;
 }
@@ -108,16 +102,14 @@
 .navbar .gliding-dropdown {
     background-color: white;
     position: absolute;
-    padding: 10px 20px;
-    top: calc(100% + 20px);
-    right: -20px;
+    padding: 5px 15px;
+    top: calc(120% + 3px);
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 160px;
+    width: 120px;
     border-radius: 5px;
-    box-shadow: 10px 10px rgb(151, 200, 236, 20%);
 }
 
 .navbar .dropdown-items {
@@ -125,7 +117,7 @@
     padding: 10px 10px;
     background-color: rgb(151, 200, 236, 10%);;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border: 0.5px solid #ccc;
     transition: background-color 0.3 ease;
 }
 
@@ -133,7 +125,7 @@
     background-color: #f0f0f0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $bs-breakpoint-xl) {
     .navbar {
         padding: 5px 10px;
     }
@@ -160,34 +152,18 @@
     .menu-elements .exit-btn {
         position: absolute;
         right: 20px;
-        top: 25px;
-    }
-
-    .navbar .back-btn {
-        display: block;
-        cursor: pointer;
-    }
-
-    .navbar .back-btn {
-        color: var(--secondary-color);
-    }
-
-    .menu-elements .back-btn {
-        position: absolute;
-        left: 20px;
-        top: 25px;
+        top: 35px;
     }
 
     /* offcanvas menu slide */
     .menu-elements {
         position: absolute;
-        right: 0;
         top: 0;
-        left: 0;
+        right: 0; // ensures menu collapses on right hand side
         width: 0;
-        height: 100vh;
+        min-height: 100vh;
         background-color: var(--bg-color);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.6s ease-in-out;
         overflow: hidden;
         z-index: 1;
     }
@@ -200,11 +176,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 70%;
+        margin-top: 50%;
+    }
+
+    .navbar .menu-items li {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
     }
 }    
 
-@media (max-width: 280px) {    
+@media (max-width: $bs-breakpoint-xs) {
     .navbar .heading {
         display: none;
     }   

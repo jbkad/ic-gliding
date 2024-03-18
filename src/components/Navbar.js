@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { scrollToTop, navigateTo } from "../styles/utils/Constants";
+import { scrollToTop, navigateTo } from "../components/utils/Constants";
 import { ReactComponent as HomeIcon } from '../assets/svgs/HomeIcon.svg';
 import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
 import { ReactComponent as ExitIcon } from '../assets/svgs/ExitIcon.svg';
 import { ReactComponent as DownArrowIcon } from '../assets/svgs/DownArrowIcon.svg';
 import { Link } from "react-router-dom";
-import '../styles/components/Navbar.css';
+import '../styles/components/Navbar.scss';
 
 export default function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);

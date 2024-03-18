@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500&family=Nanum+Gothic:wght@400;800&family=Poppins:wght@200;400;600&family=Public+Sans:wght@100;300;600&family=Tajawal:wght@200;500;800&family=Urbanist:ital,wght@0,100;0,300;0,600;1,200&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+bold {
+  font-weight: bold;
+}
+
+a {
+  color: steelblue;
+}
+
+.app {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  font-family: 'Manrope', sans-serif;
+  zoom: 100%;
+  margin: 0;
+  padding-top: 5px;
+  z-index: 0;
+}
+
+.app-container {
+  height: 100%;
+  min-height: calc(100vh - 30vh);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px 80px 15px;
+  justify-content: space-between;
+}
+
+:root {
+  --bg-color: #f5f5f7;
+  --highlight-color: rgb(151, 200, 236);
+  --primary-color: #1d1d1f;
+  --secondary-color:  steelblue;
+  --tertiary-color: #f5f5f7;
+}
+
+// screen breakpoints
+$bs-breakpoint-xs: 280px;
+$bs-breakpoint-sm: 576px;
+$bs-breakpoint-md: 768px;
+$bs-breakpoint-lg: 992px;
+$bs-breakpoint-xl: 1200px;
+$bs-breakpoint-xxl: 1400px;
