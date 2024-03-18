@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
 import { Routes, Route } from 'react-router';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Learn from './pages/Learn';
-import { ThemeContext } from './components/utils/ThemeToggle';
 import './App.scss';
 
 // pages
@@ -22,10 +20,9 @@ import FAQs from './pages/FAQs';
 
 export default function App() {
 
-  const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`app ${theme}`}>
+    <div className="app">
       <Navbar />
         <div className="app-container">
           <Routes>
