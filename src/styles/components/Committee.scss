@@ -53,7 +53,6 @@
     color: rgba(128, 128, 128, 0.7);
 }
 
-// @media (max-width: 900px) {
 @media (max-width: $bs-breakpoint-lg) {
         .committee .grid {
         display: grid;
@@ -65,7 +64,6 @@
     }
 }
 
-// @media (max-width: 600px) {
 @media (max-width: $bs-breakpoint-sm) {
     .committee .grid {
         display: grid;

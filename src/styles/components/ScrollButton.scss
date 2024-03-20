@@ -1,8 +1,10 @@
+@import 'src/App.scss';
+
 .scroll-btn  {
     display: none;
 }
   
-@media (max-width: 600px) {
+@media (max-width: $bs-breakpoint-md) {
     .scroll-btn  {
         position: fixed;
         bottom: 120px;

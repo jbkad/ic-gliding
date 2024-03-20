@@ -1,3 +1,5 @@
+@import 'src/App.scss';
+
 .footer {
     background-color:  var(--highlight-color);
     position: relative;
@@ -74,13 +76,13 @@
     color: var(--tertiary-color);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $bs-breakpoint-xl) {
     .footer {
         padding: 15px 15px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $bs-breakpoint-md) {
     .footer .container {
         display: block;
     }
@@ -95,7 +97,7 @@
     }
 }
 
-@media (max-width: 280px) {    
+@media (max-width: $bs-breakpoint-xs) {
     .footer .title {
         inline-size: 180px;
     }   

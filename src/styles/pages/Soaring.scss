@@ -1,3 +1,5 @@
+@import 'src/App.scss';
+
 .soaring .slideshow {
     display: flex;
     justify-content: space-between;
@@ -30,7 +32,7 @@
     text-align: center;
 }
   
-@media (max-width: 1000px) {
+@media (max-width: $bs-breakpoint-lg) {
     .soaring .slideshow {
         display: flex;
         flex-direction: column;
