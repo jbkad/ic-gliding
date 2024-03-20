@@ -36,7 +36,7 @@ export default function App() {
             <Route path="/whatisgliding/aerobatics" element={<Aerobatics />} />
 
             {/* Learning to glide */}
-            <Route path="/learningtoglide/learn" element={<Learn />} />
+            <Route path="/learningtoglide/join" element={<Learn />} />
             <Route path="/learningtoglide/location" element={<Location />} />
             <Route path="/learningtoglide/first-trip" element={<FirstTrip />} />
             <Route path="/learningtoglide/pre-solo-training" element={<PreSolo />} />

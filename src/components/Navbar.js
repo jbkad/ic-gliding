@@ -143,28 +143,28 @@ export default function Navbar() {
                             {showGlidingInfoDropdown && (
                                 <div className="gliding-dropdown">
                                     <Link
-                                        to="/flying-and-launching"
+                                        to="/whatisgliding/introduction"
                                         onClick={handleMenuClick}
                                         className="dropdown-items"
                                     >
                                         What's gliding?
                                     </Link>
                                     <Link
-                                        to="/soaring"
+                                        to="/whatisgliding/soaring"
                                         onClick={handleMenuClick}
                                         className="dropdown-items"
                                     >
                                         Soaring
                                     </Link>
                                     <Link
-                                        to="/cross-country"
+                                        to="/whatisgliding/cross-country"
                                         onClick={handleMenuClick}
                                         className="dropdown-items"
                                     >
                                         Cross-country gliding and comps
                                     </Link>
                                     <Link
-                                        to="/aerobatics"
+                                        to="/whatisgliding/aerobatics"
                                         onClick={handleMenuClick}
                                         className="dropdown-items"
                                     >
@@ -185,35 +185,35 @@ export default function Navbar() {
                             {showLearningDropdown && (
                                 <div className="gliding-dropdown">
                                 <Link 
-                                        to="/join" 
+                                        to="/learningtoglide/join" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
                                         Learn how to glide
                                     </Link>
                                     <Link 
-                                        to="/location" 
+                                        to="/learningtoglide/location" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
                                         Where do we fly?
                                     </Link>
                                     <Link 
-                                        to="/first-trip" 
+                                        to="/learningtoglide/first-trip" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
                                         First trip
                                     </Link>
                                     <Link 
-                                        to="/pre-solo" 
+                                        to="/learningtoglide/pre-solo-training" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
                                         Pre solo training
                                     </Link>
                                     <Link 
-                                        to="/post-solo" 
+                                        to="/learningtoglide/post-solo-progression" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
@@ -234,7 +234,7 @@ export default function Navbar() {
                             {showMemberDropdown && (
                                 <div className="gliding-dropdown">
                                     <Link 
-                                        to="/fleet-and-costs" 
+                                        to="/memberinformation/fleet-and-costs" 
                                         onClick={handleMenuClick} 
                                         className="dropdown-items"
                                     >
