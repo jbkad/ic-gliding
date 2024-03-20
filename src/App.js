@@ -30,20 +30,20 @@ export default function App() {
             <Route path="/faqs" element={<FAQs />} />
 
             {/* What is gliding? */}
-            <Route path="/flying-and-launching" element={<Flying />} />
-            <Route path="/soaring" element={<Soaring />} />
-            <Route path="/cross-country" element={<CrossCountry />} />
-            <Route path="/aerobatics" element={<Aerobatics />} />
+            <Route path="/whatisgliding/introduction" element={<Flying />} />
+            <Route path="/whatisgliding/soaring" element={<Soaring />} />
+            <Route path="/whatisgliding/cross-country" element={<CrossCountry />} />
+            <Route path="/whatisgliding/aerobatics" element={<Aerobatics />} />
 
             {/* Learning to glide */}
-            <Route path="/join" element={<Learn />} />
-            <Route path="/location" element={<Location />} />
-            <Route path="/first-trip" element={<FirstTrip />} />
-            <Route path="/pre-solo" element={<PreSolo />} />
-            <Route path="/post-solo" element={<PostSolo />} />
+            <Route path="/learningtoglide/learn" element={<Learn />} />
+            <Route path="/learningtoglide/location" element={<Location />} />
+            <Route path="/learningtoglide/first-trip" element={<FirstTrip />} />
+            <Route path="/learningtoglide/pre-solo-training" element={<PreSolo />} />
+            <Route path="/learningtoglide/post-solo-progression" element={<PostSolo />} />
 
             {/* Member information */}
-            <Route path="/fleet-and-costs" element={<FleetAndCosts />} />
+            <Route path="/memberinformation/fleet-and-costs" element={<FleetAndCosts />} />
 
             {/* Gallery */}
             <Route path="/gallery" element={<Gallery />} />
