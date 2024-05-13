@@ -45,4 +45,4 @@ function FAQs() {
   );
 }
 
-export { FAQs };
+export default FAQs;
