@@ -3,17 +3,17 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import './App.scss';
-import Flying from './pages/what-is-gliding-content/FlyingAndLaunching';
-import Soaring from './pages/what-is-gliding-content/Soaring';
-import CrossCountry from './pages/what-is-gliding-content/CrossCountry';
-import Aerobatics from './pages/what-is-gliding-content/Aerobatics';
-import Location from './pages/learning-to-glide-content/Location';
-import Learn from './pages/learning-to-glide-content/Learn';
-import FirstTrip from './pages/learning-to-glide-content/FirstTrip';
-import PreSolo from './pages/learning-to-glide-content/PreSolo';
-import PostSolo from './pages/learning-to-glide-content/PostSolo';
+import Flying from './pages/what-is-gliding/FlyingAndLaunching';
+import Soaring from './pages/what-is-gliding/Soaring';
+import CrossCountry from './pages/what-is-gliding/CrossCountry';
+import Aerobatics from './pages/what-is-gliding/Aerobatics';
+import Location from './pages/learning-to-glide/Location';
+import Learn from './pages/learning-to-glide/Learn';
+import FirstTrip from './pages/learning-to-glide/FirstTrip';
+import PreSolo from './pages/learning-to-glide/PreSolo';
+import PostSolo from './pages/learning-to-glide/PostSolo';
 import Gallery from './pages/Gallery';
-import FleetAndCosts from './pages/member-information-content/FleetAndCosts';
+import FleetAndCosts from './pages/member-information/FleetAndCosts';
 import FAQs from './pages/FAQs';
 
 export default function App() {
