@@ -32,7 +32,7 @@ export default function Decade1970s () {
 
     return (
         <div>
-            <h2>1970 - 1979</h2>
+            <h2>The 1970s</h2>
                 <div className="image-grid">
                     <div className="items-container">
                         {images.map((img70s, index) => (

@@ -109,8 +109,6 @@ export default function Navbar() {
                         <ExitIcon />
                     </div>
 
-                    
-
                     <ul className="menu-items">
                         <li>
                             <Link 

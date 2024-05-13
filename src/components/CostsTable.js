@@ -56,34 +56,11 @@ export default function CostsTable() {
 
         <br />
 
-            <table className="costs-table">
-                <thead>
-                    <tr>
-                        <th className="heading">Example</th>
-                        <th className="heading">Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>10 minute flight off a winch 
-                            <div className="note">The vast majority of your training will cost about this. </div>
-                        </td>
-                        <td>£13</td>
-                    </tr>
-                    <tr>
-                        <td>30 minute flight off a winch</td>
-                        <td>£19</td>
-                    </tr>
-                    <tr>
-                        <td>1 hour flight off a winch</td>
-                        <td>£28</td>
-                    </tr>
-                    <tr>
-                        <td>20 minute flight from a 2000ft aerotow</td>
-                        <td>£49</td>
-                    </tr>
-                </tbody>
-            </table>
+            <strong>Example</strong>
+            <li>10 minute flight off a winch (the vast majority of your training will cost about this) - £13 </li>
+            <li>30 minute flight off a winch - £19 </li>
+            <li>1 hour flight off a winch - £28 </li>
+            <li>20 minute flight from a 2000ft aerotow - £49 </li>
         </>
     );
 }

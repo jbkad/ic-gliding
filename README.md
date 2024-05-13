@@ -20,4 +20,8 @@ npm install
 npm start
 ```
 
+## Branches
+- dev: The dev branch is where all of the build takes place. Please ensure that you are always working on this branch. 
+- main: This branch is currently live. If your work is satisfactory, you can push you dev changes to the main branch for you work to go live.
+
 Happy coding!

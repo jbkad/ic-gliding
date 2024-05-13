@@ -1,13 +1,13 @@
-import Decade2020s from "../components/gallery/Decade2020s";
-import Decade2010s from "../components/gallery/Decade2010s";
-import Decade2000s from "../components/gallery/Decade2000s";
-import Decade1990s from "../components/gallery/Decade1990s";
-import Decade1980s from "../components/gallery/Decade1980s";
-import Decade1970s from "../components/gallery/Decade1970s";
-import Decade1960s from "../components/gallery/Decade1960s";
-import Decade1950s from "../components/gallery/Decade1950s";
-import Decade1940s from "../components/gallery/Decade1940s";
-import Decade1930s from "../components/gallery/Decade1930s";
+import Decade2020s from "../components/media/Decade2020s";
+import Decade2010s from "../components/media/Decade2010s";
+import Decade2000s from "../components/media/Decade2000s";
+import Decade1990s from "../components/media/Decade1990s";
+import Decade1980s from "../components/media/Decade1980s";
+import Decade1970s from "../components/media/Decade1970s";
+import Decade1960s from "../components/media/Decade1960s";
+import Decade1950s from "../components/media/Decade1950s";
+import Decade1940s from "../components/media/Decade1940s";
+import Decade1930s from "../components/media/Decade1930s";
 import '../styles/components/Gallery.scss';
 
 export default function Gallery() {
@@ -25,10 +25,7 @@ export default function Gallery() {
             <Decade1950s />
             <Decade1940s />
             <Decade1930s />
-            
-            <div 
-                className="archive-caption"
-            >
+            <div className="archive-caption">
                 To view more images and discover further about our clubs history, check out {" "}
                 <a
                     href="https://www.icgcarchive.co.uk/index.php"
@@ -37,7 +34,6 @@ export default function Gallery() {
                     icGC Archive
                 </a>.
             </div>
-
         </div>
     );
 }

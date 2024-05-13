@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../../styles/components/GalleryItem.scss';
 
-// This gallery lives on the <Home /> page.
-
-
 // Renders the gallery items containing images.
 const GalleryItem = ({ children, width, image}) => {
     return (
@@ -20,9 +17,7 @@ const GalleryItem = ({ children, width, image}) => {
     )
 }
 
-// Forms the carousel component of the gallery.
-// Updates the active index of carousel items.
-const Slideshow = ({ children }) => {
+const Carousel = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [paused, setPaused] = useState(false);
 
@@ -36,8 +31,6 @@ const Slideshow = ({ children }) => {
         setActiveIndex(newIndex);
     };
 
-    // Create the autoslideshow component of the carousel.
-    // Sets the speed of the carousel to 3.5s as long as the pause state is false. 
     useEffect(() => {
         const interval = setInterval(() => {
             if (!paused) {
@@ -53,7 +46,6 @@ const Slideshow = ({ children }) => {
     });
 
     return (
-        // Creates the conditions for the paused state (user hovering over gallery).
         <div 
             className="gallery"
             onMouseEnter={() => setPaused(true)}
@@ -71,4 +63,27 @@ const Slideshow = ({ children }) => {
     );
 }
 
-export { Slideshow, GalleryItem }
+const galleryImg = [
+    "/assets/slideshow/gliding-1.jpg",
+    "/assets/slideshow/gliding-2.jpg",
+    "/assets/slideshow/gliding-3.jpg",
+    "/assets/slideshow/gliding-4.jpg",
+    "/assets/slideshow/gliding-5.jpg",
+    "/assets/slideshow/gliding-6.jpg",
+    "/assets/slideshow/gliding-7.jpg"
+];
+
+function Slideshow() {
+    return (
+        <Carousel>
+            {galleryImg.map((image, index) => (
+                <GalleryItem 
+                    key={index}
+                    image={image} 
+                />
+            ))}
+        </Carousel>
+    );
+}
+
+export { Slideshow };

@@ -6,7 +6,7 @@ export default function Committee() {
 
     return (
         <div className="committee">
-            <div className="headers">
+            <div className="heading">
                 <h1>Commitee</h1>
                 <h4>Here are your 2023/24 commitee members</h4>
             </div>
@@ -16,7 +16,7 @@ export default function Committee() {
                         <img 
                             src={member.image}
                             alt={`${member.name}`}
-                            className="profile-img"
+                            className="headshot"
                         />
                         <div className="name">{member.name}</div>
                         <div className="position">{member.position}</div>

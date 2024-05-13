@@ -1,95 +1,94 @@
 import { useState } from "react";
-import { images } from "../../website-data/gallery/1950s";
+import { images } from "../../website-data/gallery/1930s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
 import '../../styles/components/Gallery.scss';
 
-export default function Decade1950s () {
+export default function Decade1930s () {
 
-    const [selectedImageIndex1950s, setSelectedImageIndex1950s] = useState(null);
-    const [showModal1950s, setShowModal1950s] = useState(false);
+    const [selectedImageIndex1930s, setSelectedImageIndex1930s] = useState(null);
+    const [showModal1930s, setShowModal1930s] = useState(false);
 
-    const openModal1950s = (index) => {
-        setSelectedImageIndex1950s(index);
-        setShowModal1950s(true);
+    const openModal1930s = (index) => {
+        setSelectedImageIndex1930s(index);
+        setShowModal1930s(true);
     }
 
-    const closeModal1950s = (e) => {
+    const closeModal1930s = (e) => {
         e.stopPropagation();
-        setShowModal1950s(false);
+        setShowModal1930s(false);
     }
 
-    const nextImage50s = (e) => {
+    const nextImage30s = (e) => {
         e.stopPropagation();
-        setSelectedImageIndex1950s(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        setSelectedImageIndex1930s(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     }
     
-    const prevImage50s = (e) => {
+    const prevImage30s = (e) => {
         e.stopPropagation();
-        setSelectedImageIndex1950s(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+        setSelectedImageIndex1930s(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
     }  
 
     return (
         <div>
-            <h2>1950 - 1959</h2>
+            <h2>The 1930s</h2>
                 <div className="image-grid">
                     <div className="items-container">
-                        {images.map((img50s, index) => (
+                        {images.map((img30s, index) => (
                             <div 
                                 className="item" 
                                 key={index}
-                                onClick={() => openModal1950s(index)}
+                                onClick={() => openModal1930s(index)}
                             >
                                 <img 
-                                    src={img50s.src}
-                                    alt={`${img50s.caption}`}
+                                    src={img30s.src}
+                                    alt={`${img30s.caption}`}
                                 />
                             </div>
                         ))}
                     </div>
                 </div>
 
-                {showModal1950s && (
+                {showModal1930s && (
                     <div 
-                        className={`modal ${showModal1950s ? 'show' : ''}`}
-                        onClick={closeModal1950s}
+                        className={`modal ${showModal1930s ? 'show' : ''}`}
+                        onClick={closeModal1930s}
                     >
                         <span 
                             className="close" 
-                            onClick={closeModal1950s}
+                            onClick={closeModal1930s}
                         >
                             <ExitIcon />
                         </span>
 
                         <button 
                             className="navigation-btn" 
-                            onClick={prevImage50s}
+                            onClick={prevImage30s}
                         >
                             <ArrowLeftIcon />
                         </button>
 
                         <div className="items">
                             <img 
-                                src={images[selectedImageIndex1950s].src}
-                                alt={`${images[selectedImageIndex1950s].caption}`}
+                                src={images[selectedImageIndex1930s].src}
+                                alt={`${images[selectedImageIndex1930s].caption}`}
                                 className="modal-image"
                             />
-                            
+
                             <div className="caption">
-                                {images[selectedImageIndex1950s].caption}
+                                {images[selectedImageIndex1930s].caption}
                             </div>
                         </div>
 
-
                         <button 
                             className="navigation-btn" 
-                            onClick={nextImage50s}
+                            onClick={nextImage30s}
                         >
                             <ArrowRightIcon />
                         </button>
 
-                       
+                        
                     </div>
                 )}
         </div>
