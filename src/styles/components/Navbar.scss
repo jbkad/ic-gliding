@@ -4,7 +4,9 @@
     background-color: var(--bg-color);
     transition: background-color  1s;
     top: 0;
-    padding: 5px 15px;
+    padding: 5px 35px;
+
+    /* hover navbar css */
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 2%);
     position: sticky;
     position: -webkit-sticky;
@@ -107,9 +109,7 @@
     color: black;
     border: 0.5px solid rgba(0, 0, 0, 0.3);
     width: 100%;
-    background-color: white;
-    text-align: flex-start;
-    padding: 12px;
+    border: 0.5px solid #ccc;
     transition: background-color 0.3 ease;
     text-decoration: none;
     &:hover {
@@ -172,13 +172,11 @@
     .navbar .nav-elements .nav-items {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin: 10vh 0 0 0;
-        padding: 0;
-        
-    }   
+        align-items: center;
+        margin-top: 50%;
+    }
 
-    .navbar .nav-elements .nav-item {
+    .navbar .menu-items li {
         display: flex;
         justify-content: space-between;
         width: 300px;
