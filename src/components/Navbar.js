@@ -4,48 +4,51 @@ import { ReactComponent as HomeIcon } from '../assets/svgs/HomeIcon.svg';
 import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
 import { ReactComponent as ExitIcon } from '../assets/svgs/ExitIcon.svg';
 import { ReactComponent as DownArrowIcon } from '../assets/svgs/DownArrowIcon.svg';
+import { ReactComponent as FacebookIcon } from "../assets/svgs/FacebookIcon.svg";
+import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
+import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
 import { Link } from "react-router-dom";
 import '../styles/components/Navbar.scss';
 
 export default function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);
-    const [showGlidingInfoDropdown, setShowGlidingInfoDropdown] = useState(false);
-    const [showLearningDropdown, setShowLearningDropdown] = useState(false);
-    const [showMemberDropdown, setShowMemberDropdown] = useState(false);
+    const [showWhatIsGlidingItems, setShowWhatIsGlidingItems] = useState(false);
+    const [showLearningToGlideItems, setShowLearningToGlideItems] = useState(false);
+    const [showMemberInformationItems, setShowMemberInformationItems] = useState(false);
     const navbarRef = useRef(null);
 
     const handleShowNavbar = () => {
         setShowNavbar(!showNavbar);
-        setShowGlidingInfoDropdown(false);
-        setShowLearningDropdown(false);
-        setShowMemberDropdown(false);
+        setShowWhatIsGlidingItems(false);
+        setShowLearningToGlideItems(false);
+        setShowMemberInformationItems(false);
     };
 
     const handleMenuClick = () => {
         setShowNavbar(false);
         navigateTo();
-        setShowGlidingInfoDropdown(false);
-        setShowLearningDropdown(false);
-        setShowMemberDropdown(false);
+        setShowWhatIsGlidingItems(false);
+        setShowLearningToGlideItems(false);
+        setShowMemberInformationItems(false);
     };
 
     // Prevents all dropdown elements from being opened at once when a user clicks a menu item. 
-    const toggleGlidingInfoDropdown = () => {
-        setShowGlidingInfoDropdown(!showGlidingInfoDropdown);
-        setShowLearningDropdown(false);
-        setShowMemberDropdown(false);        
+    const toggleGlidingDropdown = () => {
+        setShowWhatIsGlidingItems(!showWhatIsGlidingItems);
+        setShowLearningToGlideItems(false);
+        setShowMemberInformationItems(false);        
     }
     
     const toggleLearningDropdown = () => {
-        setShowLearningDropdown(!showLearningDropdown);
-        setShowGlidingInfoDropdown(false);
-        setShowMemberDropdown(false);        
+        setShowLearningToGlideItems(!showLearningToGlideItems);
+        setShowWhatIsGlidingItems(false);
+        setShowMemberInformationItems(false);        
     }
     
     const toggleMemberDropdown = () => {
-        setShowMemberDropdown(!showMemberDropdown);        
-        setShowGlidingInfoDropdown(false);
-        setShowLearningDropdown(false);
+        setShowMemberInformationItems(!showMemberInformationItems);
+        setShowWhatIsGlidingItems(false);
+        setShowLearningToGlideItems(false);
     }
 
     // Ensures dropdown elements are automatically closed when user clicks away.
@@ -54,13 +57,13 @@ export default function Navbar() {
             if (
                 navbarRef.current && !
                 navbarRef.current.contains(event.target) &&
-                !event.target.classList.contains("menu-items")
+                !event.target.classList.contains("nav-items")
             ) {
                 setShowNavbar(false);
 
-                setShowGlidingInfoDropdown(false);
-                setShowLearningDropdown(false);
-                setShowMemberDropdown(false);
+                setShowWhatIsGlidingItems(false);
+                setShowLearningToGlideItems(false);
+                setShowMemberInformationItems(false);
             }
         };
 
@@ -87,169 +90,180 @@ export default function Navbar() {
             <div className="container">
                 <Link 
                     to="/" 
-                    className="content"
+                    className="brand"
                     onClick={scrollToTop}
                 >
-                    <div className="header-items">
+                    <div className="content">
                         <img
                             src="/assets/gliding-logo.png" 
                             alt="ICGC Logo"
-                            className="image"
+                            className="logo"
                         />
-                        <h1 className="heading">Imperial College Gliding Club</h1>
+                        <h1 className="header">Imperial College Gliding Club</h1>
                     </div>
                 </Link>
 
                 <div className="menu-btn" onClick={handleShowNavbar}>
                     <MenuIcon />
                 </div>
-
-                <div className={`menu-elements ${showNavbar && 'active'}`}>
+                <div className={`nav-elements ${showNavbar && 'active'}`}>
                     <div className="exit-btn" onClick={handleShowNavbar}>
                         <ExitIcon />
                     </div>
-
-                    <ul className="menu-items">
-                        <li>
+                    <ul className="nav-items">
+                        <button>
                             <Link 
                                 to="/" 
                                 onClick={handleMenuClick}
-                                className="menu-items"
+                                className="nav-item"
                             >
                                 <HomeIcon />
                             </Link>
-                        </li>
-
-                        <li>
+                        </button>
+                        <button>
                             <Link 
                                 to="/faqs" 
                                 onClick={handleMenuClick}
-                                className="menu-items"
+                                className="nav-item"
                             >
                                 FAQs
                             </Link>
-                        </li>
-
-                        {/* 'What is gliding?' dropdown info */}
+                        </button>
                         <li>
-                            <div 
-                                onClick={toggleGlidingInfoDropdown}  
-                                className="menu-items"
+                            <button 
+                                onClick={toggleGlidingDropdown}  
+                                className="nav-item"
                             >
                                 What is gliding? <DownArrowIcon />
-                            </div>
-                            {showGlidingInfoDropdown && (
-                                <div className="gliding-dropdown">
+                            </button>
+                            {showWhatIsGlidingItems && (
+                                <div className="dropdown">
                                     <Link
                                         to="/whatisgliding/introduction"
                                         onClick={handleMenuClick}
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         What's gliding?
                                     </Link>
                                     <Link
                                         to="/whatisgliding/soaring"
                                         onClick={handleMenuClick}
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Soaring
                                     </Link>
                                     <Link
                                         to="/whatisgliding/cross-country"
                                         onClick={handleMenuClick}
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Cross-country gliding and comps
                                     </Link>
                                     <Link
                                         to="/whatisgliding/aerobatics"
                                         onClick={handleMenuClick}
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Aerobatics
                                     </Link>
                                 </div>
                             )}
                         </li>
-
-                        {/* 'Learing to glide' dropdown info */}
                         <li>
-                            <div 
+                            <button 
                                 onClick={toggleLearningDropdown}  
-                                className="menu-items"
+                                className="nav-item"
                             >
                                 Learning to glide <DownArrowIcon />
-                            </div>
-                            {showLearningDropdown && (
-                                <div className="gliding-dropdown">
-                                <Link 
+                            </button>
+                            {showLearningToGlideItems && (
+                                <div className="dropdown">
+                                    <Link 
                                         to="/learningtoglide/join" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Learn how to glide
                                     </Link>
                                     <Link 
                                         to="/learningtoglide/location" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Where do we fly?
                                     </Link>
                                     <Link 
                                         to="/learningtoglide/first-trip" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         First trip
                                     </Link>
                                     <Link 
                                         to="/learningtoglide/pre-solo-training" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Pre solo training
                                     </Link>
                                     <Link 
                                         to="/learningtoglide/post-solo-progression" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Post solo progression
                                     </Link>
                                 </div>
                             )}
                         </li>
-                        
-                        {/* 'Member information' dropdown info */}
                         <li>
-                            <div 
+                            <button 
                                 onClick={toggleMemberDropdown}  
-                                className="menu-items"
+                                className="nav-item"
                             >
                                 Member information <DownArrowIcon />
-                            </div>
-                            {showMemberDropdown && (
-                                <div className="gliding-dropdown">
+                            </button>
+                            {showMemberInformationItems && (
+                                <div className="dropdown">
                                     <Link 
                                         to="/memberinformation/fleet-and-costs" 
                                         onClick={handleMenuClick} 
-                                        className="dropdown-items"
+                                        className="dropdown-item"
                                     >
                                         Fleet and costs
                                     </Link>
                                 </div>
                             )}
                         </li>
-
-                        <Link 
-                            to="/gallery" 
-                            onClick={handleMenuClick} 
-                            className="menu-items"
-                        >
-                            Gallery
-                        </Link>
+                        <button>
+                            <Link 
+                                to="/gallery" 
+                                onClick={handleMenuClick} 
+                                className="nav-item"
+                            >
+                                Gallery
+                            </Link>
+                        </button>
                     </ul>
+                    <div className="social-btns">
+                        <a href="https://www.instagram.com/icgliding/" 
+                            target="blank"
+                            className="spacing"
+                        >
+                            <InstagramIcon />                   
+                        </a>  
+                        <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
+                            target="blank"
+                            className="spacing"
+                        >
+                            <FacebookIcon />
+                        </a>
+                        <a href="mailto:gliding@imperial.ac.uk" 
+                            target="blank"
+                        >
+                            <MailIcon />
+                        </a> 
+                    </div>
                 </div>
             </div>
         </nav>
