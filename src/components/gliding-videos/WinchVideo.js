@@ -6,9 +6,8 @@ export default function WinchVideo() {
         <div className="video" id="video">
             <div className="container">
                 <iframe 
-                    className="youtube-video"
+                    title="Winch Launch"
                     src="https://www.youtube.com/embed/aZy1urA3Qik?si=lhiV4Um5wAdjQcZB&amp;start=10"
-                    title="YouTube video player" 
                     allow="
                         accelerometer; 
                         autoplay; 
