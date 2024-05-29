@@ -1,6 +1,22 @@
-.home .slogan {
+@import 'src/App.scss';
+
+.home .section-1 .slogan {
     font-weight: bold;
     text-align: center;
+    text-shadow: 3px 3px rgb(151, 200, 236, 50%);
+}
+
+.home section {
+    margin: 0 0 50px 0;
+}
+
+.home .section-2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.home .section-2 h2 {
     text-shadow: 3px 3px rgb(151, 200, 236, 50%);
 }
 
@@ -8,4 +24,50 @@
     text-align: center;
     font-size: 1em;
     margin: 20px 10px;
+}
+
+.home .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.home .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 10px 10px rgb(151, 200, 236, 60%);
+}
+
+.home .links .icons {
+    margin-right: 5px
+}
+
+.home .links .button {
+    color: black;
+    border: 2px solid var(--secondary-color);
+}
+
+.home .links .button:hover {
+    color: white;
+    background-color: var(--highlight-color);
+    border: 2px solid rgb(0 0 0 / 15%);
+    transition: ease-in-out 0.3s background-color;
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .home .links {
+        padding: 5px;
+    }
+}
+
+@media (max-width: $bs-breakpoint-sm) {
+    .home .links {
+        display: block;
+    }
 }

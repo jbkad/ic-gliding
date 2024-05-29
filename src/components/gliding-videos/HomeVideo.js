@@ -7,9 +7,8 @@ export default function HomeVideo() {
             <h2>Here is what you have to look forward to!</h2>
             <div className="container">
                 <iframe 
-                    className="youtube-video"
+                    title="Imperial College Gliding Club - Promo Video"
                     src="https://www.youtube.com/embed/lgWnXsLf0as?start=9" 
-                    title="YouTube video player" 
                     allow="
                         accelerometer; 
                         autoplay; 

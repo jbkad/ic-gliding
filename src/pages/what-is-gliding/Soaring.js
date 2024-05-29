@@ -12,21 +12,21 @@ export default function Soaring() {
             <p>There are three main types of lift that can be utilised to climb in a glider. These are thermals, ridge lift and wave. </p>
             <p>Thermals are columns of rising air that gliders can circle within to gain altitude. Thermals are formed when the ground is heated by the sun, which then heats the air immediately above it. This forms a pocket of warmer air, often called a bubble, which can detach from the ground and begin to rise upward. As the bubble climbs higher it will reach an altitude where the moisture carried in the air will condense, this will form a cumulus cloud which can be used to identify the position of the thermal. Thermal lift is the most common type of lift that you will utilise whilst flying in the UK however thermals will only tend to form during the spring and summer as they require a certain level of heating from the sun.</p>
             
-            <div className="slideshow">
+            <div className="diagrams">
                 <img
                     src={SoaringImgOne}
-                    alt="soaring"
-                    className="img img-1"
+                    alt="Soaring"
+                    className="diagram-1"
                 />
                 <img
                     src={SoaringImgTwo}
-                    alt="soaring"
-                    className="img img-2"
+                    alt="Soaring"
+                    className="diagram-2"
                 />
                 <img
                     src={SoaringImgThree}
-                    alt="soaring"
-                    className="img img-3"
+                    alt="Soaring"
+                    className="diagram-3"
                 />
             </div>
             <div className="caption">The three main glider ascents: thermals, ridge lifts and wave dynamics</div>

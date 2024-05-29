@@ -6,9 +6,8 @@ export default function AerotowVideo() {
         <div className="video" id="video">
             <div className="container">
                 <iframe 
-                    className="youtube-video"
+                    title="Aerotow Launch at London Gliding club"
                     src="https://www.youtube.com/embed/_ibAos8BSlw?si=l1ItYBO_ikMmbjPp&amp;start=5" 
-                    title="YouTube video player" 
                     allow="
                         accelerometer; 
                         autoplay; 

@@ -6,9 +6,8 @@ export default function AerobaticsVideo() {
         <div className="video" id="video">
             <div className="container">
                 <iframe 
-                    className="youtube-video"
+                    title="Amazing Aerobatic Glider Tricks w/ Luca Bertossio"
                     src="https://www.youtube.com/embed/uXyYGPJGJE4?si=5SdQ7U2ZIv5R_pmg" 
-                    title="YouTube video player" 
                     allow="
                         accelerometer; 
                         autoplay; 
