@@ -1,0 +1,20 @@
+@import '../stylesheet.scss';
+
+.xc {
+    .caption {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .xc {
+        .card {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

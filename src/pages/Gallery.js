@@ -8,13 +8,13 @@ import Decade1960s from "../components/media/Decade1960s";
 import Decade1950s from "../components/media/Decade1950s";
 import Decade1940s from "../components/media/Decade1940s";
 import Decade1930s from "../components/media/Decade1930s";
-import '../styles/components/Gallery.scss';
+import '../styles/components/gallery.scss';
 
 export default function Gallery() {
 
     return (
-        <div id="gliding-gallery" className="gliding-gallery">
-            <h1>Gallery</h1>
+        <div className="decades">
+            <h1 className="header">Gallery</h1>
             <Decade2020s />
             <Decade2010s />
             <Decade2000s />
@@ -25,14 +25,8 @@ export default function Gallery() {
             <Decade1950s />
             <Decade1940s />
             <Decade1930s />
-            <div className="archive-caption">
-                To view more images and discover further about our clubs history, check out {" "}
-                <a
-                    href="https://www.icgcarchive.co.uk/index.php"
-                    target="blank"
-                >
-                    icGC Archive
-                </a>.
+            <div className="caption">
+                To view more images and discover further about our clubs history, check out {" "} <a href="https://www.icgcarchive.co.uk/index.php" target="blank">icGC Archive</a>.
             </div>
         </div>
     );

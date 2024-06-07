@@ -3,7 +3,7 @@ import { images } from "../../website-data/gallery/2010s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/components/Gallery.scss';
+import '../../styles/components/gallery.scss';
 
 export default function Decade2010s () {
 
@@ -31,25 +31,25 @@ export default function Decade2010s () {
     }  
 
     return (
-        <div>
-            <h2>The 2010s</h2>
-                <div className="image-grid">
-                    <div className="items-container">
-                        {images.map((img10s, index) => (
-                            <div 
-                                className="item" 
-                                key={index}
-                                onClick={() => openModal2010s(index)}
-                            >
-                                <img 
-                                    src={img10s.src}
-                                    alt={`${img10s.caption}`}
-                                />
-                            </div>
-                        ))}
-                    </div>
+        <div className="gallery">
+            <h2 className="header">The 2010s</h2>
+            <div className="grid">
+                <div className="container">
+                    {images.map((img10s, index) => (
+                        <div 
+                            className="item" 
+                            key={index}
+                            onClick={() => openModal2010s(index)}
+                        >
+                            <img 
+                                src={img10s.src}
+                                alt={`${img10s.caption}`}
+                            />
+                        </div>
+                    ))}
                 </div>
-
+            </div>
+            <aside>
                 {showModal2010s && (
                     <div 
                         className={`modal ${showModal2010s ? 'show' : ''}`}
@@ -61,35 +61,32 @@ export default function Decade2010s () {
                         >
                             <ExitIcon />
                         </span>
-
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={prevImage10s}
                         >
                             <ArrowLeftIcon />
                         </button>
-
                         <div className="items">
                             <img 
                                 src={images[selectedImageIndex2010s].src}
                                 alt={`${images[selectedImageIndex2010s].caption}`}
-                                className="modal-image"
+                                className="image"
                             />
 
                             <div className="caption">
                                 {images[selectedImageIndex2010s].caption}
                             </div>
                         </div>
-                        
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={nextImage10s}
                         >
                             <ArrowRightIcon />
                         </button>
-                        
                     </div>
                 )}
+            </aside>
         </div>
     )
 }

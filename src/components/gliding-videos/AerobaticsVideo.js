@@ -1,9 +1,9 @@
 import React from "react";
-import '../../styles/components/Video.scss';
+import '../../styles/components/video.scss';
 
 export default function AerobaticsVideo() {
     return (
-        <div className="video" id="video">
+        <div className="video">
             <div className="container">
                 <iframe 
                     title="Amazing Aerobatic Glider Tricks w/ Luca Bertossio"

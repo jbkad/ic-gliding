@@ -2,13 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { scrollToTop, navigateTo } from "../components/utils/Constants";
 import { ReactComponent as HomeIcon } from '../assets/svgs/HomeIcon.svg';
 import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
-import { ReactComponent as ExitIcon } from '../assets/svgs/ExitIcon.svg';
-import { ReactComponent as DownArrowIcon } from '../assets/svgs/DownArrowIcon.svg';
-import { ReactComponent as FacebookIcon } from "../assets/svgs/FacebookIcon.svg";
+import { ReactComponent as ArrowIcon } from '../assets/svgs/chevron-down.svg';
+import { ReactComponent as MetaIcon } from "../assets/svgs/MetaIcon.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
 import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
 import { Link } from "react-router-dom";
-import '../styles/components/Navbar.scss';
+import '../styles/components/navbar.scss';
 
 export default function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -73,179 +72,209 @@ export default function Navbar() {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-
-    // Allows navbar to change colour when user scrolls down past a certain point. 
-    const [colour, setColour] = useState(false);
-    const changeColour = () => {
-        if (window.scrollY > 100) {
-            setColour(true);
-        } else {
-            setColour(false);
-        }
-    }
-    window.addEventListener("scroll", changeColour);
     
     return (
-        <nav className={`navbar ${colour ? 'scrolled' : ''} ${showNavbar ? 'active' : ''}`} ref={navbarRef}>
+        <nav className={`navbar ${showNavbar ? 'active' : ''}`} ref={navbarRef}>
             <div className="container">
                 <Link 
                     to="/" 
                     className="brand"
                     onClick={scrollToTop}
                 >
-                    <div className="content">
+                    <div className="container">
                         <img
-                            src="/assets/gliding-logo.png" 
-                            alt="ICGC Logo"
+                            src={require("../assets/icgc.png")} 
+                            alt="Gliding club logo"
                             className="logo"
                         />
-                        <h1 className="header">Imperial College Gliding Club</h1>
+                        <h3 className="heading">Imperial College Gliding Club</h3>
                     </div>
                 </Link>
-
                 <div className="menu-btn" onClick={handleShowNavbar}>
                     <MenuIcon />
                 </div>
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
-                    <div className="exit-btn" onClick={handleShowNavbar}>
-                        <ExitIcon />
+                    {/* <div className="exit-btn" onClick={handleShowNavbar}>
+                        Exit
+                    </div> */}
+                    <div className="test">
+                        <div className="nav-items">
+                            <button>
+                                <Link 
+                                    to="/" 
+                                    onClick={handleMenuClick}
+                                    className="nav-item"
+                                    aria-label="Home"
+                                >
+                                    <HomeIcon />
+                                </Link>
+                            </button>
+                            <button>
+                                <Link 
+                                    to="/faqs" 
+                                    onClick={handleMenuClick}
+                                    className="nav-item"
+                                    aria-label="Frequently asked questions"
+                                >
+                                    FAQs
+                                </Link>
+                            </button>
+                            <li>
+                                <button 
+                                    onClick={toggleGlidingDropdown}  
+                                    className="nav-item"
+                                    aria-label="What is gliding?"
+                                >
+                                    What is gliding? <ArrowIcon />
+                                </button>
+                                {showWhatIsGlidingItems && (
+                                    <div className="dropdown">
+                                        <Link
+                                            to="/whatisgliding/introduction"
+                                            onClick={handleMenuClick}
+                                            className="item"
+                                            aria-label="What is gliding?"
+                                        >
+                                            What is gliding?
+                                        </Link>
+                                        <Link
+                                            to="/whatisgliding/soaring"
+                                            onClick={handleMenuClick}
+                                            className="item"
+                                            aria-label="Soaring"
+                                        >
+                                            Soaring
+                                        </Link>
+                                        <Link
+                                            to="/whatisgliding/cross-country"
+                                            onClick={handleMenuClick}
+                                            className="item"
+                                            aria-label="Cross-country gliding and competitions"
+                                        >
+                                            Cross-country gliding and competitions
+                                        </Link>
+                                        <Link
+                                            to="/whatisgliding/aerobatics"
+                                            onClick={handleMenuClick}
+                                            className="item"
+                                            aria-label="Aerobatics"
+                                        >
+                                            Aerobatics
+                                        </Link>
+                                    </div>
+                                )}
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={toggleLearningDropdown}  
+                                    className="nav-item"
+                                    aria-label="Learning to glide"
+
+                                >
+                                    Learning to glide <ArrowIcon />
+                                </button>
+                                {showLearningToGlideItems && (
+                                    <div className="dropdown">
+                                        <Link 
+                                            to="/learningtoglide/join" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="Learn how to glide"
+                                        >
+                                            Learn how to glide
+                                        </Link>
+                                        <Link 
+                                            to="/learningtoglide/location" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="Where do we fly?"
+                                        >
+                                            Where do we fly?
+                                        </Link>
+                                        <Link 
+                                            to="/learningtoglide/first-trip" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="First trip"
+                                        >
+                                            First trip
+                                        </Link>
+                                        <Link 
+                                            to="/learningtoglide/pre-solo-training" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="Pre solo training"
+                                        >
+                                            Pre solo training
+                                        </Link>
+                                        <Link 
+                                            to="/learningtoglide/post-solo-progression" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="Post solo progression"
+                                        >
+                                            Post solo progression
+                                        </Link>
+                                    </div>
+                                )}
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={toggleMemberDropdown}  
+                                    className="nav-item"
+                                    aria-label="Member information"
+                                >
+                                    Member information <ArrowIcon />
+                                </button>
+                                {showMemberInformationItems && (
+                                    <div className="dropdown">
+                                        <Link 
+                                            to="/memberinformation/fleet-and-costs" 
+                                            onClick={handleMenuClick} 
+                                            className="item"
+                                            aria-label="Fleet and costs"
+                                        >
+                                            Fleet and costs
+                                        </Link>
+                                    </div>
+                                )}
+                            </li>
+                            <button>
+                                <Link 
+                                    to="/gallery" 
+                                    onClick={handleMenuClick} 
+                                    className="nav-item"
+                                    aria-label="Gallery"
+                                >
+                                    Gallery
+                                </Link>
+                            </button>
+                        </div>
+                        <div className="social-links">
+                            <a href="https://www.instagram.com/icgliding/" 
+                                target="blank"
+                                className="link"
+                                aria-label="Instagram"
+                            >
+                                <InstagramIcon />                   
+                            </a>  
+                            <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
+                                target="blank"
+                                className="link"
+                                aria-label="Meta"
+                            >
+                                <MetaIcon />
+                            </a>
+                            <a href="mailto:gliding@imperial.ac.uk" 
+                                target="blank"
+                                className="link"
+                                aria-label="Email"
+                            >
+                                <MailIcon />
+                            </a> 
+                        </div>
                     </div>
-                    <ul className="nav-items">
-                        <button>
-                            <Link 
-                                to="/" 
-                                onClick={handleMenuClick}
-                                className="nav-item"
-                            >
-                                <HomeIcon />
-                            </Link>
-                        </button>
-                        <button>
-                            <Link 
-                                to="/faqs" 
-                                onClick={handleMenuClick}
-                                className="nav-item"
-                            >
-                                FAQs
-                            </Link>
-                        </button>
-                        <li>
-                            <button 
-                                onClick={toggleGlidingDropdown}  
-                                className="nav-item"
-                            >
-                                What is gliding? <DownArrowIcon />
-                            </button>
-                            {showWhatIsGlidingItems && (
-                                <div className="dropdown">
-                                    <Link
-                                        to="/whatisgliding/introduction"
-                                        onClick={handleMenuClick}
-                                        className="dropdown-item"
-                                    >
-                                        What's gliding?
-                                    </Link>
-                                    <Link
-                                        to="/whatisgliding/soaring"
-                                        onClick={handleMenuClick}
-                                        className="dropdown-item"
-                                    >
-                                        Soaring
-                                    </Link>
-                                    <Link
-                                        to="/whatisgliding/cross-country"
-                                        onClick={handleMenuClick}
-                                        className="dropdown-item"
-                                    >
-                                        Cross-country gliding and comps
-                                    </Link>
-                                    <Link
-                                        to="/whatisgliding/aerobatics"
-                                        onClick={handleMenuClick}
-                                        className="dropdown-item"
-                                    >
-                                        Aerobatics
-                                    </Link>
-                                </div>
-                            )}
-                        </li>
-                        <li>
-                            <button 
-                                onClick={toggleLearningDropdown}  
-                                className="nav-item"
-                            >
-                                Learning to glide <DownArrowIcon />
-                            </button>
-                            {showLearningToGlideItems && (
-                                <div className="dropdown">
-                                    <Link 
-                                        to="/learningtoglide/join" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        Learn how to glide
-                                    </Link>
-                                    <Link 
-                                        to="/learningtoglide/location" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        Where do we fly?
-                                    </Link>
-                                    <Link 
-                                        to="/learningtoglide/first-trip" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        First trip
-                                    </Link>
-                                    <Link 
-                                        to="/learningtoglide/pre-solo-training" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        Pre solo training
-                                    </Link>
-                                    <Link 
-                                        to="/learningtoglide/post-solo-progression" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        Post solo progression
-                                    </Link>
-                                </div>
-                            )}
-                        </li>
-                        <li>
-                            <button 
-                                onClick={toggleMemberDropdown}  
-                                className="nav-item"
-                            >
-                                Member information <DownArrowIcon />
-                            </button>
-                            {showMemberInformationItems && (
-                                <div className="dropdown">
-                                    <Link 
-                                        to="/memberinformation/fleet-and-costs" 
-                                        onClick={handleMenuClick} 
-                                        className="dropdown-item"
-                                    >
-                                        Fleet and costs
-                                    </Link>
-                                </div>
-                            )}
-                        </li>
-                        <button>
-                            <Link 
-                                to="/gallery" 
-                                onClick={handleMenuClick} 
-                                className="nav-item"
-                            >
-                                Gallery
-                            </Link>
-                        </button>
-                    </ul>
-                    <div className="social-btns">
+                    {/* <div className="social-btns">
                         <a href="https://www.instagram.com/icgliding/" 
                             target="blank"
                             className="spacing"
@@ -263,7 +292,7 @@ export default function Navbar() {
                         >
                             <MailIcon />
                         </a> 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>

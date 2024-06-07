@@ -1,10 +1,9 @@
 import React from "react";
-import '../../styles/components/Video.scss';
+import '../../styles/components/video.scss';
 
 export default function HomeVideo() {
     return (
-        <div className="video" id="video">
-            <h2>Here is what you have to look forward to!</h2>
+        <div className="video">
             <div className="container">
                 <iframe 
                     title="Imperial College Gliding Club - Promo Video"
@@ -16,7 +15,8 @@ export default function HomeVideo() {
                         encrypted-media; 
                         gyroscope; 
                         picture-in-picture"
-                    allowFullScreen={true}>
+                    allowFullScreen={true}
+                >
                 </iframe>
             </div>
         </div>
