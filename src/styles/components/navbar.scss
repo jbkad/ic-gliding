@@ -31,7 +31,7 @@
             flex-direction: row;
             align-items: center;
             margin: 0;
-            padding: 8px 15px;
+            padding: 10px 15px;
             width: fit-content;
 
             .heading {
@@ -47,7 +47,7 @@
         }
     }
 
-    .test {
+    .br {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -141,12 +141,16 @@
                 transition: all 0.15s ease-in;
             }
         }
+
+        span {
+            display: none;
+        }
     }
 
 }
 
 @media (max-width: $bs-breakpoint-md) {
-    // sidebar menu    
+    // sidebar menu element
     .navbar {
         .container {
             display: flex;
@@ -159,6 +163,8 @@
 
             .container {
                 border: none;
+                padding: 20px 15px;
+
             }
         }
 
@@ -174,7 +180,7 @@
             }
         }
 
-        .test {
+        .br {
             display: block;
             width: 100%;
             padding: 0;
@@ -219,22 +225,38 @@
             background-color: var(--primary-color);
             transition: width 0.45s ease-in-out;
             box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
-    
+            right: 0;
+
             .social-links {
-                position: absolute;
-                bottom: 20px;
-                left: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 
                 .link {
-                    background-color: var(--primary-color);
-                    border: 0.5px solid white;
+                    color: white;
+                    align-items: center;
+                    border-bottom: 1px solid rgba(70, 131, 180, 0.385);
+                    display: flex;
+                    padding: 0px 10px;
+                    margin: 0;
+                    border-radius: 0;
+                    height: 50px;
+                    width: -webkit-fill-available;
                     &:hover {
-                        background-color: white;
-                        color: var(--primary-color);
-                        transition: all 0.15s ease-in;
+                        text-decoration: underline;
+                        color: white;
+                        background-color: transparent;
                     }
                 }
-            }
+
+                span, a {
+                    display: block;
+                    margin: 0 0 0 5px;
+                    text-decoration: none;
+                    font-weight: 300;
+        
+                }
+            }        
         }
 
         .nav-elements.false {

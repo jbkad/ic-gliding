@@ -94,10 +94,7 @@ export default function Navbar() {
                     <MenuIcon />
                 </div>
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
-                    {/* <div className="exit-btn" onClick={handleShowNavbar}>
-                        Exit
-                    </div> */}
-                    <div className="test">
+                    <div className="br">
                         <div className="nav-items">
                             <button>
                                 <Link 
@@ -257,6 +254,7 @@ export default function Navbar() {
                                 aria-label="Instagram"
                             >
                                 <InstagramIcon />                   
+                                <span>Instagram</span>
                             </a>  
                             <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
                                 target="blank"
@@ -264,6 +262,8 @@ export default function Navbar() {
                                 aria-label="Meta"
                             >
                                 <MetaIcon />
+                                <span>Meta</span>
+
                             </a>
                             <a href="mailto:gliding@imperial.ac.uk" 
                                 target="blank"
@@ -271,28 +271,10 @@ export default function Navbar() {
                                 aria-label="Email"
                             >
                                 <MailIcon />
+                                <span>E-mail</span>
                             </a> 
                         </div>
                     </div>
-                    {/* <div className="social-btns">
-                        <a href="https://www.instagram.com/icgliding/" 
-                            target="blank"
-                            className="spacing"
-                        >
-                            <InstagramIcon />                   
-                        </a>  
-                        <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
-                            target="blank"
-                            className="spacing"
-                        >
-                            <FacebookIcon />
-                        </a>
-                        <a href="mailto:gliding@imperial.ac.uk" 
-                            target="blank"
-                        >
-                            <MailIcon />
-                        </a> 
-                    </div> */}
                 </div>
             </div>
         </nav>
