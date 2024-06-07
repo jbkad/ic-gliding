@@ -1,60 +1,58 @@
-.faqs .question-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+@import '../stylesheet.scss';
 
-.faqs .accordion-item {
-    margin: 0 0 15px 0; 
-}
+.faqs {
+    .subheading {
+        margin: 0 0 50px 0;
+    }
 
-.faqs .accordion-title {
-    color: var(--headline-color);
-    background-color: rgba(70, 131, 180, 0.15);
-}
+    .toggle {
+        color: var(--primary-color);
+        font-size: 2rem; 
+        font-weight: 200;
+    }
 
-.faqs .accordion-title:hover {
-    color: white;
-    background-color: var(--highlight-color);
-}
+    .question-container {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        margin: 15px 0;
+        width: 100%;
+        font-family: "Urbanist", sans-serif;
+        padding: 0;
 
-.faqs .toggle {
-    font-size: 2.5rem; 
-    margin-right: 10px;
-    transition: 0.3s ease-in-out;
-}
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            font-weight: 300;
+            margin: 0 15px 0 0;
+            color: var(--primary-color);
+        }
 
-.faqs .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    font-weight: 700;
-    margin-left: 15px;
-}
+        &:hover .question, .toggle {
+            font-weight: 400;
+        }
+    }
 
-.faqs .content-container {
-    max-height: fit-content;
-    overflow: hidden;
-    padding: 8px 15px 5px 15px;
-    background-color: rgba(70, 131, 180, 0.1);
-    color: var(--paragraph-color);
-}
-
-.faqs .content {
-    margin: 0;
-    padding: 8px 15px 5px 5px;
-}
-
-.faqs .content ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.faqs .content ul li {
-    padding-bottom: 10px;
-}
-
-.faqs .content:active {
-    transition: 0.5 ease-in-out;
+    .content-container {
+        max-height: fit-content;
+        overflow: hidden;
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--primary-color);
+        
+        .content {
+            margin: 0;
+        
+            ul {
+                margin: 0 0 15px 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
 }
