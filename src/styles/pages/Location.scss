@@ -1,10 +1,12 @@
-.location .address p {
-    margin: 0;
-}
+@import '../stylesheet.scss';
 
-.location .address ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 2px;
-}
+.location {
+    .address {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+        }
+    }
+} 

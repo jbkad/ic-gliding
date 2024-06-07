@@ -3,7 +3,7 @@ import { images } from "../../website-data/gallery/1990s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/components/Gallery.scss';
+import '../../styles/components/gallery.scss';
 
 export default function Decade1990s () {
 
@@ -31,25 +31,25 @@ export default function Decade1990s () {
     } 
     
     return (
-        <div>
-            <h2>The 1990s</h2>
-                <div className="image-grid">
-                    <div className="items-container">
-                        {images.map((img90s, index) => (
-                            <div 
-                                className="item" 
-                                key={index}
-                                onClick={() => openModal1990s(index)}
-                            >
-                                <img 
-                                    src={img90s.src}
-                                    alt={`${img90s.caption}`}
-                                />
-                            </div>
-                        ))}
-                    </div>
+        <div className="gallery">
+            <h2 className="header">The 1990s</h2>
+            <div className="grid">
+                <div className="container">
+                    {images.map((img90s, index) => (
+                        <div 
+                            className="item" 
+                            key={index}
+                            onClick={() => openModal1990s(index)}
+                        >
+                            <img 
+                                src={img90s.src}
+                                alt={`${img90s.caption}`}
+                            />
+                        </div>
+                    ))}
                 </div>
-
+            </div>
+            <aside>
                 {showModal1990s && (
                     <div 
                         className={`modal ${showModal1990s ? 'show' : ''}`}
@@ -61,35 +61,31 @@ export default function Decade1990s () {
                         >
                             <ExitIcon />
                         </span>
-
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={prevImage90s}
                         >
                             <ArrowLeftIcon />
                         </button>
-
                         <div className="items">
                             <img 
                                 src={images[selectedImageIndex1990s].src}
                                 alt={`${images[selectedImageIndex1990s].caption}`}
-                                className="modal-image"
+                                className="image"
                             />
                             <div className="caption">
                                 {images[selectedImageIndex1990s].caption}
                             </div>
                         </div>
-                        
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={nextImage90s}
                         >
                             <ArrowRightIcon />
                         </button>
-
-                        
                     </div>
                 )}
+            </aside>
         </div>
     )
 }

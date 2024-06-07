@@ -12,9 +12,9 @@ export const data = [
         title:'How do I sign up for day trips on Saturdays or Sundays? ',
         content: `
             <ul>
-                <li> If you have joined our <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d" target="blank">WhatsApp group</a>, you should receive a sign-up form every <strong>Monday at 21:30.</strong> The form will close every <strong>Tuesday at 21:30.</strong> </li>
-                <li>Flying & reserve lists for that weekend’s trip will be sent out every <strong>Wednesday at 21:30.</strong> </li>
-                <li>If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by <strong>Thursday 21:30</strong> to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </li>
+                <li> If you have joined our <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d" target="blank">WhatsApp group</a>, you should receive a sign-up form every <span>Monday at 21:30.</span> The form will close every <span>Tuesday at 21:30.</span> </li>
+                <li>Flying & reserve lists for that weekend’s trip will be sent out every <span>Wednesday at 21:30.</span> </li>
+                <li>If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by <span>Thursday 21:30</span> to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </li>
             </ul>
         `
     },
@@ -60,7 +60,7 @@ export const data = [
                 <li> • Time in the air - £0.30 per minute (minimum charge 7 minutes) </li>
 
                 <br />
-                <li><strong>Example</strong></li>
+                <li>Example</li>
                 <li> • 10 minute flight off a winch: £13 (the vast majority of your training flights will cost about this) </li>
                 <li> • 30 minute flight off a winch: £19 </li>
                 <li> • 1h flight off a winch: £28 </li>
@@ -73,12 +73,12 @@ export const data = [
         content: `
             <ul>
                 <li>Please tell us immediately so we can allocate your seat to someone else on the reserve list. </li>
-                <li>Members who signed up for the weekend using the link but canceled or did not confirm their attendance following the release of the flying/reserve list on Wednesday will be suspended from flying for the following number of weeks: </li>
+                <li>Members who signed up for the weekend using the link but canceled or did not confirm their attendance following the release of the flying/reserve list on Wednesday <span>will be suspended from flying</span> for the following number of weeks: </li>
                 <ul classname="trip-cancellation">
-                    <li> • Canceling before Thursday 6pm - <strong>two weeks</strong> </li>
-                    <li> • Canceling between Thursday 6pm and Friday 6pm - <strong>three weeks</strong> </li>
-                    <li> • Canceling after Friday 6pm - <strong>four weeks</strong> </li>
-                    <li> • Not turning up in the morning - <strong>four weeks</strong> </li>
+                    <li> • Canceling before Thursday 6pm: two weeks</li>
+                    <li> • Canceling between Thursday 6pm and Friday 6pm: three weeks </li>
+                    <li> • Canceling after Friday 6pm: four weeks </li>
+                    <li> • Not turning up in the morning: four weeks </li>
                 </ul>
                 <li>Please sign up for trips only if you are free. Do not arrange other activities for the weekend until you've checked the flying/reserve lists which are released every Wednesday. </li>
             </ul>
@@ -88,9 +88,10 @@ export const data = [
         title:'What launch methods are available?',
         content: `
             <ul>
-                <li><strong>Winch launch - </strong> The glider is attached to a long cable, which is wound in by a powerful engine on the opposite end of the runway. The glider is then quickly accelerated and launched into the air launching you about 1500ft above the ground. Winching is the cheapest (and most exciting) launch method we have! </li>
-                <li><strong>Aerotow launch - </strong> This method utilises a powered aircraft and a rope to tow the glider to a certain height. It’s much more expensive, but also gentler. </li>
+                <li><span>Winch launch:</span> The glider is attached to a long cable, which is wound in by a powerful engine on the opposite end of the runway. The glider is then quickly accelerated and launched into the air launching you about 1500ft above the ground. Winching is the cheapest (and most exciting) launch method we have! </li>
+                <li><span>Aerotow launch:</span> This method utilises a powered aircraft and a rope to tow the glider to a certain height. It’s much more expensive, but also gentler. </li>
                 <li>If you wish to try both, we recommend you try the aerotow first because it is much gentler and provides more height/time for flying. </li>
+                <li>To find out more about how we fly, check out the <a href="/whatisgliding/introduction">'What is gliding?'</a> page.</li>
             </ul>
         `
     },

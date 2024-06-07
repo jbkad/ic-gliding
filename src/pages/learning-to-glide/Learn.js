@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Learn () {
     return (
-        <div className="learn" id="learn">
+        <div className="learn">
             <h1>Learn how to glide</h1>
             <p>We recommend that anyone who is considering becoming a member joins our {" "}
                 <a 
@@ -26,9 +26,9 @@ export default function Learn () {
 
             <h2>Weekend trip sign ups</h2>
             <p>To get started with gliding, sign up for one of our weekend trips. </p>
-            <p>A sign-up form for the following weekend's trip will be sent out <strong>every Monday evening</strong> on the WhatsApp group. The form will close <strong>24 hours later.</strong> </p>
-            <p>Flying & reserve lists will be sent out <strong>Wednesday evening.</strong> </p>
-            <p> <strong>If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by Thursday 21:30 to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </strong> </p>
+            <p>A sign-up form for the following weekend's trip will be sent out every Monday evening on the WhatsApp group. The form will close 24 hours later. </p>
+            <p> <span className="highlight">Flying & reserve lists will be sent out Wednesday evening.</span> </p>
+            <p> <span className="highlight">If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by Thursday 21:30 to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </span> </p>
         </div>
     )
 }

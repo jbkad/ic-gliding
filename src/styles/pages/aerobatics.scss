@@ -1,6 +1,10 @@
 @import '../stylesheet.scss';
 
-.soaring {
+.aerobatics {
+    .body {
+        margin: 0;
+    }    
+
     .caption {
         display: flex;
         align-items: center;
@@ -8,16 +12,18 @@
     }
 }
 
-@media (max-width: $bs-breakpoint-sm) {
-    .soaring {
+.aerobatics .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .aerobatics {
         .card {
             .container {
                 display: flex;
                 flex-direction: column;
-            }
-
-            .caption {
-                margin: 10px 0;
             }
         }
     }

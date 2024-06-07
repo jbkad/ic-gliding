@@ -1,0 +1,35 @@
+@import '../stylesheet.scss';
+
+.fleet-costs {
+    .section-1 {
+        margin: 0 0 50px 0;
+
+        .name {
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            font-weight: 200;
+            color: var(--tertiary-color);
+            margin: 2px 0;
+        }
+    }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .fleet-costs {
+        .card {
+            .container {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

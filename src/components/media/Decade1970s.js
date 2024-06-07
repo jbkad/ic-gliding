@@ -3,7 +3,7 @@ import { images } from "../../website-data/gallery/1970s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/components/Gallery.scss';
+import '../../styles/components/gallery.scss';
 
 export default function Decade1970s () {
 
@@ -31,10 +31,10 @@ export default function Decade1970s () {
     }   
 
     return (
-        <div>
-            <h2>The 1970s</h2>
-                <div className="image-grid">
-                    <div className="items-container">
+        <div className="gallery">
+            <h2 className="header">The 1970s</h2>
+                <div className="grid">
+                    <div className="container">
                         {images.map((img70s, index) => (
                             <div 
                                 className="item" 
@@ -49,7 +49,7 @@ export default function Decade1970s () {
                         ))}
                     </div>
                 </div>
-
+            <aside>
                 {showModal1970s && (
                     <div
                         className={`modal ${showModal1970s ? 'show' : ''}`}
@@ -61,36 +61,31 @@ export default function Decade1970s () {
                         >
                             <ExitIcon />
                         </span>
-
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={prevImage70s}
                         >
                             <ArrowLeftIcon />
                         </button>
-
                         <div className="items">
                             <img 
                                 src={images[selectedImageIndex1970s].src}
                                 alt={`${images[selectedImageIndex1970s].caption}`}
-                                className="modal-image"
+                                className="image"
                             />
                             <div className="caption">
                                 {images[selectedImageIndex1970s].caption}
                             </div>
                         </div>
-
                         <button
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={nextImage70s}
                         >
                             <ArrowRightIcon />
                         </button>
-
-                       
-
                     </div>
                 )}
+            </aside>
         </div>
     )
 }

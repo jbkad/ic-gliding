@@ -2,12 +2,12 @@ import React from "react";
 
 export default function PreSolo() {
     return (
-        <div id="pre-solo" className="pre-solo">
+        <div className="pre-solo">
             <div className="container">
                 <h1>Pre solo training</h1>
 
                 <p>
-                    The stages of training are <strong>Pre-solo, White Card, and Red Card. </strong> 
+                    The stages of training are <span className="highlight">Pre-solo, White Card, and Red Card. </span> 
                 </p>
 
                 <h2>Pre solo</h2>

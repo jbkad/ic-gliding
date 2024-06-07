@@ -1,18 +1,14 @@
 import React from "react";
 import { data } from "../website-data/committeeMembers";
-import '../styles/components/Committee.scss';
+import '../styles/components/committee.scss';
 
 export default function Committee() {
 
     return (
         <div className="committee">
-            <div className="heading">
-                <h1>Commitee</h1>
-                <h4>Here are your 2023/24 commitee members</h4>
-            </div>
-            <div className="grid">
+            <div className="member">
                 {data.map((member, index) => (
-                    <div className="card" key={index}>
+                    <div className="profile wallet" key={index}>
                         <img 
                             src={member.image}
                             alt={`${member.name}`}

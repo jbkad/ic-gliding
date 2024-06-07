@@ -1,0 +1,17 @@
+@import '../stylesheet.scss';
+
+.flying-launching {
+    .body {
+        margin: 0;
+    }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .flying-launching {
+        .card {
+            .container {
+                display: contents;
+            }
+        }
+    }
+}

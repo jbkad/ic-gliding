@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import '../../styles/components/GalleryItem.scss';
+import '../styles/components/slideshow.scss';
 
-// Renders the gallery items containing images.
 const GalleryItem = ({ children, width, image}) => {
     return (
         <div 
-            className="gallery-item"
+            className="item"
             style={{ width: width}}
         >
             <img 
                 src={image}
-                alt="Gliding gallery item"
+                alt="Imperial College Gliding Club"
             />
             {children}
         </div>
@@ -19,7 +18,6 @@ const GalleryItem = ({ children, width, image}) => {
 
 const Carousel = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [paused, setPaused] = useState(false);
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -33,9 +31,7 @@ const Carousel = ({ children }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (!paused) {
-                updateIndex(activeIndex + 1);
-            }
+            (updateIndex(activeIndex + 1));
         }, 3500);
 
         return () => {
@@ -46,13 +42,9 @@ const Carousel = ({ children }) => {
     });
 
     return (
-        <div 
-            className="gallery"
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-        >
+        <div className="slideshow">
             <div
-                className="inner-gallery"
+                className="container"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
                 {React.Children.map(children, (child, index) => {

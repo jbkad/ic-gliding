@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --bg-color: #f5f5f7;
+  --primary-color: #004a9f;
+  --secondary-color:  #01BAEF;
+  --tertiary-color: #2c4f77;
+}
+
+$bs-breakpoint-xs: 280px;
+$bs-breakpoint-sm: 576px;
+$bs-breakpoint-md: 768px;
+$bs-breakpoint-lg: 992px;
+$bs-breakpoint-xl: 1200px;
+$bs-breakpoint-xxl: 1400px;
+
+.home .section-1, 
+.home .section-3, 
+.soaring, 
+.xc, 
+.faqs, 
+.aerobatics, 
+.location, 
+.post-solo, 
+.fleet-costs,
+.first-trip,
+.learn,
+.member-purchase,
+.pre-solo,
+.flying-launching,
+.decades {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 15px 80px 15px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: var(--primary-color);
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 400;
+}
+
+@media (min-width: $bs-breakpoint-xl) {
+  h1, .h1 {
+      font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  h2, .h2 {
+      font-size: 2rem;
+  }
+}
+
+h3, .h3  {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  h3, .h3 {
+      font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 200;
+}
+
+@media (min-width: 1200px) {
+  h4, .h4  {
+      font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Urbanist", sans-serif;
+  height: 100%;
+  min-height: calc(100vh);
+  zoom: 100%;
+  margin: 0;
+}
+
+a  {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+p {
+  color: var(--tertiary-color);
+  font-weight: 300;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.highlight {
+  color: white;
+  padding: 0 5px;
+  font-weight: 300;
+  background-color: var(--primary-color);
+}
+
+.note {
+  font-size: 0.8em;
+  font-weight: 200;
+  color: #595959;
+}
+
+.caption {
+  font-weight: 200;
+  font-size: 16px;
+  color: #515151;
+}
+
+.card {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f0f0f0;
+  border: 1px solid #8080801e;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .img {
+    position: relative;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}

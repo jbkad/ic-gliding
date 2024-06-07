@@ -3,7 +3,7 @@ import { images } from "../../website-data/gallery/1950s";
 import { ReactComponent as ArrowLeftIcon } from '../../assets/svgs/ArrowLeftIcon.svg';
 import { ReactComponent as ArrowRightIcon } from '../../assets/svgs/ArrowRightIcon.svg';
 import { ReactComponent as ExitIcon } from '../../assets/svgs/ExitIcon.svg';
-import '../../styles/components/Gallery.scss';
+import '../../styles/components/gallery.scss';
 
 export default function Decade1950s () {
 
@@ -31,25 +31,25 @@ export default function Decade1950s () {
     }  
 
     return (
-        <div>
-            <h2>The 1950s</h2>
-                <div className="image-grid">
-                    <div className="items-container">
-                        {images.map((img50s, index) => (
-                            <div 
-                                className="item" 
-                                key={index}
-                                onClick={() => openModal1950s(index)}
-                            >
-                                <img 
-                                    src={img50s.src}
-                                    alt={`${img50s.caption}`}
-                                />
-                            </div>
-                        ))}
-                    </div>
+        <div className="gallery">
+            <h2 className="header">The 1950s</h2>
+            <div className="grid">
+                <div className="container">
+                    {images.map((img50s, index) => (
+                        <div 
+                            className="item" 
+                            key={index}
+                            onClick={() => openModal1950s(index)}
+                        >
+                            <img 
+                                src={img50s.src}
+                                alt={`${img50s.caption}`}
+                            />
+                        </div>
+                    ))}
                 </div>
-
+            </div>
+            <aside>
                 {showModal1950s && (
                     <div 
                         className={`modal ${showModal1950s ? 'show' : ''}`}
@@ -61,9 +61,8 @@ export default function Decade1950s () {
                         >
                             <ExitIcon />
                         </span>
-
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={prevImage50s}
                         >
                             <ArrowLeftIcon />
@@ -73,25 +72,21 @@ export default function Decade1950s () {
                             <img 
                                 src={images[selectedImageIndex1950s].src}
                                 alt={`${images[selectedImageIndex1950s].caption}`}
-                                className="modal-image"
+                                className="image"
                             />
-                            
                             <div className="caption">
                                 {images[selectedImageIndex1950s].caption}
                             </div>
                         </div>
-
-
                         <button 
-                            className="navigation-btn" 
+                            className="btn-navigate" 
                             onClick={nextImage50s}
                         >
                             <ArrowRightIcon />
                         </button>
-
-                       
                     </div>
                 )}
+            </aside>
         </div>
     )
 }

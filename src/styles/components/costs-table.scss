@@ -1,0 +1,35 @@
+@import '../stylesheet.scss';
+
+.costs {
+    border-collapse: collapse;
+    font-weight: 200;
+    color: var(--primary-color);
+ 
+    td {
+        border: 0.5px solid #ddd;
+        width: 33%;
+        padding: 8px;
+    }
+
+    tbody {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .heading {
+        color: white;
+        background-color: var(--primary-color);
+        font-weight: 300;
+    }
+
+    .note {
+        color: rgba(128, 128, 128, 0.5);
+    }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .costs {
+        td {
+            width: auto;
+        }
+    }
+}

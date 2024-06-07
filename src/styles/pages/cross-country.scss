@@ -1,23 +1,19 @@
 @import '../stylesheet.scss';
 
-.soaring {
+.xc {
     .caption {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center
     }
 }
 
-@media (max-width: $bs-breakpoint-sm) {
-    .soaring {
+@media (max-width: $bs-breakpoint-md) {
+    .xc {
         .card {
             .container {
                 display: flex;
                 flex-direction: column;
-            }
-
-            .caption {
-                margin: 10px 0;
             }
         }
     }

@@ -1,17 +1,17 @@
-@import 'src/App.scss';
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.5);
-}
+@import '../stylesheet.scss';
 
 .video {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: none;
+    }
 }

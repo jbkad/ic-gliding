@@ -1,10 +1,10 @@
 import React from "react";
-import '../../styles/pages/PostSolo.scss';
+import '../../styles/pages/post-solo.scss';
 
 export default function PostSolo() {
     return (
-        <div id="post-solo" className="post-solo">
-            <h1>Post solo progression</h1>
+        <div className="post-solo">
+            <h1 className="heading">Post solo progression</h1>
             <p>Once you have flown solo in in a two-seat glider there is still much to learn. You will build experience flying in a wide range of conditions before converting into single seat gliders. You will develop your soaring skills (using lift to stay airborne) and become a much more proficient pilot. </p>
             <p>Once you have completed either 50 solo flights or 20 solo flights and 10 hours flying time you should be looking to complete your Bronze Badge. The Bronze Badge involves 10 multiple choice theoretical knowledge exams on the following subjects: </p>
             <ul>

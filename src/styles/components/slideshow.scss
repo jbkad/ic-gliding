@@ -1,0 +1,22 @@
+@import '../stylesheet.scss';
+
+.slideshow {
+    overflow: hidden;
+
+    .container {
+        white-space: nowrap;
+        transition: transform 0.3s;
+    }
+
+    .item {
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+        img {
+            width: -webkit-fill-available;
+        }
+    }
+}
