@@ -1,0 +1,58 @@
+@import '../stylesheet.scss';
+
+.faqs {
+    .subheading {
+        margin: 0 0 50px 0;
+    }
+
+    .toggle {
+        color: var(--primary-color);
+        font-size: 2rem; 
+        font-weight: 200;
+    }
+
+    .question-container {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        margin: 15px 0;
+        width: 100%;
+        font-family: "Urbanist", sans-serif;
+        padding: 0;
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            font-weight: 300;
+            margin: 0 15px 0 0;
+            color: var(--primary-color);
+        }
+
+        &:hover .question, .toggle {
+            font-weight: 400;
+        }
+    }
+
+    .content-container {
+        max-height: fit-content;
+        overflow: hidden;
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--primary-color);
+        
+        .content {
+            margin: 0;
+        
+            ul {
+                margin: 0 0 15px 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

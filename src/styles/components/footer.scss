@@ -1,0 +1,200 @@
+@import '../stylesheet.scss';
+
+.footer {
+    background-color:  var(--primary-color);
+    position: relative;
+    padding: 15px;
+    bottom: 0;
+    justify-content: center;
+    flex-shrink: 0;
+
+    a {
+        color: white;
+    }
+
+    label {
+        font-weight: 400;
+    }
+
+    hr {
+        height: 0.5px;
+        background-color: #dfdfdf;
+        border: none;
+        margin: 15px 0;
+    }
+
+    .section-1 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        margin: 0 0 150px 0;
+        color: white;
+
+        .col-1 {
+            display: flex;
+            align-items: flex-start;    
+            
+            .heading {
+                font-size: 16px;
+                font-weight: 400;
+                inline-size: 150px;
+            }
+
+            .subheading {
+                font-size: 12px;
+                font-weight: 200;
+            }
+        }
+
+        .col-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 160px);
+            gap: 10px;
+            justify-content: end;
+
+            .row-1, 
+            .row-2, 
+            .row-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                font-weight: 200;
+            }
+            
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }        
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        font-weight: 200;
+        
+        .link {
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0 10px 0 0;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .logo-icl {
+        height: 15px;
+        width: auto;
+        margin: 0 0 8px 0;
+    }
+
+    .logo-icgc {
+        height: 55px;
+        width: auto;
+        margin: 0 10px 0 0;
+    }
+
+    .section-2 {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+
+        .col-1 {
+            .note {
+                color: white;
+            }
+
+            .address {
+                font-size: 14px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+
+        .col-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+
+            .social-btns {
+                display: flex;
+                flex-direction: row;
+                
+                a {
+                    display: flex;
+                    padding: 5px;
+                    margin: 0 0 0 8px;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: var(--primary-color);
+                    border: 0.5px solid white;
+                    &:hover {
+                        color: var(--primary-color);
+                        background-color: white;
+                        border: 0.5px solid var(--primary-color);
+                        transition: all 0.15s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+    .footer {
+        .container {
+            display: block;
+        }
+
+        .section-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            .col-1 {
+                margin: 0 0 15px 0;   
+            }
+            
+            .col-2 {
+                display: flex;
+                flex-direction: column; 
+                gap: 25px;
+                
+                .row-1, 
+                .row-2 {
+                    align-items: flex-start;
+                }
+            }
+        }
+
+        .section-2 {
+            display: flex;
+            flex-direction: column-reverse;
+    
+            .col-2 {
+                justify-content: flex-start;
+                
+                .social-btns {
+                    margin: 5px 0;
+
+                    a {
+                        margin: 0 8px 0 0;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: $bs-breakpoint-sm) {
+    .footer {
+        .links {
+            flex-direction: column;
+            margin: 10px 0 0 0;
+        }
+    }
+}
