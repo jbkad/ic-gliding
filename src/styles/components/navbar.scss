@@ -96,7 +96,6 @@
                     position: absolute;   
                 }
             }
-
         }
         
     }
@@ -188,13 +187,13 @@
 
         .nav-elements {
             background-color: var(--primary-color);
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
-            height: 100vh;
             width: 0;
+            height: 100vh;
+            overflow: scroll;
             transition: width 0.45s ease-in-out;
-            overflow: hidden;
             z-index: 1;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
