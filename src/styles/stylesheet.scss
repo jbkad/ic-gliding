@@ -27,7 +27,10 @@ $bs-breakpoint-xxl: 1400px;
 .member-purchase,
 .pre-solo,
 .flying-launching,
-.decades {
+.decades,
+.sitemap,
+.accessibility,
+.sitemap {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 15px 80px 15px;
@@ -98,6 +101,13 @@ body {
   min-height: calc(100vh);
   zoom: 100%;
   margin: 0;
+
+  // position: relative;
+  // min-width: 320px;
+  // min-height: 480px;
+  // margin: 0 auto;
+  // padding: 0 40px;
+  // font-family: "Urbanist", sans-serif;
 }
 
 a  {
