@@ -34,6 +34,14 @@ export default function Footer () {
                                 What is gliding?
                             </Link>
                             <Link 
+                                to="/memberinformation/fleet-and-costs"
+                                onClick={navigateTo}
+                                className="link"
+                                aria-label="Find out more about gliding costs"
+                            >
+                                Gliding costs
+                            </Link>
+                            <Link 
                                 to="/learningtoglide/join"
                                 onClick={navigateTo}
                                 className="link"
@@ -53,29 +61,13 @@ export default function Footer () {
                                 to="/gallery"
                                 onClick={navigateTo}
                                 className="link"
-                                aria-label="Gallery"
+                                aria-label="Club gallery"
                             >
-                                Gallery
+                                Club gallery
                             </Link>
                         </div>
                         <div className="row-2">
                             <label>Useful links</label>
-                            {/* <Link 
-                                to="/sitemap"
-                                onClick={navigateTo}
-                                className="link"
-                                aria-label="Sitemap"
-                            >
-                                Sitemap
-                            </Link> */}
-                            {/* <Link 
-                                to="/accessibility"
-                                onClick={navigateTo}
-                                className="link"
-                                aria-label="Accessibility"
-                            >
-                                Accessibility
-                            </Link> */}
                             <Link 
                                 to="/faqs"
                                 onClick={navigateTo}
@@ -84,14 +76,36 @@ export default function Footer () {
                             >
                                 FAQs
                             </Link>
+                            <a 
+                                href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
+                                className="link"
+                                aria-label="Join the WhatsApp gliding group"
+                            >
+                                WhatsApp group
+                            </a>
                             <Link 
-                                to="/memberinformation/fleet-and-costs"
+                                to="/sitemap"
                                 onClick={navigateTo}
                                 className="link"
-                                aria-label="Costs"
+                                aria-label="Sitemap"
                             >
-                                Costs
+                                Sitemap
                             </Link>
+                            <Link 
+                                to="/accessibility"
+                                onClick={navigateTo}
+                                className="link"
+                                aria-label="Accessibility"
+                            >
+                                Accessibility
+                            </Link>
+                            <a 
+                                href="https://glideandseek.com/"
+                                className="link"
+                                aria-label="Glide and seek"
+                            >
+                                Glide and Seek
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +132,7 @@ export default function Footer () {
                         </div>
                     </div>
                     <div className="col-2">
-                        <div className="social-btns">
+                        <div className="social-links">
                             <a href="https://www.instagram.com/icgliding/" 
                                 target="blank"
                                 aria-label="Instagram"
@@ -133,7 +147,7 @@ export default function Footer () {
                             </a>
                             <a href="mailto:gliding@imperial.ac.uk" 
                                 target="blank"
-                                aria-label="Mail"
+                                aria-label="E-mail"
                             >
                                 <MailIcon />
                             </a> 
