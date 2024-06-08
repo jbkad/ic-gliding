@@ -14,8 +14,8 @@ import PostSolo from './pages/learning-to-glide/PostSolo';
 import Gallery from './pages/Gallery';
 import FleetAndCosts from './pages/member-information/FleetAndCosts';
 import FAQs from './pages/FAQs';
-import './styles/stylesheet.scss';
 import Sitemap from './pages/Sitemap';
+import './styles/stylesheet.scss';
 
 export default function App() {
 
