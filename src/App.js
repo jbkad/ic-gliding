@@ -15,6 +15,7 @@ import Gallery from './pages/Gallery';
 import FleetAndCosts from './pages/member-information/FleetAndCosts';
 import FAQs from './pages/FAQs';
 import Sitemap from './pages/Sitemap';
+import Accessibility from './pages/Accessibility';
 import './styles/stylesheet.scss';
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/learningtoglide/post-solo-progression" element={<PostSolo />} />
         <Route path="/memberinformation/fleet-and-costs" element={<FleetAndCosts />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/accessibility" element={<Accessibility />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
