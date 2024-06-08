@@ -1,15 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://icgliding.co.uk/</loc>
-  <lastmod>2024-06-07T21:52:42+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.icgliding.co.uk/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/faqs/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/whatisgliding/introduction/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/whatisgliding/soaring/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/whatisgliding/cross-country/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/whatisgliding/aerobatics/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/learningtoglide/join/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/learningtoglide/location/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/learningtoglide/first-trip/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/learningtoglide/pre-solo-training/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/learningtoglide/post-solo-progression/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/memberinformation/fleet-and-costs/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/sitemap/</loc>
+  </url>
+    <url>
+    <loc>https://www.icgliding.co.uk/accessibility/</loc>
+  </url>
+  <url>
+    <loc>https://www.icgliding.co.uk/gallery/</loc>
+  </url>
 </urlset>
