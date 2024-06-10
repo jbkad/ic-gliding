@@ -224,6 +224,7 @@
             transition: width 0.45s ease-in-out;
             box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
             right: 0;
+            overflow-x: hidden;
 
             .social-links {
                 display: flex;
