@@ -96,27 +96,23 @@ export default function Navbar() {
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
                     <div className="br">
                         <div className="nav-items">
-                            <button>
-                                <Link 
-                                    to="/" 
-                                    onClick={handleMenuClick}
-                                    className="nav-item"
-                                    aria-label="Home"
-                                >
-                                    <HomeIcon />
-                                </Link>
-                            </button>
-                            <button>
-                                <Link 
-                                    to="/faqs" 
-                                    onClick={handleMenuClick}
-                                    className="nav-item"
-                                    aria-label="Frequently asked questions"
-                                >
-                                    FAQs
-                                </Link>
-                            </button>
-                            <li>
+                            <Link 
+                                to="/" 
+                                onClick={handleMenuClick}
+                                className="nav-item"
+                                aria-label="Home"
+                            >
+                                <HomeIcon />
+                            </Link>
+                            <Link 
+                                to="/faqs" 
+                                onClick={handleMenuClick}
+                                className="nav-item"
+                                aria-label="Frequently asked questions"
+                            >
+                                FAQs
+                            </Link>
+                            <div>
                                 <button 
                                     onClick={toggleGlidingDropdown}  
                                     className="nav-item"
@@ -160,8 +156,8 @@ export default function Navbar() {
                                         </Link>
                                     </div>
                                 )}
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <button 
                                     onClick={toggleLearningDropdown}  
                                     className="nav-item"
@@ -214,8 +210,8 @@ export default function Navbar() {
                                         </Link>
                                     </div>
                                 )}
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <button 
                                     onClick={toggleMemberDropdown}  
                                     className="nav-item"
@@ -235,17 +231,15 @@ export default function Navbar() {
                                         </Link>
                                     </div>
                                 )}
-                            </li>
-                            <button>
-                                <Link 
-                                    to="/gallery" 
-                                    onClick={handleMenuClick} 
-                                    className="nav-item"
-                                    aria-label="Gallery"
-                                >
-                                    Gallery
-                                </Link>
-                            </button>
+                            </div>
+                            <Link 
+                                to="/gallery" 
+                                onClick={handleMenuClick} 
+                                className="nav-item"
+                                aria-label="Gallery"
+                            >
+                                Gallery
+                            </Link>
                         </div>
                         <div className="social-links">
                             <a href="https://www.instagram.com/icgliding/" 
