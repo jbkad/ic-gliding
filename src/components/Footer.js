@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { navigateTo } from "./utils/Constants";
-import { ReactComponent as MetaIcon } from "../assets/svgs/MetaIcon.svg";
-import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
-import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
+import { instagram_svg, facebook_svg, mail_svg } from "../assets/svgs/navbar";
 import '../styles/components/footer.scss';
 
 export default function Footer () {
@@ -137,19 +135,19 @@ export default function Footer () {
                                 target="blank"
                                 aria-label="Instagram"
                             >
-                                <InstagramIcon />                   
+                                {instagram_svg}                   
                             </a>  
                             <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
                                 target="blank"
                                 aria-label="Meta"
                             >
-                                <MetaIcon />
+                                {facebook_svg}
                             </a>
                             <a href="mailto:gliding@imperial.ac.uk" 
                                 target="blank"
                                 aria-label="E-mail"
                             >
-                                <MailIcon />
+                                {mail_svg}
                             </a> 
                         </div>
                     </div>

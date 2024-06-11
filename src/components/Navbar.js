@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { scrollToTop, navigateTo } from "../components/utils/Constants";
-import { ReactComponent as HomeIcon } from '../assets/svgs/HomeIcon.svg';
-import { ReactComponent as MenuIcon } from '../assets/svgs/MenuIcon.svg';
-import { ReactComponent as ArrowIcon } from '../assets/svgs/chevron-down.svg';
-import { ReactComponent as MetaIcon } from "../assets/svgs/MetaIcon.svg";
-import { ReactComponent as InstagramIcon } from "../assets/svgs/InstagramIcon.svg";
-import { ReactComponent as MailIcon } from "../assets/svgs/MailIcon.svg";
+import { home_svg, menu_svg, arrow_svg, instagram_svg, facebook_svg, mail_svg } from "../assets/svgs/navbar";
 import { Link } from "react-router-dom";
 import '../styles/components/navbar.scss';
 
@@ -91,7 +86,7 @@ export default function Navbar() {
                     </div>
                 </Link>
                 <div className="menu-btn" onClick={handleShowNavbar}>
-                    <MenuIcon />
+                    {menu_svg}
                 </div>
                 <div className={`nav-elements ${showNavbar && 'active'}`}>
                     <div className="br">
@@ -102,7 +97,7 @@ export default function Navbar() {
                                 className="nav-item"
                                 aria-label="Home"
                             >
-                                <HomeIcon />
+                                {home_svg}
                             </Link>
                             <Link 
                                 to="/faqs" 
@@ -118,7 +113,7 @@ export default function Navbar() {
                                     className="nav-item"
                                     aria-label="What is gliding?"
                                 >
-                                    What is gliding? <ArrowIcon />
+                                    What is gliding? {arrow_svg}
                                 </button>
                                 {showWhatIsGlidingItems && (
                                     <div className="dropdown">
@@ -164,7 +159,7 @@ export default function Navbar() {
                                     aria-label="Learning to glide"
 
                                 >
-                                    Learning to glide <ArrowIcon />
+                                    Learning to glide {arrow_svg}
                                 </button>
                                 {showLearningToGlideItems && (
                                     <div className="dropdown">
@@ -217,7 +212,7 @@ export default function Navbar() {
                                     className="nav-item"
                                     aria-label="Member information"
                                 >
-                                    Member information <ArrowIcon />
+                                    Member information {arrow_svg}
                                 </button>
                                 {showMemberInformationItems && (
                                     <div className="dropdown">
@@ -247,16 +242,14 @@ export default function Navbar() {
                                 className="link"
                                 aria-label="Instagram"
                             >
-                                <InstagramIcon />                   
-                                <span>Instagram</span>
+                                {instagram_svg} <span>Instagram</span>
                             </a>  
                             <a href="https://www.facebook.com/ImperialCollegeGlidingClub/"
                                 target="blank"
                                 className="link"
                                 aria-label="Meta"
                             >
-                                <MetaIcon />
-                                <span>Meta</span>
+                                {facebook_svg} <span>Facebook</span>
 
                             </a>
                             <a href="mailto:gliding@imperial.ac.uk" 
@@ -264,8 +257,7 @@ export default function Navbar() {
                                 className="link"
                                 aria-label="Email"
                             >
-                                <MailIcon />
-                                <span>E-mail</span>
+                                {mail_svg} <span>E-mail</span>
                             </a> 
                         </div>
                     </div>
