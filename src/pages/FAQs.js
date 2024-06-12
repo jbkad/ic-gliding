@@ -7,7 +7,7 @@ function AccordionItem({ title, content, isActive, onClick }) {
     <div className="accordion-item">
       <div className="accordion-title" onClick={onClick}>
         <button className="question-container">
-          <h4 className="question">{title}</h4>
+          <div className="question h4">{title}</div>
           <div className="toggle">{isActive ? '×' : '+'}</div>
         </button>
       </div>
