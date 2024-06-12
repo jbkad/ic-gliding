@@ -1,7 +1,7 @@
 import React from "react";
 import '../../styles/components/video.scss';
 
-export default function AerobaticsVideo() {
+function Aerobatics() {
     return (
         <div className="video">
             <div className="container">
@@ -21,3 +21,5 @@ export default function AerobaticsVideo() {
         </div>
     );
 }
+ 
+export { Aerobatics };

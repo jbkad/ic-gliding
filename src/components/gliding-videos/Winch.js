@@ -1,13 +1,13 @@
 import React from "react";
 import '../../styles/components/video.scss';
 
-export default function HomeVideo() {
+function Winch() {
     return (
         <div className="video">
             <div className="container">
                 <iframe 
-                    title="Imperial College Gliding Club - Promo Video"
-                    src="https://www.youtube.com/embed/lgWnXsLf0as?start=9" 
+                    title="Winch Launch"
+                    src="https://www.youtube.com/embed/aZy1urA3Qik?si=lhiV4Um5wAdjQcZB&amp;start=10"
                     allow="
                         accelerometer; 
                         autoplay; 
@@ -15,10 +15,11 @@ export default function HomeVideo() {
                         encrypted-media; 
                         gyroscope; 
                         picture-in-picture"
-                    allowFullScreen={true}
-                >
+                    allowFullScreen={true}>
                 </iframe>
-            </div>
+            </div>                
         </div>
     );
 }
+
+export { Winch };

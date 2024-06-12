@@ -1,6 +1,6 @@
 import React from "react";
 import Committee from "./Committee";
-import HomeVideo from "../components/gliding-videos/HomeVideo";
+import { Promo } from "../components/gliding-videos/Promo";
 import { Slideshow } from "../components/Slideshow";
 import { Link } from "react-router-dom";
 import '../styles/pages/home.scss';
@@ -43,7 +43,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="col-2">
-                        <HomeVideo />
+                        <Promo />
                     </div>
                 </div>
             </section>

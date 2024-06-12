@@ -1,13 +1,13 @@
 import React from "react";
 import '../../styles/components/video.scss';
 
-export default function AerotowVideo() {
+function Promo() {
     return (
         <div className="video">
             <div className="container">
                 <iframe 
-                    title="Aerotow Launch at London Gliding club"
-                    src="https://www.youtube.com/embed/_ibAos8BSlw?si=l1ItYBO_ikMmbjPp&amp;start=5" 
+                    title="Imperial College Gliding Club - Promo Video"
+                    src="https://www.youtube.com/embed/lgWnXsLf0as?start=9" 
                     allow="
                         accelerometer; 
                         autoplay; 
@@ -15,9 +15,12 @@ export default function AerotowVideo() {
                         encrypted-media; 
                         gyroscope; 
                         picture-in-picture"
-                    allowFullScreen={true}>
+                    allowFullScreen={true}
+                >
                 </iframe>
             </div>
         </div>
     );
 }
+
+export { Promo };

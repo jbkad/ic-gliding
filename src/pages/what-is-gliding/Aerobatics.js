@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/pages/aerobatics.scss';
-import AerobaticsVideo from "../../components/gliding-videos/AerobaticsVideo";
+import { Aerobatics as AerobaticsVideo } from "../../components/gliding-videos/Aerobatics";
 
 export default function Aerobatics() {
     return (

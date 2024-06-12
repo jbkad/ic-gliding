@@ -1,13 +1,13 @@
 import React from "react";
 import '../../styles/components/video.scss';
 
-export default function WinchVideo() {
+function Aerotow() {
     return (
         <div className="video">
             <div className="container">
                 <iframe 
-                    title="Winch Launch"
-                    src="https://www.youtube.com/embed/aZy1urA3Qik?si=lhiV4Um5wAdjQcZB&amp;start=10"
+                    title="Aerotow Launch at London Gliding club"
+                    src="https://www.youtube.com/embed/_ibAos8BSlw?si=l1ItYBO_ikMmbjPp&amp;start=5" 
                     allow="
                         accelerometer; 
                         autoplay; 
@@ -17,7 +17,9 @@ export default function WinchVideo() {
                         picture-in-picture"
                     allowFullScreen={true}>
                 </iframe>
-            </div>                
+            </div>
         </div>
     );
 }
+
+export { Aerotow };
