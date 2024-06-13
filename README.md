@@ -29,17 +29,16 @@ Check out your changes on [http://localhost:3000/](http://localhost:3000/).
 #### dev
 The dev branch is where all of the updates from feature/bug branches will be pushed to. When you are ready to push an update to main, you should ensure that the application has been fully tested to confirm that it is works as it should be. 
 
-#### feature-<no>
+#### feature-[num]
 For every new feature, it should have it's own separate branch for these changes to be implemented. The feature number will be based on the corresponding ticket number. All updates made in the main branch should be merged into the feature branch to avoid the branch from having major conflicts. Ensure that this branch is deleted once the feature has been implemented and is merged to the dev branch.
 
-#### bug-<no>
+#### bug-[num]
 This type of branch should be created when a bug is spotted on the main branch. The bug number will be based on the corresponding ticket number. When fixed, merge to the main branch and delete this branch. 
 
 [Find out more about how to structure the project branches.](https://gist.github.com/digitaljhelms/4287848)
 
 ## Commits
-The commit message should be written clearly and meaningfully. Here is how it should be structured: 
-###### <commit type>(optional scope): <sort description>
+The commit message should be written clearly and meaningfully. 
 ``` 
 # example
 feat(location): map img added to file
