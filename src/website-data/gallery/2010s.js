@@ -47,4 +47,21 @@ export const images = [
         src: require("../../assets/gallery/10s/12.jpg"),
         caption: "icGC Summer Tour, Issoudun 2019"
     },
+    {
+        src: require("../../assets/gallery/10s/13.jpg"),
+        caption: "icGC 85th Annual dinner (2015)"
+    },
+    {
+        src: require("../../assets/gallery/10s/14.jpg"),
+        caption: "icGC 85th Annual dinner (2015)"
+    },
+    {
+        src: require("../../assets/gallery/10s/15.jpg"),
+        caption: "icGC 85th Annual dinner (2015)"
+    },
+    {
+        src: require("../../assets/gallery/10s/16.jpg"),
+        caption: "icGC 85th Annual dinner (2015)"
+    },
+
 ];
