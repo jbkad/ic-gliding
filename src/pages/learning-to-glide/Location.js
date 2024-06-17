@@ -16,14 +16,28 @@ export default function Location() {
 
             <h3 className="subheading">By Car</h3>
             <p>We have some members who are able to offer lifts with their own cars.  </p>
-            <div className="address">
-                <p>Please follow directions to:</p>
-                <a href="https://maps.app.goo.gl/6N9rqyPNqGEAu1T36" target="blank">
-                    <div>Lasham Gliding Society</div>
-                    <div>The Avenue</div> 
-                    <div>Alton</div> 
-                    <div>GU34 5SS</div>
-                </a>
+            <div className="card">
+                <div className="container">
+                    <a href="https://maps.app.goo.gl/6N9rqyPNqGEAu1T36" target="blank">
+                        <img 
+                            src={require('../../assets/lasham_map.png')}
+                            alt="Map of the Lasham Gliding Society"
+                            className="img"
+                        />
+                    </a>
+                    <div>
+                        <div className="address">
+                            <p>Please follow directions to:</p>
+                            <a href="https://maps.app.goo.gl/6N9rqyPNqGEAu1T36" target="blank">
+                                <div>Lasham Gliding Society</div>
+                                <div>The Avenue</div> 
+                                <div>Alton</div> 
+                                <div>GU34 5SS</div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
             <h3 className="subheading">By Public Transport</h3>
             <p>There are frequent trains from <span className="highlight">London Waterloo</span> to <span className="highlight">Basingstoke station</span>. From Basingstoke we recommend using {" "}
