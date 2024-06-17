@@ -10,3 +10,14 @@
         }
     }
 } 
+
+@media (max-width: $bs-breakpoint-md) {
+    .location {
+        .card {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
