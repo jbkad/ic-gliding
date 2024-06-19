@@ -1,5 +1,5 @@
 import React from "react";
-import Committee from "./Committee";
+import Committee from "../components/Committee";
 import { Promo } from "../components/gliding-videos/Promo";
 import { Slideshow } from "../components/Slideshow";
 import { Link } from "react-router-dom";
