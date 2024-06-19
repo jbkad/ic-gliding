@@ -101,13 +101,6 @@ body {
   min-height: calc(100vh);
   zoom: 100%;
   margin: 0;
-
-  // position: relative;
-  // min-width: 320px;
-  // min-height: 480px;
-  // margin: 0 auto;
-  // padding: 0 40px;
-  // font-family: "Urbanist", sans-serif;
 }
 
 a  {
@@ -134,14 +127,14 @@ button {
 }
 
 .note {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 200;
   color: #595959;
 }
 
 .caption {
   font-weight: 200;
-  font-size: 16px;
+  font-size: 1rem;
   color: #515151;
 }
 

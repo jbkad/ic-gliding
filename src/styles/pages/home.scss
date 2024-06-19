@@ -8,7 +8,7 @@
         }
 
         .body {
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0 0 50px 0;
         }
 
@@ -82,7 +82,7 @@
             }
 
             .body {
-                font-size: 18px;
+                font-size: 1.1rem;
             }
 
             .links {
@@ -93,13 +93,19 @@
                 }
             }
         }
+
+        .section-3 {    
+            .heading {
+                margin: 20px 0 0 0;
+            }
+        }
     }
 }
 
 @media (max-width: $bs-breakpoint-lg) {
     .home {
         .section-2 {
-            padding: 50px 15px 80px;      
+            padding: 20px 15px 80px;      
     
             .container {
                 display: flex;
