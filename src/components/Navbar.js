@@ -99,14 +99,6 @@ export default function Navbar() {
                             >
                                 {home_svg}
                             </Link>
-                            <Link 
-                                to="/faqs" 
-                                onClick={handleMenuClick}
-                                className="nav-item"
-                                aria-label="Frequently asked questions"
-                            >
-                                FAQs
-                            </Link>
                             <div>
                                 <button 
                                     onClick={toggleGlidingDropdown}  
@@ -227,6 +219,14 @@ export default function Navbar() {
                                     </div>
                                 )}
                             </div>
+                            <Link 
+                                to="/faqs" 
+                                onClick={handleMenuClick}
+                                className="nav-item"
+                                aria-label="Frequently asked questions"
+                            >
+                                FAQs
+                            </Link>
                             <Link 
                                 to="/gallery" 
                                 onClick={handleMenuClick} 
