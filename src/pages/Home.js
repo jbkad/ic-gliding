@@ -3,6 +3,7 @@ import Committee from "../components/Committee";
 import { Promo } from "../components/gliding-videos/Promo";
 import { Slideshow } from "../components/Slideshow";
 import { Link } from "react-router-dom";
+import { navigateTo } from "../components/utils/Constants";
 import '../styles/pages/home.scss';
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
                         <p className="body">
                             <div>Whether you’re looking for a new hobby, an adventure, or just curious about the art of gliding, we’ve got something for everyone. </div>
                             <br />
-                            <div>Interested in finding out more about flying? Head over to our <Link to='whatisgliding/introduction'>'What is gliding?'</Link> and <Link to="/learningtoglide/first-trip">'First flight'</Link> page to dive deeper into the sport. From the basics of how gliders work to the exhilaration of your first solo flight, we cover everything you need to know to get started on your flying journey. </div>
+                            <div>Interested in finding out more about flying? Head over to our <Link to="whatisgliding/introduction" onClick={navigateTo}>'What is gliding?'</Link> and <Link to="/learningtoglide/first-trip" onClick={navigateTo}>'First flight'</Link> page to dive deeper into the sport. From the basics of how gliders work to the exhilaration of your first solo flight, we cover everything you need to know to get started on your flying journey. </div>
                         </p>
                     </div>
                     <div className="col-2">
