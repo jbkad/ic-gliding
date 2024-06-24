@@ -3,7 +3,7 @@
 .home {
     .section-1 {
         .heading {
-            margin: 80px 0 16px 0;
+            margin: 16px 0;
             font-weight: 300;
         }
 
@@ -68,7 +68,7 @@
         }
 
         .heading {
-            margin: 80px 0 0 0;
+            margin: 16px 0;
             font-weight: 300;
         }
     }
@@ -77,10 +77,6 @@
 @media (max-width: $bs-breakpoint-sm) {
     .home {
         .section-1 {
-            .heading {
-                margin: 40px 0 16px 0;
-            }
-
             .body {
                 font-size: 1.1rem;
             }
@@ -91,12 +87,6 @@
                 .link {
                     margin: 10px 0;
                 }
-            }
-        }
-
-        .section-3 {    
-            .heading {
-                margin: 20px 0 0 0;
             }
         }
     }
