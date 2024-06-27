@@ -35,13 +35,13 @@
             align-items: flex-start;    
             
             .heading {
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: 400;
                 inline-size: 150px;
             }
 
             .subheading {
-                font-size: 12px;
+                font-size: 0.75rem;
                 font-weight: 200;
             }
         }
@@ -75,7 +75,7 @@
         font-weight: 200;
         
         .link {
-            font-size: 14px;
+            font-size: 0.8rem;
             text-decoration: none;
             margin: 0 10px 0 0;
             &:hover {
@@ -107,7 +107,7 @@
             }
 
             .address {
-                font-size: 14px;
+                font-size: 0.8rem;
                 color: white;
                 text-decoration: none;
                 font-weight: 200;

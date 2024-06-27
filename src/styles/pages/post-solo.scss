@@ -1,10 +1,6 @@
 @import '../stylesheet.scss';
 
 .post-solo {
-    li {
-        list-style-type: "• ";
-    }
-
     ul {
         color: var(--tertiary-color);
         font-weight: 200;
