@@ -84,6 +84,7 @@
         height: 50px;
         &:hover {
           text-decoration: underline;
+          text-underline-offset: 0.25rem;
         }
 
         .active {
@@ -115,6 +116,8 @@
       &:hover {
         background-color: rgba(255, 255, 255, 0.211);
         transition: ease 0.3s background-color;
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
       }
     }
   }
