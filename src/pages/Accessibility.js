@@ -42,7 +42,7 @@ export default function Accessibility() {
             </p>
             <h2>Feedback and Assistance</h2>
             <p>
-                If you encounter any accessibility issues or have suggestions for improvement, please contact <a href="https://linkedin.com/in/jbkad/" target="blank">Joyce</a> (site manager). We value your input and are here to assist you in any way possible.
+                If you encounter any accessibility issues or have suggestions for improvement, <a href="mailto:gliding@imperial.ac.uk" aria-label="E-mail">please contact us.</a> We value your input and are here to assist you in any way possible.
             </p>
         </div>
     );
