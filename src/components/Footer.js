@@ -104,6 +104,13 @@ export default function Footer () {
                             >
                                 Glide and Seek
                             </a>
+                            <a 
+                                href="https://lashamgliding.com/"
+                                className="link"
+                                aria-label="Lasham gliding"
+                            >
+                                Lasham Gliding
+                            </a>
                         </div>
                     </div>
                 </div>
