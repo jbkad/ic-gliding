@@ -123,9 +123,9 @@ export default function Footer () {
                             className="logo-icl"
                         />
                         <div>
-                            <div className="note">
+                            <a className="note" href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5033166/charity-overview" target="blank">
                                 © 2024 Imperial College Union. Registered Charity No. 1151241 | VAT Reg No. GB 240 5617 84
-                            </div>
+                            </a>
                             <a className="address" href="https://maps.app.goo.gl/8r8WdNV1TJXYMXqr7" target="blank">
                                 Imperial College Union, Beit Quadrangle, Prince Consort Road, London SW7 2BB
                             </a>

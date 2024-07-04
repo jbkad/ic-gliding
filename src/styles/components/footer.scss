@@ -103,7 +103,12 @@
 
         .col-1 {
             .note {
+                display: block;
                 color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             .address {
