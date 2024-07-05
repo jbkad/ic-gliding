@@ -18,19 +18,29 @@ export default function Home() {
                     <br/><br/>
                     ICGC is not only about flying – we believe in building a strong, connected community. Throughout the year, we organise a variety of social events that bring our members together beyond the skies. From lively bar nights to formals, there's always something happening at the gliding club. If this sounds like something you'd be interested in, come for a flight and try it out for yourself!                    
                 </p>
-                <div className="links">
-                    <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
-                        target="blank"
-                        className="link"
-                    >
-                        WhatsApp Group 
-                    </a>
-                    <a href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding" 
-                        target="blank"
-                        className="link"
-                    >
-                        Union Website     
-                    </a>
+                <div className="join-us">
+                    <div className="overlay"></div>
+                    <img src="/assets/slideshow/gliding-3.jpg" className="img" />
+                    <div className="content">
+                        <div className="copy">
+                            <div className="heading">Join us!</div>
+                            <div className="subheading">Ready for adventure? Join our club and experience the exhilaration of gliding.</div>
+                        </div>
+                        <div className="links">
+                            <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
+                                target="blank"
+                                className="btn-link"
+                            >
+                                WhatsApp Group 
+                            </a>
+                            <a href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding" 
+                                target="blank"
+                                className="btn-link"
+                            >
+                                Union Website     
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className="section-2">
