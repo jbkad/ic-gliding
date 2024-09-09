@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="copy">
                     <h1 className="heading">Meet the commitee</h1>
                     <p className="subheading">
-                        Our 2023/24 committee is dedicated to making your gliding experience unforgettable. From organising training sessions to planning social events, they work tirelessly to ensure the club runs smoothly. Get to know the individuals who keep the club running!
+                        Our 2024/25 committee is dedicated to making your gliding experience unforgettable. From organising training sessions to planning social events, they work tirelessly to ensure the club runs smoothly. Get to know the individuals who keep the club running!
                     </p>
                 </div>
                 <Committee />
