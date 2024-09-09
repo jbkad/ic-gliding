@@ -1,51 +1,44 @@
 export const data = [
     {
-        image: "assets/committee/Matthew.png",
-        name: "Matthew Homa",
+        name: "Aidan Clark",
         position: "Captain",
         course: "Aeronautical Engineering",
         year: "3"
     },
     {
-        image: "assets/committee/Sam.png",
-        name: "Sam Manyak",
+        name: "Tomasz Tomaszeski",
         position: "Vice Captain",
-        course: "Product Design",
-        year: "2 Masters"
-    },
-    {
-        image: "assets/committee/Lincoln.png",
-        name: "Lincoln Hung",
-        position: "Secretary",
-        course: "Aeronautical Engineering",
+        course: "Design Engineering",
         year: "4"
     },
     {
-        image: "assets/committee/Alfred.png",
-        name: "Alfred Beadman",
-        position: "Junior Treasurer",
+        name: "Luca Doltu",
+        position: "Secretary",
         course: "Medicine",
-        year: "3"
+        year: "4"
     },
     {
-        image: "assets/committee/Aidan.png",
-        name: "Aidan Clark",
-        position: "Publicity",
-        course: "Aeronautical Engineering",
+        name: "Pak Liu",
+        position: "Junior Treasurer",
+        course: "Chemistry",
         year: "2"
     },
     {
-        image: "assets/committee/Alex.png",
-        name: "Alexander Hook",
+        name: "Benjamin Tan",
+        position: "Publicity",
+        course: "Mechanical Engineering",
+        year: "3"
+    },
+    {
+        name: "Matthew Homa",
         position: "Equipment Officer",
         course: "Aeronautical Engineering",
         year: "4"
     },
     {
-        image: "assets/committee/Tomasz.png",
-        name: "Tomasz Tomaszewski",
+        name: "Sihan Gao",
         position: "Trip Officer",
         course: "Design Engineering",
-        year: "3"
+        year: "2"
     },
 ];
