@@ -17,7 +17,6 @@ export default function Gallery() {
         <div className="decades">
             <h1 className="header">Gallery</h1>
             <Decade images={img20s} decade="2020" />
-            <div className="caption">New images coming soon!</div>
             <Decade images={img10s} decade="2010" />
             <Decade images={img00s} decade="2000" />
             <div className="caption">New images coming soon!</div>
