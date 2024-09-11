@@ -55,7 +55,6 @@ export default function Decade({ images, decade }) {
                 {showModal && (
                     <div 
                         className={`modal ${showModal ? 'show' : ''}`}
-                        // onClick={closeModal}
                     >
                         <div className="tools">
                             <div className="arrows">
