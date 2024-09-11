@@ -13,7 +13,7 @@ import { images as img30s } from "../gallery/1930s";
 export const data = [
     { images: img20s, decade: "2020" },
     { images: img10s, decade: "2010" },
-    { images: img00s, decade: "2000", caption: "New images coming soon!" },
+    { images: img00s, decade: "2000" },
     { images: img90s, decade: "1990" },
     { images: img80s, decade: "1980", caption: "New images coming soon!" },
     { images: img70s, decade: "1970" },
