@@ -17,6 +17,7 @@ import FAQs from './pages/FAQs';
 import Sitemap from './pages/Sitemap';
 import Accessibility from './pages/Accessibility';
 import './styles/stylesheet.scss';
+import Error from './pages/Error';
 
 export default function App() {
 
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/accessibility" element={<Accessibility />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>
