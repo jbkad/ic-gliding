@@ -15,7 +15,7 @@ export default function Gallery() {
                 </div>
             ))}
             <div className="caption">
-                To view more images and discover further about our club’s history, check out <a href="google" target="blank">the Archive</a>.
+                To view more images and discover further about our club’s history, check out <a href="https://www.icgcarchive.co.uk/" target="blank">the ICGC Archive</a>.
             </div>
         </div>
     );
