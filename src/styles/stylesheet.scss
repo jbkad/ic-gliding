@@ -142,6 +142,43 @@ li {
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  height: fit-content;
+  width: 180px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary-color);
+
+  &:hover {
+    background-color: #0a5dbd;
+    transform: scale(1.05);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-secondary {
+  color: #0a5dbd;
+  background-color: white;
+
+  &:hover {
+    // background-color: #0a5dbd;
+    transform: scale(1.05);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .highlight {
