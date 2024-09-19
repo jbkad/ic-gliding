@@ -68,7 +68,6 @@ export default function Home() {
       <section className="section-2">
         <div className="container">
           <div className="col-1">
-            {/* <Promo /> */}
             <img
               src={require("../assets/gallery/00s/1.jpg")}
               alt="Student glider pilot in action."

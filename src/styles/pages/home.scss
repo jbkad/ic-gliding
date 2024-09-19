@@ -23,6 +23,7 @@
       border-radius: 5px;
 
       .img {
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -106,10 +107,11 @@
     }
 
     .col-2 {
-      position: relative;
       display: flex;
       flex-direction: column;
       padding: 6rem 4rem 4rem;
+      align-items: left;
+      text-align: left;
       height: 100%;
 
       .heading {
@@ -136,6 +138,7 @@
     margin: 0 auto;
 
     .copy {
+      display: block;
       text-align: flex-start;
       margin: 0 0 30px 0;
     }
@@ -158,6 +161,8 @@
       }
 
       .col-2 {
+        text-align: center;
+        align-items: center;
         padding: 2rem;
       }
     }
@@ -174,17 +179,32 @@
       .join-us {
         overflow: hidden;
 
-        .content {
-          display: flex;
-          flex-direction: column;
+        .overlay {
+          background: transparent;
         }
 
         .img {
-          position: relative;
+          display: none;
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+
+          .copy {
+            display: none;
+
+            .subheading {
+              max-width: -webkit-fill-available;
+            }
+          }
         }
 
         .btn-link {
           display: block;
+          width: -webkit-fill-available;
+          text-align: center;
         }
       }
     }
