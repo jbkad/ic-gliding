@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
 
   .menu-btn {
@@ -50,7 +50,7 @@
   .nav-elements {
     display: flex;
     border: 1px solid #004a9f21;
-    background-color: var(--bg-color);
+    background-color: $bg-color;
     transition: background-color 1s ease-out;
     height: 50px;
 
@@ -71,7 +71,7 @@
         position: relative;
         font-size: 1rem;
         font-family: "Urbanist", sans-serif;
-        color: var(--primary-color);
+        color: $primary-color;
         font-weight: 300;
         text-decoration: none;
         width: fit-content;
@@ -99,7 +99,7 @@
     width: 300px;
     position: absolute;
     margin: 1px 0 0 0;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
     z-index: 1;
 
     .item {
@@ -122,16 +122,16 @@
 
     .link {
       color: white;
-      background-color: var(--primary-color);
-      border: 0.5px solid var(--primary-color);
+      background-color: $primary-color;
+      border: 0.5px solid $primary-color;
       display: flex;
       padding: 5px;
       margin: 0 4px;
       border-radius: 50%;
       &:hover {
-        color: var(--primary-color);
+        color: $primary-color;
         background-color: white;
-        border: 0.5px solid var(--primary-color);
+        border: 0.5px solid $primary-color;
         transition: all 0.15s ease-in;
       }
     }
@@ -178,7 +178,7 @@
     }
 
     .nav-elements {
-      background-color: var(--primary-color);
+      background-color: $primary-color;
       position: fixed;
       top: 0;
       right: 0;
@@ -213,7 +213,7 @@
     .nav-elements.active {
       height: 100vh;
       width: 300px;
-      background-color: var(--primary-color);
+      background-color: $primary-color;
       transition: width 0.45s ease-in-out;
       box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
       right: 0;

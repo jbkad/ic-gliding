@@ -3,7 +3,7 @@
 .costs {
     border-collapse: collapse;
     font-weight: 200;
-    color: var(--primary-color);
+    color: $primary-color;
  
     td {
         border: 0.5px solid #ddd;
@@ -17,7 +17,7 @@
 
     .heading {
         color: white;
-        background-color: var(--primary-color);
+        background-color: $primary-color;
         font-weight: 300;
     }
 

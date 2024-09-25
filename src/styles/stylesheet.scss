@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
-  --bg-color: #f5f5f7;
-  --primary-color: #004a9f;
-  --secondary-color: #01baef;
-  --tertiary-color: #2c4f77;
-}
+$bg-color: #f5f5f7;
+$primary-color: #004a9f;
+$secondary-color: #01baef;
+$tertiary-color: #2c4f77;
 
 $bs-breakpoint-xs: 280px;
 $bs-breakpoint-sm: 576px;
@@ -47,7 +45,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 h1,
@@ -115,7 +113,7 @@ h6,
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   font-family: "Urbanist", sans-serif;
   height: 100%;
   min-height: calc(100vh);
@@ -124,19 +122,19 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: $primary-color;
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
 
 p {
-  color: var(--tertiary-color);
+  color: $tertiary-color;
   font-weight: 300;
 }
 
 li {
   list-style-type: "▪ ";
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 button {
@@ -161,7 +159,7 @@ button {
 
 .btn-primary {
   color: white;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
 
   &:hover {
     background-color: #0a5dbd;
@@ -185,7 +183,7 @@ button {
   color: white;
   padding: 0 5px;
   font-weight: 300;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
 }
 
 .note {

@@ -1,6 +1,8 @@
+@import '../stylesheet.scss';
+
 .error {
   .status-code {
-    color: var(--primary-color);
+    color: $primary-color;
     font-size: 12px;
     text-transform: uppercase;
   }
