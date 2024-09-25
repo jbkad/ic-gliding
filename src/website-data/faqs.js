@@ -57,10 +57,10 @@ export const data = [
             <ul>
                 <li>If you find that you are unavailable for a trip, please inform us immediately so we can allocate your seat to someone on the reserve list. We kindly ask that you only sign up for trips if you are certain of your availability. Please refrain from making other weekend commitments until you've checked the flying/reserve lists released every Wednesday. </li>
                 <li>Members who sign up for a weekend trip but then cancel or fail to confirm their attendance after the flying/reserve list is released on Wednesday will face the following suspension periods from flying: </li>
-                    <li>▪ <strong>Canceling before Thursday (6pm): </strong> Two weeks</li>
-                    <li>▪ <strong>Canceling between Thursday (6pm) and Friday (6pm): </strong> Three weeks </li>
-                    <li>▪ <strong>Canceling after Friday (6pm): </strong> Four weeks </li>
-                    <li>▪ <strong>Not turning up in the morning: </strong> Four weeks </li>
+                    <li>- <strong>Canceling before Thursday (6pm): </strong> Two weeks</li>
+                    <li>- <strong>Canceling between Thursday (6pm) and Friday (6pm): </strong> Three weeks </li>
+                    <li>- <strong>Canceling after Friday (6pm): </strong> Four weeks </li>
+                    <li>- <strong>Not turning up in the morning: </strong> Four weeks </li>
             </ul>
         `,
   },
@@ -81,9 +81,9 @@ export const data = [
     title: "What does the Imperial College Gliding Club membership include?",
     content: `
             <ul>
-                <li>▪ You will have access to our glider fleet (two-seater Grob 103, single-seater Discus, single-seater ASW 24). </li>
-                <li>▪ You can join day trips on Saturdays and Sundays where you will have access to our glider fleet: <a href="/memberinformation/fleet-and-costs" target="blank">a two-seater Grob Twin Acro III, single-seater Discus bW and single-seater ASW24 </a>. The committee will organise transportation and find you an instructor. The ICGC will sign you up as a daily guest at Lasham for your first 3 trips. </li>
-                <li>▪ You may receive a Lasham Gliding Society annual full membership through the icGC. As a Declared Training Organisation (DTO), Lasham requires their students to be full members after coming 3 times as guests. We have limited budget for purchasing Lasham memberships, therefore they will only be given to committed and keen people who would come gliding regularly. </li>
+                <li>- You will have access to our glider fleet (two-seater Grob 103, single-seater Discus, single-seater ASW 24). </li>
+                <li>- You can join day trips on Saturdays and Sundays where you will have access to our glider fleet: <a href="/memberinformation/fleet-and-costs" target="blank">a two-seater Grob Twin Acro III, single-seater Discus bW and single-seater ASW24 </a>. The committee will organise transportation and find you an instructor. The ICGC will sign you up as a daily guest at Lasham for your first 3 trips. </li>
+                <li>- You may receive a Lasham Gliding Society annual full membership through the icGC. As a Declared Training Organisation (DTO), Lasham requires their students to be full members after coming 3 times as guests. We have limited budget for purchasing Lasham memberships, therefore they will only be given to committed and keen people who would come gliding regularly. </li>
             </ul>
         `,
   },
@@ -101,8 +101,8 @@ export const data = [
     content: `
             <ul>
                 <li>To obtain a Sailplane Pilot License (SPL), you will need to complete both the Bronze and Cross-Country Endorsements: </li>
-                <li><strong>Bronze Endorsement: </strong> This involves passing a written theory test as well as a practical flying skills test. </li>
-                <li><strong>Cross-Country Endorsement: </strong>This includes a Navigation Test and a Field Landing Test to demonstrate your ability to fly cross-country safely. </li>
+                <li>- <strong>Bronze Endorsement: </strong> This involves passing a written theory test as well as a practical flying skills test. </li>
+                <li>- <strong>Cross-Country Endorsement: </strong>This includes a Navigation Test and a Field Landing Test to demonstrate your ability to fly cross-country safely. </li>
             </ul>
         `,
   },
