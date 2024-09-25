@@ -99,6 +99,7 @@ export default function Footer() {
               <a
                 href="https://glideandseek.com/"
                 className="link"
+                target="blank"
                 aria-label="Glide and seek"
               >
                 Glide and Seek
@@ -106,6 +107,7 @@ export default function Footer() {
               <a
                 href="https://www.lashamgliding.com/"
                 className="link"
+                target="blank"
                 aria-label="Lasham gliding"
               >
                 Lasham Gliding
