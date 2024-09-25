@@ -1,7 +1,7 @@
 @import '../stylesheet.scss';
 
 .footer {
-    background-color:  var(--primary-color);
+    background-color:  $primary-color;
     position: relative;
     padding: 15px;
     bottom: 0;
@@ -138,12 +138,12 @@
                     margin: 0 0 0 8px;
                     border-radius: 50%;
                     color: white;
-                    background-color: var(--primary-color);
+                    background-color: $primary-color;
                     border: 0.5px solid white;
                     &:hover {
-                        color: var(--primary-color);
+                        color: $primary-color;
                         background-color: white;
-                        border: 0.5px solid var(--primary-color);
+                        border: 0.5px solid $primary-color;
                         transition: all 0.15s ease-in;
                     }
                 }
