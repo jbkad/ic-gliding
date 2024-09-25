@@ -3,18 +3,16 @@ export const data = [
     title: "Do I require any experience to fly?",
     content: `
             <ul>
-                <li>Most of our members joined with no flying experience. You will be flying in a two-seater glider with an instructor at the back to teach you. </li>
-                <li>Your instructor will be handling the takeoff and landing for the first few flights, you will do the rest! </li>
-            </ul>
+                <li>Not at all! Most of our members started with no prior flying experience. You'll be flying in a two-seater glider with an instructor behind you to guide you through the process. For your first few flights, the instructor will handle takeoff and landing, while you'll take the controls for the rest of the flight! </li>
+            </li>
         `,
   },
   {
     title: "How do I sign up for day trips on Saturdays or Sundays? ",
     content: `
             <ul>
-                <li> If you have joined our <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d" target="blank">WhatsApp group</a>, you should receive a sign-up form every <span>Monday at 21:30.</span> The form will close every <span>Tuesday at 21:30.</span> </li>
-                <li>Flying & reserve lists for that weekend’s trip will be sent out every <span>Wednesday at 21:30.</span> </li>
-                <li>If you see your name on the flying or reserve list, join the corresponding WhatsApp groups by <span>Thursday 21:30</span> to confirm your attendance. Otherwise, your spot might be given to members on the reserve list. </li>
+                <li>If you're in our <a href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d" target="blank">WhatsApp group</a>, you'll receive a link for a sign-up form every Monday at 21:30. The form closes on Tuesday at 21:30. </li>
+                <li>By Wednesday at 21:30, we’ll share the flying and reserve lists for the upcoming weekend’s trip. If you see your name on either list, make sure to join the relevant WhatsApp group by Thursday at 21:30 to confirm your spot. If you don't, your place may be given to someone on the reserve list. </li>
             </ul>
         `,
   },
@@ -22,9 +20,8 @@ export const data = [
     title: "How does the committee decide who’s going on the trips?",
     content: `
             <ul>
-                <li>We aim to fly everyone at least once before the end of October. </li>
-                <li>For the first two weeks, seats will be allocated to members who bought the Gliding Club membership early (on the day of the Fresher’s Fair). After most people have at least one go, we will start prioritising the people with the fewest flights. </li>
-                <li>If you can drive, you may get priority. Please <a href="mailto:gliding@imperial.ac.uk" target="blank">email us</a> if this is the case.</li>
+                <li>Our goal is to ensure everyone gets at least one flight before the end of October. During the first two weeks of the academic year, priority will be given to those who purchased their Gliding Club membership early (on the day of the Fresher’s Fair). After most members have had a chance to fly, we’ll prioritise those with the fewest flights. </li>
+                <li>If you can drive, you may receive priority. Please <a href="mailto:gliding@imperial.ac.uk?subject=Request%20-%20Priority%20To%20Fly%20Due%20to%20Driving%20Availability" target="blank">email us</a> to let us know if you're available to help with transport. </li>
             </ul>
         `,
   },
@@ -41,7 +38,8 @@ export const data = [
     title: "How do I get to Lasham Airfield?",
     content: `
             <ul>
-                <li>If you are coming with us on a trip on Saturdays or Sundays, the committee will organise you to take either a train and taxi, minibus, or a ride in a member’s car. </li>
+                <li>If you choose to travel with the club, the committee will handle the trip arrangements. We typically use a combination of transport options, including trains with taxis, a minibus, or catching a ride in a member’s car. </li>
+                <li>Check out the <a href="/learningtoglide/location">'Where do we fly?'</a> page for more information. </li>
             </ul>
         `,
   },
@@ -49,22 +47,7 @@ export const data = [
     title: "How much will it cost?",
     content: `
             <ul>
-                <li>The Imperial College Gliding Club annual membership must be purchased before any flying activities due to insurance requirements. It can be purchased from the <a href="https://www.imperialcollegeunion.org/shop/csp/gliding/gliding-membership-23-24" target="blank">union shop</a> for £50. </li>
-                <li>These costs will be charged accordingly at the end of each flying day: </li>
-                <li> • Minibus / private car to Lasham Airfield with return - £16  </li>
-                <li> • Train tickets between Clapham Junction and Basingstoke - at your own costs </li>
-                <li> • Transport between Basingstoke and Lasham Airfield - £12 </li>
-                <li> • Winch Launch - £10 </li>
-                <li> • Aerotow to 2000 feet - £43 </li>
-                <li> • Aerotow additional 500 feet - £4.45 </li>
-                <li> • Time in the air - £0.30 per minute (minimum charge 7 minutes) </li>
-
-                <br />
-                <li>Example</li>
-                <li> • 10 minute flight off a winch: £13 (the vast majority of your training flights will cost about this) </li>
-                <li> • 30 minute flight off a winch: £19 </li>
-                <li> • 1h flight off a winch: £28 </li>
-                <li> • 20 minute flight from 2000ft aerotow: £49 </li>
+                <li>Due to insurance requirements, the Imperial College Gliding Club annual membership must be purchased from the <a href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding" target="blank">union shop</a> (£50) before any flying activities. Check out the <a href="/memberinformation/fleet-and-costs" target="blank">'Fleet and costs'</a> page for more information about the general costs of gliding at the club. </li>
             </ul>
         `,
   },
@@ -72,15 +55,12 @@ export const data = [
     title: "What if I am no longer available for a trip?",
     content: `
             <ul>
-                <li>Please tell us immediately so we can allocate your seat to someone else on the reserve list. </li>
-                <li>Members who signed up for the weekend using the link but canceled or did not confirm their attendance following the release of the flying/reserve list on Wednesday <span>will be suspended from flying</span> for the following number of weeks: </li>
-                <ul classname="trip-cancellation">
-                    <li>Canceling before Thursday 6pm: two weeks</li>
-                    <li>Canceling between Thursday 6pm and Friday 6pm: three weeks </li>
-                    <li>Canceling after Friday 6pm: four weeks </li>
-                    <li>Not turning up in the morning: four weeks </li>
-                </ul>
-                <li>Please sign up for trips only if you are free. Do not arrange other activities for the weekend until you've checked the flying/reserve lists which are released every Wednesday. </li>
+                <li>If you find that you are unavailable for a trip, please inform us immediately so we can allocate your seat to someone on the reserve list. We kindly ask that you only sign up for trips if you are certain of your availability. Please refrain from making other weekend commitments until you've checked the flying/reserve lists released every Wednesday. </li>
+                <li>Members who sign up for a weekend trip but then cancel or fail to confirm their attendance after the flying/reserve list is released on Wednesday will face the following suspension periods from flying: </li>
+                    <li>▪ <strong>Canceling before Thursday (6pm): </strong> Two weeks</li>
+                    <li>▪ <strong>Canceling between Thursday (6pm) and Friday (6pm): </strong> Three weeks </li>
+                    <li>▪ <strong>Canceling after Friday (6pm): </strong> Four weeks </li>
+                    <li>▪ <strong>Not turning up in the morning: </strong> Four weeks </li>
             </ul>
         `,
   },
@@ -88,30 +68,22 @@ export const data = [
     title: "What launch methods are available?",
     content: `
             <ul>
-                <li><span>Winch launch:</span> The glider is attached to a long cable, which is wound in by a powerful engine on the opposite end of the runway. The glider is then quickly accelerated and launched into the air launching you about 1500ft above the ground. Winching is the cheapest (and most exciting) launch method we have! </li>
-                <li><span>Aerotow launch:</span> This method utilises a powered aircraft and a rope to tow the glider to a certain height. It’s much more expensive, but also gentler. </li>
-                <li>If you wish to try both, we recommend you try the aerotow first because it is much gentler and provides more height/time for flying. </li>
-                <li>To find out more about how we fly, check out the <a href="/whatisgliding/introduction">'What is gliding?'</a> page.</li>
+                <li>We offer two launch methods: winch launches and aerotows. If you’re keen to experience both, we suggest starting with an aerotow. It’s a smoother launch, giving you more altitude and time in the air—though it’s also more costly. For a more thrilling (and budget-friendly) option, winch launching is our most affordable and exciting method! </li>
+                <li>To find out more about how we fly, check out the <a href="/whatisgliding/introduction" target="blank">'What is gliding?'</a> page.</li>
             </ul>
         `,
   },
   {
     title: "Can I use a GoPro while flying?",
-    content: `
-            <ul>
-                <li>Ask your instructor! They will usually allow this if you ask nicely. </li>
-                <li>Prepare a suction mount. Ask a committee member/experienced member to help you mount it onto the glider canopy. </li>
-            </ul>
-        `,
+    content: `Yes, but make sure to ask your instructor first! They're usually happy to allow it if you ask politely. Bring a suction mount with you, and feel free to ask a committee or experienced member to assist in mounting it securely onto the glider canopy. `,
   },
   {
     title: "What does the Imperial College Gliding Club membership include?",
     content: `
             <ul>
-                <li>You will have access to our glider fleet (two-seater Grob 103, single-seater Discus, single-seater ASW 24). </li>
-                <li>You can join day trips on Saturdays and Sundays. The committee will organise transportation and find you an instructor. </li>
-                <li>The icGC could sign you up as a daily guest at Lasham for your first 3 trips. </li>
-                <li>You may receive a Lasham Gliding Society annual full membership through the icGC. As a Declared Training Organisation (DTO), Lasham requires their students to be full members after coming 3 times as guests. We have limited budget for purchasing Lasham memberships, they will only be given to committed and keen people who would come gliding regularly. </li>
+                <li>▪ You will have access to our glider fleet (two-seater Grob 103, single-seater Discus, single-seater ASW 24). </li>
+                <li>▪ You can join day trips on Saturdays and Sundays where you will have access to our glider fleet: <a href="/memberinformation/fleet-and-costs" target="blank">a two-seater Grob Twin Acro III, single-seater Discus bW and single-seater ASW24 </a>. The committee will organise transportation and find you an instructor. The ICGC will sign you up as a daily guest at Lasham for your first 3 trips. </li>
+                <li>▪ You may receive a Lasham Gliding Society annual full membership through the icGC. As a Declared Training Organisation (DTO), Lasham requires their students to be full members after coming 3 times as guests. We have limited budget for purchasing Lasham memberships, therefore they will only be given to committed and keen people who would come gliding regularly. </li>
             </ul>
         `,
   },
@@ -120,7 +92,7 @@ export const data = [
     content: `
             <ul>
                 <li>Flying solo! </li>
-                <li><a href="" target="blank">The Lasham website</a> suggests the average number of training flights to solo is 80-120. </li>
+                <li><a href="https://www.lashamgliding.com/" target="blank">The Lasham website</a> suggests the average number of training flights to solo is 80-120. </li>
             </ul>
         `,
   },
@@ -128,9 +100,9 @@ export const data = [
     title: "How can I obtain a license? ",
     content: `
             <ul>
-                <li>The Sailplane Pilot License (SPL) consists of Bronze and Cross-Country Endorsements. </li>
-                <li>The Bronze Endorsement includes a written theory test and a flying skills test. </li>
-                <li>The Cross-Country Endorsement includes a Navigation and Field Landing Test. </li>
+                <li>To obtain a Sailplane Pilot License (SPL), you will need to complete both the Bronze and Cross-Country Endorsements: </li>
+                <li><strong>Bronze Endorsement: </strong> This involves passing a written theory test as well as a practical flying skills test. </li>
+                <li><strong>Cross-Country Endorsement: </strong>This includes a Navigation Test and a Field Landing Test to demonstrate your ability to fly cross-country safely. </li>
             </ul>
         `,
   },
@@ -138,7 +110,7 @@ export const data = [
     title: "What if I have previous flying/gliding experience?",
     content: `
             <ul>
-                <li> <a href="mailto:gliding@imperial.ac.uk" target="blank">Come and talk to us!</a> You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). </li>
+                <li> <a href="mailto:gliding@imperial.ac.uk?subject=New%20Member%20Query%20-%20I%20Have%20Flying%20Experience" target="blank">Come and talk to us!</a> You might meet the requirements for flying one of our single-seaters (Discus or ASW 24). </li>
             </ul>
         `,
   },
