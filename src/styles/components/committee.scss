@@ -1,69 +1,62 @@
-@import '../stylesheet.scss';
-
+@import "../stylesheet.scss";
 
 .committee {
-    .member {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        font-weight: 200;
+  .member {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-weight: 200;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0, 5%);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+
+    .headshot {
+      height: auto;
+      min-height: 10vh;
+      max-width: 100%;
+      border-radius: 50%;
+      margin: 10px 0 30px 0;
     }
 
-    .profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;  
-        background-color: #fff;
-        border: 1px solid rgb(0, 0, 0, 5%);
-        padding: 20px;
-        width: auto;
-        height: auto;
-        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-        transition: all 0.3s ease-out;
-        
-        &:hover {
-            transform: translateY(-5px) scale(1.005) translateZ(0);
-            box-shadow: 0 24px 36px #2c4f775b;
-        }
-
-        .headshot {
-            height: auto;
-            min-height: 10vh;
-            max-width: 100%;
-            border-radius: 50%;
-            margin: 10px 0 30px 0;
-        }
-
-        .name {
-            font-size: 1.25rem;
-        }
-
-        .position {
-            border-radius: 5px;
-            padding: 10px;
-            margin: 5px 0;
-            color: white;
-            background-color: $primary-color;
-        }
+    .name {
+      font-size: 1.25rem;
     }
+
+    .position {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px 0;
+      color: white;
+      background-color: $primary-color;
+    }
+  }
 }
 
 @media (max-width: $bs-breakpoint-lg) {
-    .committee {
-        .member {
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
+  .committee {
+    .member {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
     }
+  }
 }
 
 @media (max-width: $bs-breakpoint-sm) {
-    .committee {
-        .member {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+  .committee {
+    .member {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
+  }
 }
