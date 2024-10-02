@@ -1,24 +1,26 @@
-@import '../stylesheet.scss';
+@import "../stylesheet.scss";
 
 .soaring {
-    .caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  @include marginals;
+
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: $bs-breakpoint-sm) {
-    .soaring {
-        .card {
-            .container {
-                display: flex;
-                flex-direction: column;
-            }
+  .soaring {
+    .card {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
 
-            .caption {
-                margin: 10px 0;
-            }
-        }
+      .caption {
+        margin: 10px 0;
+      }
     }
+  }
 }

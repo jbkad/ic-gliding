@@ -1,10 +1,12 @@
-@import '../stylesheet.scss';
+@import "../stylesheet.scss";
 
 .post-solo {
-    ul {
-        color: $tertiary-color;
-        font-weight: 200;
-        margin: 0 0 0 15px;
-        padding: 0;
-    }
+  @include marginals;
+
+  ul {
+    color: $secondary-color;
+    font-weight: 200;
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
 }

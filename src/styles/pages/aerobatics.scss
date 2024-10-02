@@ -1,30 +1,32 @@
-@import '../stylesheet.scss';
+@import "../stylesheet.scss";
 
 .aerobatics {
-    .body {
-        margin: 0;
-    }    
+  @include marginals;
 
-    .caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
+  .body {
+    margin: 0;
+  }
 
-.aerobatics .caption {
+  .caption {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.aerobatics .caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: $bs-breakpoint-md) {
-    .aerobatics {
-        .card {
-            .container {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+  .aerobatics {
+    .card {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
 }

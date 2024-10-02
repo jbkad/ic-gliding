@@ -1,6 +1,8 @@
 @import "../stylesheet.scss";
 
 .decades {
+  @include marginals;
+
   .caption {
     text-align: center;
     text-decoration: none;

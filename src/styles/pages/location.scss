@@ -1,23 +1,25 @@
-@import '../stylesheet.scss';
+@import "../stylesheet.scss";
 
 .location {
-    .address {
-        display: flex;
-        flex-direction: column;
+  @include marginals;
 
-        p {
-            margin: 0;
-        }
+  .address {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0;
     }
-} 
+  }
+}
 
 @media (max-width: $bs-breakpoint-md) {
-    .location {
-        .card {
-            .container {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+  .location {
+    .card {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
 }

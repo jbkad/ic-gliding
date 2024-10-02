@@ -1,20 +1,22 @@
-@import '../stylesheet.scss';
+@import "../stylesheet.scss";
 
 .xc {
-    .caption {
-        display: flex;
-        align-items: center;
-        justify-content: center
-    }
+  @include marginals;
+
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: $bs-breakpoint-md) {
-    .xc {
-        .card {
-            .container {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+  .xc {
+    .card {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
 }

@@ -1,9 +1,11 @@
 @import "../stylesheet.scss";
 
 .faqs {
+  @include marginals;
+
   hr {
-    height: 0.5px;
-    background-color: #004a9f;
+    height: 1px;
+    background-color: $secondary-color;
     border: none;
   }
 

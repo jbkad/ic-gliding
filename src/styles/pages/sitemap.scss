@@ -1,6 +1,8 @@
 @import "../stylesheet.scss";
 
 .sitemap {
+  @include marginals;
+
   label {
     display: block;
     font-size: 1.5em;
