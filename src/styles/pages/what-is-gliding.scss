@@ -1,0 +1,15 @@
+@import "../stylesheet.scss";
+
+.what-is-gliding {
+  @include marginals;
+}
+
+@media (max-width: $bs-breakpoint-md) {
+  .what-is-gliding {
+    .card {
+      .container {
+        display: contents;
+      }
+    }
+  }
+}
