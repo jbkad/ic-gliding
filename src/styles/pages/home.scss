@@ -1,10 +1,15 @@
 @import "../stylesheet.scss";
 
 .home {
-  .section-1 {
+  .section-1,
+  .section-2,
+  .section-3 {
     max-width: 1000px;
-    padding: 20px 15px 50px;
     margin: 0 auto;
+  }
+
+  .section-1 {
+    padding: 20px 15px 0;
 
     .heading {
       margin: 16px 0;
@@ -83,9 +88,7 @@
   }
 
   .section-2 {
-    max-width: 1000px;
-    padding: 50px 15px;
-    margin: 0 auto;
+    padding: 20px 15px;
 
     .container {
       background-color: $primary-color;
@@ -133,9 +136,7 @@
   }
 
   .section-3 {
-    max-width: 1000px;
-    padding: 20px 15px 80px;
-    margin: 0 auto;
+    padding: 20px 15px 100px;
 
     .copy {
       display: block;
