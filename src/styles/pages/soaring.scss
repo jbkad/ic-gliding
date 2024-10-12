@@ -3,10 +3,15 @@
 .soaring {
   @include marginals;
 
-  .caption {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  // .caption {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  .name {
+    margin: 0 0 10px 0;
+    padding: 0;
   }
 }
 
