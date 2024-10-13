@@ -2,6 +2,11 @@
 
 .what-is-gliding {
   @include marginals;
+
+  .subheading {
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: $bs-breakpoint-md) {
@@ -9,6 +14,10 @@
     .card {
       .container {
         display: contents;
+
+        .subheading {
+          margin: 10px 0;
+        }
       }
     }
   }
