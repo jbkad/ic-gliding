@@ -194,16 +194,11 @@
         overflow: hidden;
 
         .overlay {
-          // background: linear-gradient(
-          //   to top,
-          //   rgba(10, 93, 189, 0.8) 20%,
-          //   rgba(0, 0, 0, 0.05) 90%
-          // );
           background: transparent;
         }
 
         .img {
-          position: relative;
+          display: none;
         }
 
         .content {
@@ -212,8 +207,6 @@
           color: white;
 
           .copy {
-            // display: none;
-
             .subheading {
               max-width: -webkit-fill-available;
             }
