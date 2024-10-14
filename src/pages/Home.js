@@ -42,17 +42,46 @@ export default function Home() {
             <div className="copy">
               <div className="heading">Join us!</div>
               <div className="subheading">
-                Ready for adventure? Join our club and experience the
-                exhilaration of gliding.
+                Whether you’re looking for a new hobby, or just curious about
+                the art of gliding, we’ve got something for everyone.
+                <br />
+                <br />
+                Head over to the{" "}
+                <Link
+                  to="whatisgliding/introduction"
+                  onClick={navigateTo}
+                  className="link"
+                >
+                  'What is gliding?'
+                </Link>{" "}
+                and{" "}
+                <Link
+                  to="/learningtoglide/first-trip"
+                  className="link"
+                  onClick={navigateTo}
+                >
+                  'First flight'
+                </Link>{" "}
+                pages to dive deeper into the sport, where you will find the
+                basics of how gliders work to the process of your first flight -
+                we cover everything you need to know to get started on your
+                flying journey.
               </div>
             </div>
             <div className="links">
+              <a
+                className="btn btn-secondary btn-link"
+                href="https://www.youtube.com/embed/lgWnXsLf0as?start=9"
+                target="blank"
+              >
+                Watch a take off
+              </a>
               <a
                 href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
                 target="blank"
                 className="btn btn-primary btn-link"
               >
-                WhatsApp Group
+                Join WhatsApp Group
               </a>
               <a
                 href="https://www.imperialcollegeunion.org/activities/a-to-z/gliding"
@@ -65,7 +94,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-2">
+      {/* <section className="section-2">
         <div className="container">
           <div className="col-1">
             <img
@@ -107,7 +136,6 @@ export default function Home() {
                 journey.{" "}
               </div>
             </p>
-
             <a
               className="btn btn-secondary btn-video"
               href="https://www.youtube.com/embed/lgWnXsLf0as?start=9"
@@ -117,7 +145,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="section-3">
         <div className="copy">
           <h1 className="heading">Meet the commitee</h1>
