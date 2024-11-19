@@ -4,6 +4,8 @@ import { instagram_svg, facebook_svg, mail_svg } from "../assets/svgs/navbar";
 import "../styles/components/footer.scss";
 
 export default function Footer() {
+  let currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -129,8 +131,8 @@ export default function Footer() {
                 href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5033166/charity-overview"
                 target="blank"
               >
-                © 2024 Imperial College Union. Registered Charity No. 1151241 |
-                VAT Reg No. GB 240 5617 84
+                ©{currentYear} Imperial College Union. Registered Charity No.
+                1151241 | VAT Reg No. GB 240 5617 84
               </a>
               <a
                 className="address"
