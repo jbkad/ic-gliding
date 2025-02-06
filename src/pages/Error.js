@@ -4,7 +4,6 @@ import "../styles/components/error.scss";
 export default function Error() {
   return (
     <div className="error">
-      <div className="status-code">404 - Not found</div>
       <h1>
         Uh oh. <br /> Looks like you've flown off course!
       </h1>
@@ -20,6 +19,7 @@ export default function Error() {
           <a href="mailto:gliding@imperial.ac.uk">Get in touch with us</a>
         </li>
       </ul>
+      <div className="status-code">404 - Not found</div>
     </div>
   );
 }

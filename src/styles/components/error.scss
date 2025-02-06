@@ -3,9 +3,27 @@
 .error {
   @include marginals;
 
+  p {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  ul {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+
   .status-code {
     color: $primary-color;
     font-size: 12px;
     text-transform: uppercase;
+    width: fit-content;
+    background-color: #013691;
+    color: white;
+    padding: 5px 8px;
+    margin-top: 30px;
   }
 }
