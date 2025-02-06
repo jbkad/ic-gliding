@@ -12,7 +12,34 @@ export default function Footer() {
         <div className="section-1">
           <div className="col-1">
             <div className="row-1">
-              <label>About Us</label>
+              <label>Top links</label>
+              <Link
+                to="/learningtoglide/join"
+                onClick={navigateTo}
+                className="link"
+                aria-label="Learn how to glide"
+              >
+                Learn how to glide
+              </Link>
+              <Link
+                to="/memberinformation/fleet-and-costs"
+                onClick={navigateTo}
+                className="link"
+                aria-label="Find out more about gliding costs"
+              >
+                Gliding costs
+              </Link>
+              <Link
+                to="/gallery"
+                onClick={navigateTo}
+                className="link"
+                aria-label="Club gallery"
+              >
+                Club gallery
+              </Link>
+            </div>
+            <div className="row-2">
+              <label>About us</label>
               <Link
                 to="/whatisgliding/introduction"
                 onClick={navigateTo}
@@ -38,8 +65,8 @@ export default function Footer() {
                 FAQs
               </Link>
             </div>
-            <div className="row-2">
-              <label>Useful Resources</label>
+            <div className="row-3">
+              <label>Useful resources</label>
               <a
                 href="https://chat.whatsapp.com/EcanRrIn34KFmpIbJsSy4d"
                 className="link"
@@ -64,7 +91,7 @@ export default function Footer() {
                 Lasham Gliding
               </a>
             </div>
-            <div className="row-3">
+            <div className="row-4">
               <label>Site information</label>
               <Link
                 to="/sitemap"
@@ -81,33 +108,6 @@ export default function Footer() {
                 aria-label="Accessibility"
               >
                 Accessibility
-              </Link>
-            </div>
-            <div className="row-4">
-              <label>Top links</label>
-              <Link
-                to="/learningtoglide/join"
-                onClick={navigateTo}
-                className="link"
-                aria-label="Learn how to glide"
-              >
-                Learn how to glide
-              </Link>
-              <Link
-                to="/memberinformation/fleet-and-costs"
-                onClick={navigateTo}
-                className="link"
-                aria-label="Find out more about gliding costs"
-              >
-                Gliding costs
-              </Link>
-              <Link
-                to="/gallery"
-                onClick={navigateTo}
-                className="link"
-                aria-label="Club gallery"
-              >
-                Club gallery
               </Link>
             </div>
           </div>
