@@ -11,17 +11,22 @@ export default function Committee() {
     <div className="committee">
       <div className="member">
         {data.map((member, index) => (
-          <div className="profile wallet" key={index}>
-            <img
-              src={`assets/committee/${member.name}.png`}
+          <div className="profile" key={index}>
+            {/* <img
+              src={
+                `assets/committee/${member.name}.png` ||
+                "assets/committee/profile.png"
+              }
               alt={member.name}
               className="headshot"
               onError={handleEmptyProfile}
-            />
-            <div className="name">{member.name}</div>
-            <div className="position">{member.position}</div>
-            <div className="course">{member.course}</div>
-            <div className="year"> Year {member.year}</div>
+            /> */}
+            <div className="col-2">
+              <div className="position">{member.position}</div>
+              <div className="name">{member.name}</div>
+              {/* <div className="course">{member.course}</div> */}
+              {/* <div className="year"> Year {member.year}</div> */}
+            </div>
           </div>
         ))}
       </div>

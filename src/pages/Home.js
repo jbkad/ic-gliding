@@ -31,12 +31,13 @@ export default function Home() {
           the gliding club. If this sounds like something you'd be interested
           in, come for a flight and try it out for yourself!
         </p>
-        <div className="join-us">
+      </section>
+      <section className="section-2">
+        <div className="container">
           <div className="overlay"></div>
           <img
             src="/assets/slideshow/gliding-3.jpg"
             alt="Flying at Gore Farm, Shaftesbury (September 1930)"
-            className="img"
           />
           <div className="content">
             <div className="copy">
@@ -52,7 +53,7 @@ export default function Home() {
                   onClick={navigateTo}
                   className="link"
                 >
-                  'What is gliding?'
+                  What is gliding
                 </Link>{" "}
                 and{" "}
                 <Link
@@ -60,7 +61,7 @@ export default function Home() {
                   className="link"
                   onClick={navigateTo}
                 >
-                  'First flight'
+                  First flight
                 </Link>{" "}
                 pages to dive deeper into the sport, where you will find the
                 basics of how gliders work to the process of your first flight -
@@ -94,68 +95,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="section-2">
-        <div className="container">
-          <div className="col-1">
-            <img
-              src={require("../assets/gallery/00s/1.jpg")}
-              alt="Student glider pilot in action."
-            />
-          </div>
-          <div className="col-2">
-            <div className="heading">
-              Here is what you have to look forward to!
-            </div>
-            <p className="body">
-              <div>
-                Whether you’re looking for a new hobby, an adventure, or just
-                curious about the art of gliding, we’ve got something for
-                everyone.{" "}
-              </div>
-              <br />
-              <div>
-                Interested in finding out more about flying? Head over to our{" "}
-                <Link
-                  to="whatisgliding/introduction"
-                  onClick={navigateTo}
-                  className="link"
-                >
-                  'What is gliding?'
-                </Link>{" "}
-                and{" "}
-                <Link
-                  to="/learningtoglide/first-trip"
-                  className="link"
-                  onClick={navigateTo}
-                >
-                  'First flight'
-                </Link>{" "}
-                page to dive deeper into the sport. From the basics of how
-                gliders work to the exhilaration of your first solo flight, we
-                cover everything you need to know to get started on your flying
-                journey.{" "}
-              </div>
-            </p>
-            <a
-              className="btn btn-secondary btn-video"
-              href="https://www.youtube.com/embed/lgWnXsLf0as?start=9"
-              target="blank"
-            >
-              Watch a take off
-            </a>
-          </div>
-        </div>
-      </section> */}
       <section className="section-3">
         <div className="copy">
           <h1 className="heading">Meet the commitee</h1>
           <p className="subheading">
-            Our 2024/25 committee is dedicated to making your gliding experience
+            Our 2025/26 committee is dedicated to making your gliding experience
             unforgettable. From organising training sessions to planning social
             events, they work tirelessly to ensure the club runs smoothly. Get
             to know the individuals who keep the club running!
           </p>
         </div>
+        <br />
         <Committee />
       </section>
     </div>
