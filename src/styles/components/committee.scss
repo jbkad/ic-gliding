@@ -3,7 +3,7 @@
 .committee {
   .member {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     font-weight: 200;
   }
@@ -27,7 +27,7 @@
       color: $primary-color;
 
       padding: 15px;
-      text-align: left;
+      text-align: center;
 
       .position {
         font-size: 1.25rem;
